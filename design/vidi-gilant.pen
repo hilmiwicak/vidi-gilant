@@ -3,6 +3,435 @@
   "children": [
     {
       "type": "frame",
+      "id": "C2o7Oj",
+      "x": 880,
+      "y": 1080,
+      "name": "Screen 1a - Welcome, greeting",
+      "clip": true,
+      "width": 390,
+      "height": 844,
+      "fill": "$ground",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "icon",
+          "id": "RgQ43",
+          "layoutPosition": "absolute",
+          "x": 214,
+          "y": 700,
+          "name": "Ornament Star Gold 2",
+          "rotation": 14,
+          "width": 22,
+          "height": 22,
+          "icon": "star",
+          "library": "Material Symbols Rounded",
+          "weight": 600,
+          "fill": "$gold"
+        },
+        {
+          "type": "icon",
+          "id": "Ggyqg",
+          "layoutPosition": "absolute",
+          "x": 138,
+          "y": 652,
+          "name": "Ornament Sun Gold",
+          "width": 30,
+          "height": 30,
+          "icon": "sunny",
+          "library": "Material Symbols Rounded",
+          "weight": 600,
+          "fill": "$gold"
+        },
+        {
+          "type": "icon",
+          "id": "JtzlN",
+          "layoutPosition": "absolute",
+          "x": 296,
+          "y": 640,
+          "name": "Ornament Party Popper Red",
+          "width": 36,
+          "height": 36,
+          "icon": "celebration",
+          "library": "Material Symbols Rounded",
+          "weight": 600,
+          "fill": "$accent"
+        },
+        {
+          "type": "icon",
+          "id": "VnUe4",
+          "layoutPosition": "absolute",
+          "x": 200,
+          "y": 150,
+          "name": "Ornament Heart Red",
+          "rotation": 10,
+          "width": 24,
+          "height": 24,
+          "icon": "favorite",
+          "library": "Material Symbols Rounded",
+          "weight": 600,
+          "fill": "$accent"
+        },
+        {
+          "type": "icon",
+          "id": "Sr98J",
+          "layoutPosition": "absolute",
+          "x": 34,
+          "y": 132,
+          "name": "Ornament Star Gold",
+          "rotation": -12.000000000000002,
+          "width": 32,
+          "height": 32,
+          "icon": "star",
+          "library": "Material Symbols Rounded",
+          "weight": 600,
+          "fill": "$gold"
+        },
+        {
+          "id": "qYWhr",
+          "type": "ref",
+          "ref": "s2Vhb",
+          "name": "Ornament Flower Bottom Left",
+          "layoutPosition": "absolute",
+          "x": -38,
+          "y": 598
+        },
+        {
+          "id": "Yfajo",
+          "type": "ref",
+          "ref": "R271s",
+          "name": "Ornament Lily Top Right",
+          "layoutPosition": "absolute",
+          "x": 288,
+          "y": 64
+        },
+        {
+          "id": "X5Ou0",
+          "type": "ref",
+          "ref": "VhrqG",
+          "name": "Status Bar"
+        },
+        {
+          "type": "frame",
+          "id": "gowxi",
+          "name": "Content",
+          "width": "fill_container",
+          "height": "fill_container",
+          "layout": "vertical",
+          "padding": [
+            0,
+            20,
+            28,
+            20
+          ],
+          "justifyContent": "space_between",
+          "children": [
+            {
+              "type": "frame",
+              "id": "Np6WQ",
+              "name": "Greeting",
+              "width": "fill_container",
+              "height": "fill_container",
+              "layout": "vertical",
+              "gap": 16,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "fFtHI",
+                  "name": "Sprig Row",
+                  "width": "fill_container",
+                  "justifyContent": "center",
+                  "children": [
+                    {
+                      "id": "QwN8n",
+                      "type": "ref",
+                      "ref": "t244L",
+                      "name": "Flower Sprig"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "pAKmX",
+                  "name": "Title",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "esyLG",
+                      "name": "Title Line 1",
+                      "fill": "$ink",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Happy birthday,",
+                      "lineHeight": 1.05,
+                      "textAlign": "center",
+                      "fontFamily": "$font-display",
+                      "fontSize": 44,
+                      "fontWeight": "800"
+                    },
+                    {
+                      "type": "text",
+                      "id": "OowV6",
+                      "name": "Her Name Placeholder",
+                      "fill": "$accent",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Vidiana Tryartha Ramadhani",
+                      "lineHeight": 1,
+                      "textAlign": "center",
+                      "fontFamily": "$font-hand",
+                      "fontSize": 52,
+                      "fontWeight": "700"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "RRUSZ",
+              "type": "ref",
+              "ref": "Hs1Ix",
+              "name": "Next Button",
+              "width": "fill_container",
+              "height": 64,
+              "descendants": {
+                "HsIhc": {
+                  "icon": "arrow_forward"
+                },
+                "C3TJA": {
+                  "content": "Next",
+                  "fontSize": 22
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "q20qSG",
+          "layoutPosition": "absolute",
+          "x": 133,
+          "y": 62,
+          "name": "Admin tap zone (invisible)",
+          "width": 124,
+          "height": 56
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "i33uwe",
+      "x": 1320,
+      "y": 1080,
+      "name": "Screen 1b - Welcome, introduction",
+      "clip": true,
+      "width": 390,
+      "height": 844,
+      "fill": "$ground",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "icon",
+          "id": "x7f9Yb",
+          "layoutPosition": "absolute",
+          "x": 290,
+          "y": 640,
+          "name": "Ornament Star Gold 2",
+          "rotation": 12.000000000000002,
+          "width": 22,
+          "height": 22,
+          "icon": "star",
+          "library": "Material Symbols Rounded",
+          "weight": 600,
+          "fill": "$accent"
+        },
+        {
+          "type": "icon",
+          "id": "vwd52",
+          "layoutPosition": "absolute",
+          "x": 210,
+          "y": 690,
+          "name": "Ornament Cake Gold",
+          "rotation": 8,
+          "width": 30,
+          "height": 30,
+          "icon": "cake",
+          "library": "Material Symbols Rounded",
+          "weight": 600,
+          "fill": "$gold"
+        },
+        {
+          "type": "icon",
+          "id": "xfFUQ",
+          "layoutPosition": "absolute",
+          "x": 160,
+          "y": 638.5,
+          "name": "Ornament Party Popper Red",
+          "flipX": true,
+          "width": 27,
+          "height": 27,
+          "icon": "celebration",
+          "library": "Material Symbols Rounded",
+          "weight": 600,
+          "fill": "$gold"
+        },
+        {
+          "type": "icon",
+          "id": "o5NzX",
+          "layoutPosition": "absolute",
+          "x": 313.0618082211215,
+          "y": 258,
+          "name": "Ornament Heart Red",
+          "rotation": -8,
+          "width": 22,
+          "height": 22,
+          "icon": "favorite",
+          "library": "Material Symbols Rounded",
+          "weight": 600,
+          "fill": "$gold"
+        },
+        {
+          "type": "icon",
+          "id": "nES1a",
+          "layoutPosition": "absolute",
+          "x": 34,
+          "y": 112,
+          "name": "Ornament Star Gold",
+          "rotation": -10,
+          "width": 30,
+          "height": 30,
+          "icon": "star",
+          "library": "Material Symbols Rounded",
+          "weight": 600,
+          "fill": "$accent"
+        },
+        {
+          "id": "zNkjA",
+          "type": "ref",
+          "ref": "R271s",
+          "name": "Ornament Lily Bottom Left",
+          "layoutPosition": "absolute",
+          "x": -44,
+          "y": 590
+        },
+        {
+          "id": "TamIX",
+          "type": "ref",
+          "ref": "s2Vhb",
+          "name": "Ornament Flower Top Right",
+          "layoutPosition": "absolute",
+          "x": 290,
+          "y": 66
+        },
+        {
+          "id": "oxWpG",
+          "type": "ref",
+          "ref": "VhrqG",
+          "name": "Status Bar"
+        },
+        {
+          "type": "frame",
+          "id": "u2gcj",
+          "name": "Content",
+          "width": "fill_container",
+          "height": "fill_container",
+          "layout": "vertical",
+          "gap": 20,
+          "padding": [
+            0,
+            20,
+            28,
+            20
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "O2W8Fe",
+              "name": "Introduction",
+              "width": "fill_container",
+              "height": "fill_container",
+              "layout": "vertical",
+              "gap": 20,
+              "justifyContent": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "Sc0ds",
+                  "name": "Intro Title",
+                  "fill": "$ink",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "guess what's waiting for you..",
+                  "lineHeight": 1.05,
+                  "fontFamily": "$font-display",
+                  "fontSize": 44,
+                  "fontWeight": "800"
+                },
+                {
+                  "type": "text",
+                  "id": "KSF7V",
+                  "name": "Intro Body",
+                  "fill": "$ink",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "We're going on a treasure hunt. I've picked a few Stops for you. Somewhere that has a significant meaning for the both of us, or somewhere important. Each Stop gives you a Puzzle for the next one, and if a Puzzle has you stuck, ask for a Clue. Nobody's counting. I won't say much about where we're going. I'm just here to keep you company.",
+                  "lineHeight": 1.35,
+                  "fontFamily": "$font-body",
+                  "fontSize": 20,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "text",
+                  "id": "jSPDU",
+                  "name": "Sign-off Handwritten",
+                  "fill": "$accent",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Good luck, and have fun!",
+                  "lineHeight": 1.05,
+                  "fontFamily": "$font-hand",
+                  "fontSize": 38,
+                  "fontWeight": "700"
+                }
+              ]
+            },
+            {
+              "id": "qmg9j",
+              "type": "ref",
+              "ref": "Hs1Ix",
+              "name": "Start Button",
+              "width": "fill_container",
+              "height": 64,
+              "descendants": {
+                "HsIhc": {
+                  "icon": "explore"
+                },
+                "C3TJA": {
+                  "content": "Start",
+                  "fontSize": 22
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "ZMVtY",
+          "layoutPosition": "absolute",
+          "x": 133,
+          "y": 62,
+          "name": "Admin tap zone (invisible)",
+          "width": 124,
+          "height": 56
+        }
+      ]
+    },
+    {
+      "type": "frame",
       "id": "uJp7n",
       "x": 880,
       "y": 0,
@@ -456,7 +885,7 @@
     {
       "type": "frame",
       "id": "s2Vhb",
-      "x": 2111,
+      "x": 2460,
       "y": 0,
       "name": "Flower - Red and Gold",
       "reusable": true,
@@ -489,7 +918,7 @@
     {
       "type": "frame",
       "id": "t244L",
-      "x": 2411,
+      "x": 2655,
       "y": 0,
       "name": "Flower Sprig - Red and Gold",
       "reusable": true,
@@ -870,436 +1299,8 @@
     },
     {
       "type": "frame",
-      "id": "C2o7Oj",
-      "x": 880,
-      "y": 1080,
-      "name": "Screen 1a - Welcome, greeting",
-      "clip": true,
-      "width": 390,
-      "height": 844,
-      "fill": "$ground",
-      "layout": "vertical",
-      "children": [
-        {
-          "type": "icon",
-          "id": "RgQ43",
-          "layoutPosition": "absolute",
-          "x": 214,
-          "y": 700,
-          "name": "Ornament Star Gold 2",
-          "rotation": 14,
-          "width": 22,
-          "height": 22,
-          "icon": "star",
-          "library": "Material Symbols Rounded",
-          "weight": 600,
-          "fill": "$gold"
-        },
-        {
-          "type": "icon",
-          "id": "Ggyqg",
-          "layoutPosition": "absolute",
-          "x": 138,
-          "y": 652,
-          "name": "Ornament Sun Gold",
-          "width": 30,
-          "height": 30,
-          "icon": "sunny",
-          "library": "Material Symbols Rounded",
-          "weight": 600,
-          "fill": "$gold"
-        },
-        {
-          "type": "icon",
-          "id": "JtzlN",
-          "layoutPosition": "absolute",
-          "x": 296,
-          "y": 640,
-          "name": "Ornament Party Popper Red",
-          "width": 36,
-          "height": 36,
-          "icon": "celebration",
-          "library": "Material Symbols Rounded",
-          "weight": 600,
-          "fill": "$accent"
-        },
-        {
-          "type": "icon",
-          "id": "VnUe4",
-          "layoutPosition": "absolute",
-          "x": 200,
-          "y": 150,
-          "name": "Ornament Heart Red",
-          "rotation": 10,
-          "width": 24,
-          "height": 24,
-          "icon": "favorite",
-          "library": "Material Symbols Rounded",
-          "weight": 600,
-          "fill": "$accent"
-        },
-        {
-          "type": "icon",
-          "id": "Sr98J",
-          "layoutPosition": "absolute",
-          "x": 34,
-          "y": 132,
-          "name": "Ornament Star Gold",
-          "rotation": -12.000000000000002,
-          "width": 32,
-          "height": 32,
-          "icon": "star",
-          "library": "Material Symbols Rounded",
-          "weight": 600,
-          "fill": "$gold"
-        },
-        {
-          "id": "qYWhr",
-          "type": "ref",
-          "ref": "s2Vhb",
-          "name": "Ornament Flower Bottom Left",
-          "layoutPosition": "absolute",
-          "x": -38,
-          "y": 598
-        },
-        {
-          "id": "Yfajo",
-          "type": "ref",
-          "ref": "R271s",
-          "name": "Ornament Lily Top Right",
-          "layoutPosition": "absolute",
-          "x": 288,
-          "y": 64
-        },
-        {
-          "id": "X5Ou0",
-          "type": "ref",
-          "ref": "VhrqG",
-          "name": "Status Bar"
-        },
-        {
-          "type": "frame",
-          "id": "gowxi",
-          "name": "Content",
-          "width": "fill_container",
-          "height": "fill_container",
-          "layout": "vertical",
-          "padding": [
-            0,
-            20,
-            28,
-            20
-          ],
-          "justifyContent": "space_between",
-          "children": [
-            {
-              "type": "frame",
-              "id": "Np6WQ",
-              "name": "Greeting",
-              "width": "fill_container",
-              "height": "fill_container",
-              "layout": "vertical",
-              "gap": 16,
-              "justifyContent": "center",
-              "alignItems": "center",
-              "children": [
-                {
-                  "type": "frame",
-                  "id": "fFtHI",
-                  "name": "Sprig Row",
-                  "width": "fill_container",
-                  "justifyContent": "center",
-                  "children": [
-                    {
-                      "id": "QwN8n",
-                      "type": "ref",
-                      "ref": "t244L",
-                      "name": "Flower Sprig"
-                    }
-                  ]
-                },
-                {
-                  "type": "frame",
-                  "id": "pAKmX",
-                  "name": "Title",
-                  "width": "fill_container",
-                  "layout": "vertical",
-                  "alignItems": "center",
-                  "children": [
-                    {
-                      "type": "text",
-                      "id": "esyLG",
-                      "name": "Title Line 1",
-                      "fill": "$ink",
-                      "textGrowth": "fixed-width",
-                      "width": "fill_container",
-                      "content": "Happy birthday,",
-                      "lineHeight": 1.05,
-                      "textAlign": "center",
-                      "fontFamily": "$font-display",
-                      "fontSize": 44,
-                      "fontWeight": "800"
-                    },
-                    {
-                      "type": "text",
-                      "id": "OowV6",
-                      "name": "Her Name Placeholder",
-                      "fill": "$accent",
-                      "textGrowth": "fixed-width",
-                      "width": "fill_container",
-                      "content": "Vidiana Tryartha Ramadhani",
-                      "lineHeight": 1,
-                      "textAlign": "center",
-                      "fontFamily": "$font-hand",
-                      "fontSize": 52,
-                      "fontWeight": "700"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "id": "RRUSZ",
-              "type": "ref",
-              "ref": "Hs1Ix",
-              "name": "Next Button",
-              "width": "fill_container",
-              "height": 64,
-              "descendants": {
-                "HsIhc": {
-                  "icon": "arrow_forward"
-                },
-                "C3TJA": {
-                  "content": "Next",
-                  "fontSize": 22
-                }
-              }
-            }
-          ]
-        },
-        {
-          "type": "frame",
-          "id": "q20qSG",
-          "layoutPosition": "absolute",
-          "x": 133,
-          "y": 62,
-          "name": "Admin tap zone (invisible)",
-          "width": 124,
-          "height": 56
-        }
-      ]
-    },
-    {
-      "type": "frame",
-      "id": "i33uwe",
-      "x": 1320,
-      "y": 1080,
-      "name": "Screen 1b - Welcome, introduction",
-      "clip": true,
-      "width": 390,
-      "height": 844,
-      "fill": "$ground",
-      "layout": "vertical",
-      "children": [
-        {
-          "type": "icon",
-          "id": "x7f9Yb",
-          "layoutPosition": "absolute",
-          "x": 140,
-          "y": 640,
-          "name": "Ornament Star Gold 2",
-          "rotation": 12.000000000000002,
-          "width": 22,
-          "height": 22,
-          "icon": "star",
-          "library": "Material Symbols Rounded",
-          "weight": 600,
-          "fill": "$gold"
-        },
-        {
-          "type": "icon",
-          "id": "vwd52",
-          "layoutPosition": "absolute",
-          "x": 210,
-          "y": 690,
-          "name": "Ornament Cake Gold",
-          "rotation": 8,
-          "width": 30,
-          "height": 30,
-          "icon": "cake",
-          "library": "Material Symbols Rounded",
-          "weight": 600,
-          "fill": "$gold"
-        },
-        {
-          "type": "icon",
-          "id": "xfFUQ",
-          "layoutPosition": "absolute",
-          "x": 300,
-          "y": 620,
-          "name": "Ornament Party Popper Red",
-          "width": 36,
-          "height": 36,
-          "icon": "celebration",
-          "library": "Material Symbols Rounded",
-          "weight": 600,
-          "fill": "$accent"
-        },
-        {
-          "type": "icon",
-          "id": "o5NzX",
-          "layoutPosition": "absolute",
-          "x": 92,
-          "y": 176,
-          "name": "Ornament Heart Red",
-          "rotation": -8,
-          "width": 22,
-          "height": 22,
-          "icon": "favorite",
-          "library": "Material Symbols Rounded",
-          "weight": 600,
-          "fill": "$accent"
-        },
-        {
-          "type": "icon",
-          "id": "nES1a",
-          "layoutPosition": "absolute",
-          "x": 34,
-          "y": 112,
-          "name": "Ornament Star Gold",
-          "rotation": -10,
-          "width": 30,
-          "height": 30,
-          "icon": "star",
-          "library": "Material Symbols Rounded",
-          "weight": 600,
-          "fill": "$gold"
-        },
-        {
-          "id": "zNkjA",
-          "type": "ref",
-          "ref": "R271s",
-          "name": "Ornament Lily Bottom Left",
-          "layoutPosition": "absolute",
-          "x": -44,
-          "y": 590
-        },
-        {
-          "id": "TamIX",
-          "type": "ref",
-          "ref": "s2Vhb",
-          "name": "Ornament Flower Top Right",
-          "layoutPosition": "absolute",
-          "x": 290,
-          "y": 66
-        },
-        {
-          "id": "oxWpG",
-          "type": "ref",
-          "ref": "VhrqG",
-          "name": "Status Bar"
-        },
-        {
-          "type": "frame",
-          "id": "u2gcj",
-          "name": "Content",
-          "width": "fill_container",
-          "height": "fill_container",
-          "layout": "vertical",
-          "gap": 20,
-          "padding": [
-            0,
-            20,
-            28,
-            20
-          ],
-          "children": [
-            {
-              "type": "frame",
-              "id": "O2W8Fe",
-              "name": "Introduction",
-              "width": "fill_container",
-              "height": "fill_container",
-              "layout": "vertical",
-              "gap": 20,
-              "justifyContent": "center",
-              "children": [
-                {
-                  "type": "text",
-                  "id": "Sc0ds",
-                  "name": "Intro Title",
-                  "fill": "$ink",
-                  "textGrowth": "fixed-width",
-                  "width": "fill_container",
-                  "content": "Today is yours.",
-                  "lineHeight": 1.05,
-                  "fontFamily": "$font-display",
-                  "fontSize": 44,
-                  "fontWeight": "800"
-                },
-                {
-                  "type": "text",
-                  "id": "KSF7V",
-                  "name": "Intro Body",
-                  "fill": "$ink",
-                  "textGrowth": "fixed-width",
-                  "width": "fill_container",
-                  "content": "I've picked a few Stops for you. Each Stop gives you a Puzzle for the next one, and if a Puzzle has you stuck, ask for a Clue. Nobody's counting. I won't say much about where we're going. I'm just here to keep you company.",
-                  "lineHeight": 1.35,
-                  "fontFamily": "$font-body",
-                  "fontSize": 20,
-                  "fontWeight": "500"
-                },
-                {
-                  "type": "text",
-                  "id": "jSPDU",
-                  "name": "Sign-off Handwritten",
-                  "fill": "$accent",
-                  "textGrowth": "fixed-width",
-                  "width": "fill_container",
-                  "content": "Good luck, and have fun!",
-                  "lineHeight": 1.05,
-                  "fontFamily": "$font-hand",
-                  "fontSize": 38,
-                  "fontWeight": "700"
-                }
-              ]
-            },
-            {
-              "id": "qmg9j",
-              "type": "ref",
-              "ref": "Hs1Ix",
-              "name": "Start Button",
-              "width": "fill_container",
-              "height": 64,
-              "descendants": {
-                "HsIhc": {
-                  "icon": "explore"
-                },
-                "C3TJA": {
-                  "content": "Start",
-                  "fontSize": 22
-                }
-              }
-            }
-          ]
-        },
-        {
-          "type": "frame",
-          "id": "ZMVtY",
-          "layoutPosition": "absolute",
-          "x": 133,
-          "y": 62,
-          "name": "Admin tap zone (invisible)",
-          "width": 124,
-          "height": 56
-        }
-      ]
-    },
-    {
-      "type": "frame",
       "id": "R271s",
-      "x": 2111,
+      "x": 2460,
       "y": 190,
       "name": "Flower Lily - White",
       "reusable": true,
@@ -1582,6 +1583,287 @@
           "height": 1.3868999999999956,
           "stroke": "#230E0D",
           "strokeWidth": 0.342429
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "vbiNR",
+      "x": 2025,
+      "y": 0,
+      "name": "Color Swatch",
+      "reusable": true,
+      "width": 360,
+      "gap": 16,
+      "alignItems": "center",
+      "children": [
+        {
+          "type": "frame",
+          "id": "YGTJF",
+          "name": "Chip",
+          "width": 72,
+          "height": 72,
+          "fill": "$ground",
+          "cornerRadius": 16,
+          "stroke": "#00000033",
+          "strokeWidth": 2,
+          "strokeAlignment": "inner",
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "tPbV1",
+              "name": "Sample",
+              "fill": "$ink",
+              "content": "Aa",
+              "fontFamily": "$font-display",
+              "fontSize": 32,
+              "fontWeight": "800"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "hL8wt",
+          "name": "Labels",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 2,
+          "children": [
+            {
+              "type": "text",
+              "id": "IG17H",
+              "name": "Token Name",
+              "fill": "#222222",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "token",
+              "fontFamily": "Outfit",
+              "fontSize": 18,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "ExYMT",
+              "name": "Role",
+              "fill": "#555555",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "role",
+              "fontFamily": "Outfit",
+              "fontSize": 14,
+              "fontWeight": "500"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "r5epOc",
+      "x": 2025,
+      "y": 120,
+      "name": "Color Palette",
+      "width": 420,
+      "fill": "#F2F2F2",
+      "cornerRadius": 24,
+      "layout": "vertical",
+      "gap": 16,
+      "padding": 24,
+      "children": [
+        {
+          "type": "text",
+          "id": "amAKJ",
+          "name": "Title",
+          "fill": "#222222",
+          "textGrowth": "fixed-width",
+          "width": "fill_container",
+          "content": "Color palette",
+          "fontFamily": "Bricolage Grotesque",
+          "fontSize": 28,
+          "fontWeight": "800"
+        },
+        {
+          "type": "text",
+          "id": "v9UBP",
+          "name": "How To Edit",
+          "fill": "#555555",
+          "textGrowth": "fixed-width",
+          "width": "fill_container",
+          "content": "Change a value in the Variables panel. These swatches and every screen built with the token follow.",
+          "lineHeight": 1.3,
+          "fontFamily": "Outfit",
+          "fontSize": 15,
+          "fontWeight": "500"
+        },
+        {
+          "id": "D468Nr",
+          "type": "ref",
+          "ref": "vbiNR",
+          "name": "Swatch - ground",
+          "width": "fill_container",
+          "descendants": {
+            "YGTJF": {
+              "fill": "$ground"
+            },
+            "tPbV1": {
+              "fill": "$ink"
+            },
+            "IG17H": {
+              "content": "ground"
+            },
+            "ExYMT": {
+              "content": "Screen background"
+            }
+          }
+        },
+        {
+          "id": "Xji6j",
+          "type": "ref",
+          "ref": "vbiNR",
+          "name": "Swatch - surface",
+          "width": "fill_container",
+          "descendants": {
+            "YGTJF": {
+              "fill": "$surface"
+            },
+            "tPbV1": {
+              "fill": "$ink"
+            },
+            "IG17H": {
+              "content": "surface"
+            },
+            "ExYMT": {
+              "content": "Counter pill, outline button fill"
+            }
+          }
+        },
+        {
+          "id": "C9uRlk",
+          "type": "ref",
+          "ref": "vbiNR",
+          "name": "Swatch - ink",
+          "width": "fill_container",
+          "descendants": {
+            "YGTJF": {
+              "fill": "$ink"
+            },
+            "tPbV1": {
+              "fill": "$on-ink"
+            },
+            "IG17H": {
+              "content": "ink"
+            },
+            "ExYMT": {
+              "content": "Text, primary button, outlines"
+            }
+          }
+        },
+        {
+          "id": "WUuSE",
+          "type": "ref",
+          "ref": "vbiNR",
+          "name": "Swatch - ink-soft",
+          "width": "fill_container",
+          "descendants": {
+            "YGTJF": {
+              "fill": "$ink-soft"
+            },
+            "tPbV1": {
+              "fill": "$on-ink"
+            },
+            "IG17H": {
+              "content": "ink-soft"
+            },
+            "ExYMT": {
+              "content": "Secondary text"
+            }
+          }
+        },
+        {
+          "id": "gkuYr",
+          "type": "ref",
+          "ref": "vbiNR",
+          "name": "Swatch - accent",
+          "width": "fill_container",
+          "descendants": {
+            "YGTJF": {
+              "fill": "$accent"
+            },
+            "tPbV1": {
+              "fill": "$on-ink"
+            },
+            "IG17H": {
+              "content": "accent"
+            },
+            "ExYMT": {
+              "content": "Handwritten name and phrases, decor"
+            }
+          }
+        },
+        {
+          "id": "nvDsv",
+          "type": "ref",
+          "ref": "vbiNR",
+          "name": "Swatch - gold",
+          "width": "fill_container",
+          "descendants": {
+            "YGTJF": {
+              "fill": "$gold"
+            },
+            "tPbV1": {
+              "fill": "$ink"
+            },
+            "IG17H": {
+              "content": "gold"
+            },
+            "ExYMT": {
+              "content": "Pointer disc, small decor icons"
+            }
+          }
+        },
+        {
+          "id": "T2U1su",
+          "type": "ref",
+          "ref": "vbiNR",
+          "name": "Swatch - on-ink",
+          "width": "fill_container",
+          "descendants": {
+            "YGTJF": {
+              "fill": "$on-ink"
+            },
+            "tPbV1": {
+              "fill": "$ink"
+            },
+            "IG17H": {
+              "content": "on-ink"
+            },
+            "ExYMT": {
+              "content": "Text on ink and accent"
+            }
+          }
+        },
+        {
+          "id": "WRqo5",
+          "type": "ref",
+          "ref": "vbiNR",
+          "name": "Swatch - flower-tint",
+          "width": "fill_container",
+          "descendants": {
+            "YGTJF": {
+              "fill": "$flower-tint"
+            },
+            "tPbV1": {
+              "fill": "$ink"
+            },
+            "IG17H": {
+              "content": "flower-tint"
+            },
+            "ExYMT": {
+              "content": "Faint flower tint (not used yet)"
+            }
+          }
         }
       ]
     }
