@@ -4,6 +4,7 @@ Vocabulary lives in [GLOSSARY.md](./GLOSSARY.md). Use those terms exactly (Stop,
 
 - All text she sees is in English.
 - Design the screens with the user in Pencil (pen.dev) before any Ralph loop. See [docs/BUILD-PLAN.md](./docs/BUILD-PLAN.md).
+- Visual system, design rules and Pencil tips: [docs/DESIGN.md](./docs/DESIGN.md) (design source: `design/vidi-gilant.pen`)
 - Hunt behaviour and rules: [docs/HUNT.md](./docs/HUNT.md)
 - Worker, Photo check, Event log, rate limits: [docs/WORKER.md](./docs/WORKER.md)
 - Tests and what only real iPhones can verify: [docs/TESTING.md](./docs/TESTING.md)

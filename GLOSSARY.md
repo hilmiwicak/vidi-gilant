@@ -6,7 +6,7 @@ A birthday scavenger hunt played on her phone. She travels to places that are si
 
 **Hunt**:
 The whole birthday experience, from the Welcome to the dinner.
-_Avoid_: Game, quest, tour, route
+_Avoid_: Game, quest, tour, route, treasure hunt
 
 **Welcome**:
 The opening sequence before the first Stop: permissions, a birthday greeting, and the Mission intro. It has no place to reach, so it is not a Stop.
