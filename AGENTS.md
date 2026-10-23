@@ -1,0 +1,14 @@
+Vidi is a birthday scavenger hunt web app for one person (his girlfriend), played on her iPhone and hosted on Cloudflare.
+
+Vocabulary lives in [GLOSSARY.md](./GLOSSARY.md). Use those terms exactly (Stop, Puzzle, Clue, Reveal, Arrival, Fallback, Plan, and so on).
+
+- All text she sees is in English.
+- Design the screens with the user in Pencil (pen.dev) before any Ralph loop. See [docs/BUILD-PLAN.md](./docs/BUILD-PLAN.md).
+- Hunt behaviour and rules: [docs/HUNT.md](./docs/HUNT.md)
+- Worker, Photo check, Event log, rate limits: [docs/WORKER.md](./docs/WORKER.md)
+- Tests and what only real iPhones can verify: [docs/TESTING.md](./docs/TESTING.md)
+- Branches, commits, pull requests: [docs/GIT.md](./docs/GIT.md)
+
+This project uses npm. Commands (created in the foundation phase): `npm test`, `npm run typecheck`, `npm run build`.
+
+Never push a git tag or run `wrangler deploy`: a tag deploys to her phone, and only the user decides when. Dev ports are pinned in config; the harness injects `PORT` and `NODE_ENV`, so don't trust them.

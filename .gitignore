@@ -1,0 +1,18 @@
+# Raw, uncompressed originals (photos, voice, video, song). Commit only the compressed copies.
+media-raw/
+
+# Secrets and local Worker config
+.dev.vars
+.env
+.env.*
+
+# Wrangler and build output
+.wrangler/
+node_modules/
+dist/
+
+# Test output (committed Playwright snapshot baselines are NOT ignored)
+playwright-report/
+test-results/
+
+.DS_Store
