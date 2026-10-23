@@ -64,7 +64,7 @@ She hands out 10 to 20 prepared food boxes. The counter has +1 and -1, no target
 
 ## Admin mode
 
-On-device only, no remote control. Opened by 5 taps on the title plus a PIN, or by typing the Master code into the Code field. Shown as a modal, with no "test mode" banner. It can force Arrival, jump to any Stop, reset progress, set the Boxes count, choose the Plan, and show the build hash and the on-device log. **Capture here** shows current lat, lng and accuracy, used on scouting visits to record each Stop's real coordinates.
+On-device only, no remote control. Opened by 5 taps within 3 seconds on a fixed invisible zone at the top center of every screen and every Stage (on the Puzzle screen it sits over the Boxes counter label, and stays in place when the counter is hidden in Plan B), then a PIN, or by typing the Master code into the Code field. The tap zone does nothing on a single tap. Shown as a modal, with no "test mode" banner. It can force Arrival, jump to any Stop, reset progress, set the Boxes count, choose the Plan, and show the build hash and the on-device log. **Capture here** shows current lat, lng and accuracy, used on scouting visits to record each Stop's real coordinates.
 
 ## Persistence
 

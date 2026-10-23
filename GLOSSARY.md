@@ -12,6 +12,10 @@ _Avoid_: Game, quest, tour, route
 The opening sequence before the first Stop: permissions, a birthday greeting, and the Mission intro. It has no place to reach, so it is not a Stop.
 _Avoid_: Stop 0, intro, onboarding
 
+**Stage**:
+One tap-to-advance frame inside a screen, shown on its own before the next one. The Welcome, the Mission intro, the last-Stop congratulation and the final screen are each a sequence of Stages. Not to be confused with a Stop, which is a place.
+_Avoid_: Step, beat, slide, page
+
 **Plan**:
 One of two versions of the Hunt. He picks it before the Welcome and it never changes mid-Hunt. Plan A runs from late morning, covers Bintaro and Jakarta, includes the Mission, and ends with dinner around 5 to 6pm. Plan B starts after he picks her up from work in Jakarta, stays in Jakarta, makes the Mission optional, and ends with dinner around 8pm.
 _Avoid_: Route, mode, variant
