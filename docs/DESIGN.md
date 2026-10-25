@@ -4,7 +4,7 @@ Visual system and working rules for the Pencil (pen.dev) designs. Source file: [
 
 ## Direction
 
-Warm, playful, whimsical. Florals sparingly. High contrast and readable in sun glare and at night. Large type. Tap targets at least 56 px. Frame size: iPhone 390x844.
+Warm, playful, whimsical. Florals sparingly. High contrast and readable in sun glare and at night. Large type. Tap targets at least 56 px. Frame width: iPhone 390. Stage frames are 844 high. The Puzzle screen and any other screen that scrolls grow in height with their content.
 
 ## Colors
 
@@ -83,9 +83,21 @@ Every screen and every Stage gets an invisible 124x56 px frame named "Admin tap 
 
 ## Puzzle screen order
 
-Top to bottom: Boxes counter pill (floating), Puzzle text, "Need a Clue?" button, Pointer arrow, distance, "Refresh location", "Having trouble?" link. Plan B hides the counter by default. No Maps link or place names ever. The dinner name stays hidden until Arrival. The Pointer shows "Updating..." while refreshing. Distances over 1 km show in km. The "Inspiration" frame has a reference layout.
+Top to bottom: Boxes counter pill (floating), Puzzle text, "Need a Clue?" button, Pointer arrow, distance, "Refresh location", "Having trouble" link with the italic sub-line "at the location?". The screen can scroll, so the link may sit below the fold. Plan B hides the counter by default and the top stays empty; the tap zone stays in place. No Maps link or place names ever. The dinner name stays hidden until Arrival. The Pointer shows "Updating..." in place of the distance while refreshing, and the arrow dims. A weak-signal note appears when accuracy is poor. Distances over 1 km show in km. The "Inspiration" frame has a reference layout.
 
-"Need a Clue?" shows the easier hint. "Having trouble?" opens the Fallback ladder.
+The Puzzle screen is drawn once, for Plan A Stop 1, with a frame per variant, named "Puzzle - <variant>": Puzzle, Clue, Location Updating, Weak signal, No location, No compass, Over 1 km, Arrival range. "Puzzle - Plan B Puzzle (counter hidden)" is the only Plan B frame, because only the counter and the text differ. Every other Stop reuses the layout and changes only its Puzzle and Clue text (see STOP.md). Do not draw a frame per Stop.
+
+The Clue is a white card with an `ink` outline over a scrim (`ink` at 65%). It sits just below the "Need a Clue?" button and ends with a "Got it" button. The Admin tap zone stays above the scrim.
+
+### Arrival and Reveal frames
+
+The frames are "Arrival", "Reveal - Text", "Reveal - Video", "Reveal - Voice" and "Reveal - Song", each 390x844 with the usual Stage structure (Status Bar, Content, "Continue" Button Primary, Admin tap zone last).
+
+- **Arrival:** a gold disc with a check, a display-type title ("You found it!", draft), the Stop name in handwriting, then "Continue". The disc content may change per Stop and need not always be a check.
+- **Reveal:** a handwritten heading (draft), then one card, then "Continue". Text uses an outlined `surface` card. Video and Song use an `ink` card. Voice uses an outlined `surface` card. Video, Voice and Song show a 112 px gold play disc with an `ink` play icon and a label ("Tap to play the video", "Tap to play the voice message", "Tap to play the song"). The Song card also shows a title placeholder.
+- Ornaments sit in different places on every frame and clear of the card, text and button.
+
+"Need a Clue?" shows the easier hint as an overlay above every element. "Having trouble" opens the Fallback ladder.
 
 ## Pencil tooling notes
 
@@ -99,7 +111,3 @@ Top to bottom: Boxes counter pill (floating), Puzzle text, "Need a Clue?" button
 ## Audit
 
 After the screens are done, run the antislop audit (numbered findings list) and the contrast checks before the beautify pass. Tick phase 2 in BUILD-PLAN only when the PR is open and the checks pass.
-
-## Privacy
-
-The repo is public. The design file holds her name on the Welcome. Don't add more personal data.

@@ -14,26 +14,31 @@ Not a Stop: no Arrival, no Fallbacks. Order: a Start button that requests locati
 
 ## Puzzle screen (top to bottom)
 
-Boxes counter pill (floating), Puzzle text, "Need a Clue?" button, arrow, distance, "Refresh location", "Having trouble?" link.
+Boxes counter pill (floating), Puzzle text, "Need a Clue?" button, arrow, distance, "Refresh location", "Having trouble" link with the italic sub-line "at the location?".
 
 - Puzzles are never graded: no answer field, no wrong answers, no skip button, no solved state.
-- The Clue button is always available. The Clue text shows only when she presses it.
+- The Clue button is always available. The Clue text shows only when she presses it, as an overlay above every other element (a card over a dimmed screen). Tapping outside the card or its close button dismisses it.
+- The screen can scroll. "Having trouble" may sit below the fold.
 - If she is still stuck, he gives other clues himself, or the Code.
 
 ## Pointer
 
-- Arrow and distance are always shown. Distance over 1 km displays in km.
+- The gold disc is always shown. Distance is rounded to the nearest 50 m and displays in km over 1 km. Draft copy: "You're here!" under 50 m, "1.2 km" with "still a way to go" over 1 km.
+- Weak or inaccurate reading (accuracy worse than 100 m): the disc and last good distance stay, with the note "Weak signal. This distance may be off." (draft).
+- No location at all: the disc stays with a location icon, the distance reads "On hold", and a note says "Your location isn't coming through right now." (draft). "Refresh location" and "Having trouble" stay available.
 - No Maps link and no place names, ever.
-- Arrow only if the compass works; otherwise distance-only text. The Start button requests compass permission (it needs a tap on iOS).
-- Wake Lock is not used. When the app becomes visible again it fetches a fresh position immediately and shows "Updating…" until a reading arrives. "Refresh location" does the same on demand.
+- Arrow only if the compass works; otherwise the distance moves inside the disc and the arrow is gone. The Start button requests compass permission (it needs a tap on iOS).
+- Wake Lock is not used. When the app becomes visible again it fetches a fresh position immediately and shows "Updating…" in place of the distance, with the arrow dimmed, until a reading arrives. "Refresh location" does the same on demand.
 
 ## Arrival
 
 Automatic when she is within the Stop's radius (default 50 m, optional per-Stop override) and reported accuracy is at most 50 m, on two consecutive readings. Readings with accuracy worse than 100 m are ignored.
 
+On Arrival, by any route (automatic or a Fallback), she sees a short congratulation for finding the Stop. It waits for her tap, then she goes to the Reveal. It is not always a checkmark. The Arrival frame shows a gold disc with a check (the base design), a title ("You found it!", draft), the Stop's name in handwriting (the name is revealed here, and for the dinner it is the first time she sees it), and a "Continue" button. The last Stop gets a longer, more celebratory version (the last-Stop congratulation). Its final Puzzle uses the same layout as every other Puzzle.
+
 ## Fallback ladder
 
-"Having trouble?" is always visible. Steps unlock in order; the Pointer stays on.
+"Having trouble" (with the italic "at the location?") is always available, though on a long Puzzle it may sit below the fold. Steps unlock in order; the Pointer stays on.
 
 1. **Photo check.** She photographs the place. The AI compares it with the Stop's single reference photo. A `match` or `unsure` verdict gives Arrival. A `no_match` shows a gentle message ("Hmm, I'm not sure that's it. Try another angle?"). After 2 `no_match` results, step 2 appears. If the model call fails or is rate limited, go straight to step 2. Details in [WORKER.md](./WORKER.md). Photo check is mandatory for every Stop.
 2. **Outline photo.** The outline of a distinctive shape (roofline, window) is shown on screen. She then opens the native camera and photographs it. Accepted without verification. (A live in-app camera overlay is a later upgrade.)
@@ -44,12 +49,14 @@ Automatic when she is within the Stop's radius (default 50 m, optional per-Stop 
 
 Voice message, video, song (Spotify embed), or text. The play button is large and clearly labelled ("Tap to play the video"), because iOS blocks autoplay. "Continue" is always available, even if she never presses play. She may watch it later while travelling. Reveals are shared across both Plans.
 
+Each Reveal frame has a handwritten heading (draft), one card, and "Continue". Text shows the message in an outlined card. Video, Voice and Song show a large gold play disc with a label ("Tap to play the video", "Tap to play the voice message", "Tap to play the song"); Song also shows a title line (a placeholder in the design, since the Spotify embed was not drawn).
+
 ## Plans
 
 | | Plan A | Plan B |
 |---|---|---|
 | Start | Late morning | After he picks her up from work in Jakarta |
-| Stops | 3 around Bintaro, 1 to 2 in Jakarta, then dinner | 3 close together in Jakarta, then dinner |
+| Stops | 2 to 3 around Bintaro, 0 to 2 in Jakarta, then dinner | 2 close together in Jakarta, then dinner |
 | Dinner | About 5 to 6pm | About 8pm |
 | Mission | Yes | Optional (counter hidden by default, enabled in Admin mode) |
 

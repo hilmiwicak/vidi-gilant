@@ -21,7 +21,7 @@ One of two versions of the Hunt. He picks it before the Welcome and it never cha
 _Avoid_: Route, mode, variant
 
 **Stop**:
-A significant place she must physically reach. The last Stop of every Plan is the dinner. Plan A has 3 Stops around Bintaro, 1 to 2 in Jakarta, then the dinner. Plan B has 3 Stops close together in Jakarta, then the dinner.
+A significant place she must physically reach. The last Stop of every Plan is the dinner. Plan A has 2 to 3 Stops around Bintaro, 0 to 2 in Jakarta, then the dinner. Plan B has 2 Stops close together in Jakarta, then the dinner.
 _Avoid_: Checkpoint, location, waypoint, station
 
 **Puzzle**:

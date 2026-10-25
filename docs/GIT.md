@@ -33,5 +33,4 @@ Example: `feat(arrival): require two consecutive qualifying readings`
 - Push directly to `main`, by any route (`git push origin main`, a refresh of the local `main`, or an API call). The only exception is when the user explicitly and emphatically asks for it in that message. Branch protection may not be enabled, so nothing but this rule stops it. Without that explicit request, work on a branch and open a PR.
 - Push a git tag, or run `wrangler deploy`. A tag deploys to her phone.
 - Commit `.dev.vars`, tokens, the log-page token, or raw uncompressed media. The repo is public.
-- Put real Codes or Puzzle answers in a PR description or commit message.
 - Force-push a branch the user may have reviewed.
