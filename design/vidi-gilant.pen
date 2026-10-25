@@ -4707,6 +4707,747 @@
         }
       ]
     },
+    {
+      "type": "frame",
+      "id": "KusIA",
+      "x": 880,
+      "y": 4826,
+      "name": "Reveal - Text",
+      "clip": true,
+      "width": 390,
+      "height": 844,
+      "fill": "$ground",
+      "layout": "vertical",
+      "children": [
+        {
+          "id": "hSiQC",
+          "type": "ref",
+          "ref": "s2Vhb",
+          "name": "Ornament Flower Bottom Left",
+          "layoutPosition": "absolute",
+          "x": -44,
+          "y": 590
+        },
+        {
+          "type": "icon",
+          "id": "q4rbru",
+          "layoutPosition": "absolute",
+          "x": 310,
+          "y": 110,
+          "name": "Ornament Star Gold",
+          "rotation": -10,
+          "width": 30,
+          "height": 30,
+          "icon": "star",
+          "library": "Material Symbols Rounded",
+          "weight": 600,
+          "fill": "$gold"
+        },
+        {
+          "type": "icon",
+          "id": "l6vTxj",
+          "layoutPosition": "absolute",
+          "x": 300,
+          "y": 600,
+          "name": "Ornament Heart Red",
+          "rotation": 8,
+          "width": 26,
+          "height": 26,
+          "icon": "favorite",
+          "library": "Material Symbols Rounded",
+          "weight": 600,
+          "fill": "$accent"
+        },
+        {
+          "id": "G2NNUC",
+          "type": "ref",
+          "ref": "VhrqG",
+          "name": "Status Bar"
+        },
+        {
+          "type": "frame",
+          "id": "J3Vgsx",
+          "name": "Content",
+          "width": "fill_container",
+          "height": "fill_container",
+          "layout": "vertical",
+          "padding": [
+            0,
+            20,
+            28,
+            20
+          ],
+          "justifyContent": "space_between",
+          "children": [
+            {
+              "type": "frame",
+              "id": "RpLKU",
+              "name": "Reveal Body",
+              "width": "fill_container",
+              "height": "fill_container",
+              "layout": "vertical",
+              "gap": 20,
+              "padding": [
+                46,
+                0,
+                0,
+                0
+              ],
+              "justifyContent": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "xhJL6",
+                  "name": "Reveal Heading (draft)",
+                  "fill": "$accent",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Something for you",
+                  "lineHeight": 1,
+                  "fontFamily": "$font-hand",
+                  "fontSize": 54,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "frame",
+                  "id": "Q5mlnN",
+                  "name": "Text Card",
+                  "width": "fill_container",
+                  "fill": "$surface",
+                  "cornerRadius": "$radius-control",
+                  "stroke": "$ink",
+                  "strokeWidth": 2,
+                  "strokeAlignment": "inner",
+                  "layout": "vertical",
+                  "padding": 28,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "VUA3Q",
+                      "name": "Reveal Text (placeholder)",
+                      "fill": "$ink",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Your message goes here, in your own words. It can run a few lines.",
+                      "lineHeight": 1.35,
+                      "fontFamily": "$font-body",
+                      "fontSize": 24,
+                      "fontWeight": "600"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "K0dShA",
+              "type": "ref",
+              "ref": "Hs1Ix",
+              "name": "Continue Button",
+              "width": "fill_container",
+              "height": 64,
+              "descendants": {
+                "HsIhc": {
+                  "icon": "arrow_forward"
+                },
+                "C3TJA": {
+                  "content": "Continue",
+                  "fontSize": 22
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "Dcbmp",
+          "layoutPosition": "absolute",
+          "x": 133,
+          "y": 62,
+          "name": "Admin tap zone (invisible)",
+          "width": 124,
+          "height": 56
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "VVoiS",
+      "x": 1320,
+      "y": 4826,
+      "name": "Reveal - Video",
+      "clip": true,
+      "width": 390,
+      "height": 844,
+      "fill": "$ground",
+      "layout": "vertical",
+      "children": [
+        {
+          "id": "KxzBq",
+          "type": "ref",
+          "ref": "R271s",
+          "name": "Ornament Lily Top Right",
+          "layoutPosition": "absolute",
+          "x": 310,
+          "y": 70
+        },
+        {
+          "type": "icon",
+          "id": "SbTW8",
+          "layoutPosition": "absolute",
+          "x": 36,
+          "y": 668,
+          "name": "Ornament Celebration Gold",
+          "rotation": 10,
+          "width": 32,
+          "height": 32,
+          "icon": "celebration",
+          "library": "Material Symbols Rounded",
+          "weight": 600,
+          "fill": "$gold"
+        },
+        {
+          "type": "icon",
+          "id": "m5i0h",
+          "layoutPosition": "absolute",
+          "x": 320,
+          "y": 672,
+          "name": "Ornament Heart Red",
+          "rotation": -8,
+          "width": 26,
+          "height": 26,
+          "icon": "favorite",
+          "library": "Material Symbols Rounded",
+          "weight": 600,
+          "fill": "$accent"
+        },
+        {
+          "id": "QmZRm",
+          "type": "ref",
+          "ref": "VhrqG",
+          "name": "Status Bar"
+        },
+        {
+          "type": "frame",
+          "id": "g3M8h",
+          "name": "Content",
+          "width": "fill_container",
+          "height": "fill_container",
+          "layout": "vertical",
+          "padding": [
+            0,
+            20,
+            28,
+            20
+          ],
+          "justifyContent": "space_between",
+          "children": [
+            {
+              "type": "frame",
+              "id": "XgE3J",
+              "name": "Reveal Body",
+              "width": "fill_container",
+              "height": "fill_container",
+              "layout": "vertical",
+              "gap": 20,
+              "padding": [
+                46,
+                0,
+                0,
+                0
+              ],
+              "justifyContent": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "KwOL0",
+                  "name": "Reveal Heading (draft)",
+                  "fill": "$accent",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Something for you",
+                  "lineHeight": 1,
+                  "fontFamily": "$font-hand",
+                  "fontSize": 54,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "frame",
+                  "id": "UUDV8",
+                  "name": "Video Card (placeholder poster)",
+                  "width": "fill_container",
+                  "height": 320,
+                  "fill": "$ink",
+                  "cornerRadius": "$radius-control",
+                  "layout": "vertical",
+                  "gap": 20,
+                  "padding": 20,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "B8DQiX",
+                      "name": "Play Disc",
+                      "width": 112,
+                      "height": 112,
+                      "fill": "$gold",
+                      "cornerRadius": 56,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon",
+                          "id": "xoZ7c",
+                          "name": "Play Icon",
+                          "width": 72,
+                          "height": 72,
+                          "icon": "play_arrow",
+                          "library": "Material Symbols Rounded",
+                          "weight": 700,
+                          "fill": "$ink"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "Wd6RQ",
+                      "name": "Play Label",
+                      "fill": "$on-ink",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Tap to play the video",
+                      "lineHeight": 1.2,
+                      "textAlign": "center",
+                      "fontFamily": "$font-body",
+                      "fontSize": 22,
+                      "fontWeight": "700"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "wZzWD",
+              "type": "ref",
+              "ref": "Hs1Ix",
+              "name": "Continue Button",
+              "width": "fill_container",
+              "height": 64,
+              "descendants": {
+                "HsIhc": {
+                  "icon": "arrow_forward"
+                },
+                "C3TJA": {
+                  "content": "Continue",
+                  "fontSize": 22
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "y1AZ7",
+          "layoutPosition": "absolute",
+          "x": 133,
+          "y": 62,
+          "name": "Admin tap zone (invisible)",
+          "width": 124,
+          "height": 56
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "A0BMBN",
+      "x": 1760,
+      "y": 4826,
+      "name": "Reveal - Voice",
+      "clip": true,
+      "width": 390,
+      "height": 844,
+      "fill": "$ground",
+      "layout": "vertical",
+      "children": [
+        {
+          "id": "ZKpfD",
+          "type": "ref",
+          "ref": "s2Vhb",
+          "name": "Ornament Flower Top Right",
+          "layoutPosition": "absolute",
+          "x": 296,
+          "y": 64
+        },
+        {
+          "type": "icon",
+          "id": "B84fnC",
+          "layoutPosition": "absolute",
+          "x": 40,
+          "y": 672,
+          "name": "Ornament Sun Gold",
+          "width": 32,
+          "height": 32,
+          "icon": "sunny",
+          "library": "Material Symbols Rounded",
+          "weight": 600,
+          "fill": "$gold"
+        },
+        {
+          "type": "icon",
+          "id": "mhEth",
+          "layoutPosition": "absolute",
+          "x": 320,
+          "y": 676,
+          "name": "Ornament Star Red",
+          "rotation": 12.000000000000002,
+          "width": 26,
+          "height": 26,
+          "icon": "star",
+          "library": "Material Symbols Rounded",
+          "weight": 600,
+          "fill": "$accent"
+        },
+        {
+          "id": "qfYIu",
+          "type": "ref",
+          "ref": "VhrqG",
+          "name": "Status Bar"
+        },
+        {
+          "type": "frame",
+          "id": "x8kQZD",
+          "name": "Content",
+          "width": "fill_container",
+          "height": "fill_container",
+          "layout": "vertical",
+          "padding": [
+            0,
+            20,
+            28,
+            20
+          ],
+          "justifyContent": "space_between",
+          "children": [
+            {
+              "type": "frame",
+              "id": "sG6uH",
+              "name": "Reveal Body",
+              "width": "fill_container",
+              "height": "fill_container",
+              "layout": "vertical",
+              "gap": 20,
+              "padding": [
+                46,
+                0,
+                0,
+                0
+              ],
+              "justifyContent": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "rC3H1",
+                  "name": "Reveal Heading (draft)",
+                  "fill": "$accent",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Something for you",
+                  "lineHeight": 1,
+                  "fontFamily": "$font-hand",
+                  "fontSize": 54,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "frame",
+                  "id": "ZchK0",
+                  "name": "Voice Card",
+                  "width": "fill_container",
+                  "height": 320,
+                  "fill": "$surface",
+                  "cornerRadius": "$radius-control",
+                  "stroke": "$ink",
+                  "strokeWidth": 2,
+                  "strokeAlignment": "inner",
+                  "layout": "vertical",
+                  "gap": 20,
+                  "padding": 20,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "i6wjoS",
+                      "name": "Play Disc",
+                      "width": 112,
+                      "height": 112,
+                      "fill": "$gold",
+                      "cornerRadius": 56,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon",
+                          "id": "fAgcI",
+                          "name": "Play Icon",
+                          "width": 72,
+                          "height": 72,
+                          "icon": "play_arrow",
+                          "library": "Material Symbols Rounded",
+                          "weight": 700,
+                          "fill": "$ink"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "ydICK",
+                      "name": "Play Label",
+                      "fill": "$ink",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Tap to play the voice message",
+                      "lineHeight": 1.2,
+                      "textAlign": "center",
+                      "fontFamily": "$font-body",
+                      "fontSize": 22,
+                      "fontWeight": "700"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "A51THd",
+              "type": "ref",
+              "ref": "Hs1Ix",
+              "name": "Continue Button",
+              "width": "fill_container",
+              "height": 64,
+              "descendants": {
+                "HsIhc": {
+                  "icon": "arrow_forward"
+                },
+                "C3TJA": {
+                  "content": "Continue",
+                  "fontSize": 22
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "X6AQ55",
+          "layoutPosition": "absolute",
+          "x": 133,
+          "y": 62,
+          "name": "Admin tap zone (invisible)",
+          "width": 124,
+          "height": 56
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "JS37B",
+      "x": 2200,
+      "y": 4826,
+      "name": "Reveal - Song",
+      "clip": true,
+      "width": 390,
+      "height": 844,
+      "fill": "$ground",
+      "layout": "vertical",
+      "children": [
+        {
+          "id": "uinpl",
+          "type": "ref",
+          "ref": "s2Vhb",
+          "name": "Ornament Flower Bottom Right",
+          "layoutPosition": "absolute",
+          "x": -44,
+          "y": 70
+        },
+        {
+          "type": "icon",
+          "id": "Y5H77C",
+          "layoutPosition": "absolute",
+          "x": 320,
+          "y": 150,
+          "name": "Ornament Star Gold",
+          "rotation": -12.000000000000002,
+          "width": 30,
+          "height": 30,
+          "icon": "star",
+          "library": "Material Symbols Rounded",
+          "weight": 600,
+          "fill": "$gold"
+        },
+        {
+          "type": "icon",
+          "id": "kE6GM",
+          "layoutPosition": "absolute",
+          "x": 320,
+          "y": 672,
+          "name": "Ornament Heart Red",
+          "rotation": 8,
+          "width": 26,
+          "height": 26,
+          "icon": "favorite",
+          "library": "Material Symbols Rounded",
+          "weight": 600,
+          "fill": "$accent"
+        },
+        {
+          "id": "N023Y",
+          "type": "ref",
+          "ref": "VhrqG",
+          "name": "Status Bar"
+        },
+        {
+          "type": "frame",
+          "id": "S2VfyO",
+          "name": "Content",
+          "width": "fill_container",
+          "height": "fill_container",
+          "layout": "vertical",
+          "padding": [
+            0,
+            20,
+            28,
+            20
+          ],
+          "justifyContent": "space_between",
+          "children": [
+            {
+              "type": "frame",
+              "id": "hf6qQ",
+              "name": "Reveal Body",
+              "width": "fill_container",
+              "height": "fill_container",
+              "layout": "vertical",
+              "gap": 20,
+              "padding": [
+                46,
+                0,
+                0,
+                0
+              ],
+              "justifyContent": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "y8CvS8",
+                  "name": "Reveal Heading (draft)",
+                  "fill": "$accent",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Something for you",
+                  "lineHeight": 1,
+                  "fontFamily": "$font-hand",
+                  "fontSize": 54,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "frame",
+                  "id": "lEHEN",
+                  "name": "Song Card (Spotify embed placeholder)",
+                  "width": "fill_container",
+                  "height": 320,
+                  "fill": "$ink",
+                  "cornerRadius": "$radius-control",
+                  "layout": "vertical",
+                  "gap": 16,
+                  "padding": 20,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "YAP5S",
+                      "name": "Play Disc",
+                      "width": 112,
+                      "height": 112,
+                      "fill": "$gold",
+                      "cornerRadius": 56,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon",
+                          "id": "qabLV",
+                          "name": "Play Icon",
+                          "width": 72,
+                          "height": 72,
+                          "icon": "play_arrow",
+                          "library": "Material Symbols Rounded",
+                          "weight": 700,
+                          "fill": "$ink"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "sU2ld",
+                      "name": "Play Label",
+                      "fill": "$on-ink",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Tap to play the song",
+                      "lineHeight": 1.2,
+                      "textAlign": "center",
+                      "fontFamily": "$font-body",
+                      "fontSize": 22,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "vV98y",
+                      "name": "Song Title (placeholder)",
+                      "fill": "$on-ink",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Song title (placeholder)",
+                      "lineHeight": 1.2,
+                      "textAlign": "center",
+                      "fontFamily": "$font-body",
+                      "fontSize": 20,
+                      "fontWeight": "500"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "mXeNl",
+              "type": "ref",
+              "ref": "Hs1Ix",
+              "name": "Continue Button",
+              "width": "fill_container",
+              "height": 64,
+              "descendants": {
+                "HsIhc": {
+                  "icon": "arrow_forward"
+                },
+                "C3TJA": {
+                  "content": "Continue",
+                  "fontSize": 22
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "v1i6ml",
+          "layoutPosition": "absolute",
+          "x": 133,
+          "y": 62,
+          "name": "Admin tap zone (invisible)",
+          "width": 124,
+          "height": 56
+        }
+      ]
     }
   ],
   "variables": {
