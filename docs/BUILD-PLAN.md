@@ -22,7 +22,7 @@ Vite, React, TSX and Tailwind v4, on one Cloudflare Worker with static assets. S
 Mark a phase `[x]` when its PR is open and its checks pass, so a fresh iteration knows where to resume. Phase 2 is done by the user with the agent in Pencil, never by a loop. A Ralph run stops at phase 2 until the user says the designs are approved.
 
 1. [ ] Foundation: project, Worker with static assets, Stop types, placeholder data for both Plans.
-2. [ ] **Design every screen with the user in Pencil.** Do not start the Ralph loop until the user approves. Screens: Welcome, Mission intro, Puzzle with Pointer, Arrival moment (the congratulation before each Reveal), Reveal, last-Stop congratulation, final screen, each "Having trouble" ladder step, Admin modal, photo capture. First settle the visual direction (palette, type, how much floral).
+2. [x] **Design every screen with the user in Pencil.** Do not start the Ralph loop until the user approves. Screens: Welcome, Mission intro, Puzzle with Pointer, Arrival moment (the congratulation before each Reveal), Reveal, last-Stop congratulation, final screen, each "Having trouble" ladder step, Admin modal, photo capture. First settle the visual direction (palette, type, how much floral).
 3. [ ] Core hunt: state machine, Welcome, Puzzle and Clue, Reveal, Boxes counter, a manual "I'm here" button, `localStorage` restore.
 4. [ ] Pointer: GPS, distance, bearing, compass, Arrival rule, "Refresh location".
 5. [ ] Fallbacks and Admin mode: Code, Master code, Admin modal, Capture here, Plan selection, `/a` and `/b`.

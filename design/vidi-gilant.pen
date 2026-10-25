@@ -1613,7 +1613,7 @@
                     {
                       "type": "text",
                       "id": "OowV6",
-                      "name": "Her Name Placeholder",
+                      "name": "Her Name",
                       "fill": "$accent",
                       "textGrowth": "fixed-width",
                       "width": "fill_container",
@@ -2009,7 +2009,7 @@
                 {
                   "type": "frame",
                   "id": "XdsiK",
-                  "name": "Photo - food box (placeholder)",
+                  "name": "Photo - food box",
                   "clip": true,
                   "width": "fill_container",
                   "height": 280,
@@ -2756,7 +2756,7 @@
                 {
                   "type": "text",
                   "id": "FAObv",
-                  "name": "Distance (placeholder)",
+                  "name": "Distance",
                   "fill": "$ink",
                   "content": "450 m",
                   "fontFamily": "$font-display",
@@ -2958,7 +2958,7 @@
                 {
                   "type": "text",
                   "id": "NRXZL",
-                  "name": "Distance (placeholder)",
+                  "name": "Distance",
                   "fill": "$ink",
                   "content": "450 m",
                   "fontFamily": "$font-display",
@@ -3437,7 +3437,7 @@
                 {
                   "type": "text",
                   "id": "yEhH0",
-                  "name": "Distance (placeholder)",
+                  "name": "Distance",
                   "fill": "$ink",
                   "content": "450 m",
                   "fontFamily": "$font-display",
@@ -3447,7 +3447,7 @@
                 {
                   "type": "text",
                   "id": "zCdCe",
-                  "name": "Weak Signal Note (draft)",
+                  "name": "Weak Signal Note",
                   "fill": "$ink",
                   "textGrowth": "fixed-width",
                   "width": "fill_container",
@@ -3662,7 +3662,7 @@
                 {
                   "type": "text",
                   "id": "N2pfz",
-                  "name": "On Hold Note (draft)",
+                  "name": "On Hold Note",
                   "fill": "$ink",
                   "textGrowth": "fixed-width",
                   "width": "fill_container",
@@ -3853,7 +3853,7 @@
                     {
                       "type": "text",
                       "id": "ey1nu",
-                      "name": "Distance (placeholder)",
+                      "name": "Distance",
                       "fill": "$ink",
                       "content": "450 m",
                       "fontFamily": "$font-display",
@@ -4067,7 +4067,7 @@
                 {
                   "type": "text",
                   "id": "m3zC2F",
-                  "name": "Far Note (draft)",
+                  "name": "Far Note",
                   "fill": "$accent",
                   "textGrowth": "fixed-width",
                   "width": "fill_container",
@@ -4472,7 +4472,7 @@
                 {
                   "type": "text",
                   "id": "Pmvc5",
-                  "name": "Distance (placeholder)",
+                  "name": "Distance",
                   "fill": "$ink",
                   "content": "450 m",
                   "fontFamily": "$font-display",
@@ -4649,7 +4649,7 @@
                 {
                   "type": "text",
                   "id": "gxTtA",
-                  "name": "Arrival Title (draft)",
+                  "name": "Arrival Title",
                   "fill": "$ink",
                   "textGrowth": "fixed-width",
                   "width": "fill_container",
@@ -4798,7 +4798,7 @@
                 {
                   "type": "text",
                   "id": "xhJL6",
-                  "name": "Reveal Heading (draft)",
+                  "name": "Reveal Heading",
                   "fill": "$accent",
                   "textGrowth": "fixed-width",
                   "width": "fill_container",
@@ -4824,7 +4824,7 @@
                     {
                       "type": "text",
                       "id": "VUA3Q",
-                      "name": "Reveal Text (placeholder)",
+                      "name": "Reveal Text",
                       "fill": "$ink",
                       "textGrowth": "fixed-width",
                       "width": "fill_container",
@@ -4960,7 +4960,7 @@
                 {
                   "type": "text",
                   "id": "KwOL0",
-                  "name": "Reveal Heading (draft)",
+                  "name": "Reveal Heading",
                   "fill": "$accent",
                   "textGrowth": "fixed-width",
                   "width": "fill_container",
@@ -4973,7 +4973,7 @@
                 {
                   "type": "frame",
                   "id": "UUDV8",
-                  "name": "Video Card (placeholder poster)",
+                  "name": "Video Card",
                   "width": "fill_container",
                   "height": 320,
                   "fill": "$ink",
@@ -5147,7 +5147,7 @@
                 {
                   "type": "text",
                   "id": "rC3H1",
-                  "name": "Reveal Heading (draft)",
+                  "name": "Reveal Heading",
                   "fill": "$accent",
                   "textGrowth": "fixed-width",
                   "width": "fill_container",
@@ -5338,7 +5338,7 @@
                 {
                   "type": "text",
                   "id": "y8CvS8",
-                  "name": "Reveal Heading (draft)",
+                  "name": "Reveal Heading",
                   "fill": "$accent",
                   "textGrowth": "fixed-width",
                   "width": "fill_container",
@@ -5351,7 +5351,7 @@
                 {
                   "type": "frame",
                   "id": "lEHEN",
-                  "name": "Song Card (Spotify embed placeholder)",
+                  "name": "Song Card",
                   "width": "fill_container",
                   "height": 320,
                   "fill": "$ink",
@@ -5403,7 +5403,7 @@
                     {
                       "type": "text",
                       "id": "vV98y",
-                      "name": "Song Title (placeholder)",
+                      "name": "Song Title",
                       "fill": "$on-ink",
                       "textGrowth": "fixed-width",
                       "width": "fill_container",
@@ -5440,6 +5440,3956 @@
         {
           "type": "frame",
           "id": "v1i6ml",
+          "layoutPosition": "absolute",
+          "x": 133,
+          "y": 62,
+          "name": "Admin tap zone (invisible)",
+          "width": 124,
+          "height": 56
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "AT047",
+      "x": 880,
+      "y": 5820,
+      "name": "Heading to the last Stop",
+      "clip": true,
+      "width": 390,
+      "height": 844,
+      "fill": "$ground",
+      "layout": "vertical",
+      "children": [
+        {
+          "id": "akfnA",
+          "type": "ref",
+          "ref": "s2Vhb",
+          "name": "Ornament Flower Top Right",
+          "layoutPosition": "absolute",
+          "x": 290,
+          "y": 66
+        },
+        {
+          "id": "F6jYcM",
+          "type": "ref",
+          "ref": "R271s",
+          "name": "Ornament Lily Bottom Left",
+          "layoutPosition": "absolute",
+          "x": -44,
+          "y": 590
+        },
+        {
+          "type": "icon",
+          "id": "VYxZ9",
+          "layoutPosition": "absolute",
+          "x": 306,
+          "y": 632,
+          "name": "Ornament Star Gold",
+          "rotation": 12.000000000000002,
+          "width": 28,
+          "height": 28,
+          "icon": "star",
+          "library": "Material Symbols Rounded",
+          "weight": 600,
+          "fill": "$gold"
+        },
+        {
+          "type": "icon",
+          "id": "zGBLi",
+          "layoutPosition": "absolute",
+          "x": 200,
+          "y": 676,
+          "name": "Ornament Sun Gold",
+          "width": 30,
+          "height": 30,
+          "icon": "sunny",
+          "library": "Material Symbols Rounded",
+          "weight": 600,
+          "fill": "$gold"
+        },
+        {
+          "type": "icon",
+          "id": "wl3Wl",
+          "layoutPosition": "absolute",
+          "x": 318,
+          "y": 696,
+          "name": "Ornament Heart Red",
+          "rotation": -8,
+          "width": 24,
+          "height": 24,
+          "icon": "favorite",
+          "library": "Material Symbols Rounded",
+          "weight": 600,
+          "fill": "$accent"
+        },
+        {
+          "id": "xvPBY",
+          "type": "ref",
+          "ref": "VhrqG",
+          "name": "Status Bar"
+        },
+        {
+          "type": "frame",
+          "id": "LhBuW",
+          "name": "Content",
+          "width": "fill_container",
+          "height": "fill_container",
+          "layout": "vertical",
+          "padding": [
+            0,
+            20,
+            28,
+            20
+          ],
+          "justifyContent": "space_between",
+          "children": [
+            {
+              "type": "frame",
+              "id": "x4k8B",
+              "name": "Heads-up",
+              "width": "fill_container",
+              "height": "fill_container",
+              "layout": "vertical",
+              "gap": 20,
+              "padding": [
+                46,
+                0,
+                0,
+                0
+              ],
+              "justifyContent": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "ZNDzV",
+                  "name": "Last Stop Disc",
+                  "width": 112,
+                  "height": 112,
+                  "fill": "$gold",
+                  "cornerRadius": 56,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "yqILM",
+                      "name": "Last Stop Disc Icon",
+                      "width": 64,
+                      "height": 64,
+                      "icon": "flag",
+                      "library": "Material Symbols Rounded",
+                      "weight": 700,
+                      "fill": "$ink"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "q9i7Nq",
+                  "name": "Title",
+                  "fill": "$ink",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "One Stop to go",
+                  "lineHeight": 1.05,
+                  "fontFamily": "$font-display",
+                  "fontSize": 44,
+                  "fontWeight": "800"
+                },
+                {
+                  "type": "text",
+                  "id": "Z7w0d",
+                  "name": "Body",
+                  "fill": "$ink",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "The next one is the last. Kira-kira bakal kemana hayoo?",
+                  "lineHeight": 1.35,
+                  "fontFamily": "$font-body",
+                  "fontSize": 20,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "text",
+                  "id": "dPfQ9",
+                  "name": "Sign-off Handwritten",
+                  "fill": "$accent",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Ready for one more?",
+                  "lineHeight": 1,
+                  "fontFamily": "$font-hand",
+                  "fontSize": 44,
+                  "fontWeight": "700"
+                }
+              ]
+            },
+            {
+              "id": "SXvxT",
+              "type": "ref",
+              "ref": "Hs1Ix",
+              "name": "See the last Puzzle Button",
+              "width": "fill_container",
+              "height": 64,
+              "descendants": {
+                "HsIhc": {
+                  "icon": "arrow_forward"
+                },
+                "C3TJA": {
+                  "content": "See the last Puzzle",
+                  "fontSize": 22
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "R0R9x",
+          "layoutPosition": "absolute",
+          "x": 133,
+          "y": 62,
+          "name": "Admin tap zone (invisible)",
+          "width": 124,
+          "height": 56
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "rJnmO",
+      "x": 1320,
+      "y": 5820,
+      "name": "Last-Stop congratulation - Stage 1",
+      "clip": true,
+      "width": 390,
+      "height": 844,
+      "fill": "$ground",
+      "layout": "vertical",
+      "children": [
+        {
+          "id": "jpDNv",
+          "type": "ref",
+          "ref": "R271s",
+          "name": "Ornament Lily Top Right",
+          "layoutPosition": "absolute",
+          "x": 310,
+          "y": 70
+        },
+        {
+          "id": "tu77F",
+          "type": "ref",
+          "ref": "s2Vhb",
+          "name": "Ornament Flower Bottom Left",
+          "layoutPosition": "absolute",
+          "x": -44,
+          "y": 612
+        },
+        {
+          "id": "YxEYZ",
+          "type": "ref",
+          "ref": "R271s",
+          "name": "Ornament Lily Bottom Right",
+          "layoutPosition": "absolute",
+          "x": 300,
+          "y": 612
+        },
+        {
+          "type": "icon",
+          "id": "lRcim",
+          "layoutPosition": "absolute",
+          "x": 120,
+          "y": 652,
+          "name": "Ornament Star Gold",
+          "rotation": -10,
+          "width": 30,
+          "height": 30,
+          "icon": "star",
+          "library": "Material Symbols Rounded",
+          "weight": 600,
+          "fill": "$gold"
+        },
+        {
+          "type": "icon",
+          "id": "oKbW8",
+          "layoutPosition": "absolute",
+          "x": 176,
+          "y": 664,
+          "name": "Ornament Party Popper Red",
+          "rotation": -10,
+          "width": 34,
+          "height": 34,
+          "icon": "celebration",
+          "library": "Material Symbols Rounded",
+          "weight": 600,
+          "fill": "$accent"
+        },
+        {
+          "type": "icon",
+          "id": "z749O",
+          "layoutPosition": "absolute",
+          "x": 262,
+          "y": 650,
+          "name": "Ornament Heart Red",
+          "rotation": -8,
+          "width": 26,
+          "height": 26,
+          "icon": "favorite",
+          "library": "Material Symbols Rounded",
+          "weight": 600,
+          "fill": "$accent"
+        },
+        {
+          "id": "NLL6y",
+          "type": "ref",
+          "ref": "VhrqG",
+          "name": "Status Bar"
+        },
+        {
+          "type": "frame",
+          "id": "wJ9yA",
+          "name": "Content",
+          "width": "fill_container",
+          "height": "fill_container",
+          "layout": "vertical",
+          "padding": [
+            0,
+            20,
+            28,
+            20
+          ],
+          "justifyContent": "space_between",
+          "children": [
+            {
+              "type": "frame",
+              "id": "EcG9L",
+              "name": "Congratulation",
+              "width": "fill_container",
+              "height": "fill_container",
+              "layout": "vertical",
+              "gap": 16,
+              "padding": [
+                0,
+                0,
+                80,
+                0
+              ],
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "Mt8cQ",
+                  "name": "Disc with Ring",
+                  "width": 272,
+                  "height": 272,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "ellipse",
+                      "id": "U1Xugd",
+                      "layoutPosition": "absolute",
+                      "x": 0,
+                      "y": 0,
+                      "name": "Celebration Ring",
+                      "width": 272,
+                      "height": 272,
+                      "stroke": "$gold",
+                      "strokeWidth": 4,
+                      "strokeAlignment": "inner"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "zszI8",
+                      "name": "Arrival Disc",
+                      "width": 216,
+                      "height": 216,
+                      "fill": "$gold",
+                      "cornerRadius": 108,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon",
+                          "id": "L5WJGg",
+                          "name": "Arrival Disc Icon",
+                          "width": 144,
+                          "height": 144,
+                          "icon": "check",
+                          "library": "Material Symbols Rounded",
+                          "weight": 700,
+                          "fill": "$ink"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "ktfPe",
+                  "name": "Title",
+                  "fill": "$ink",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "You made it!",
+                  "lineHeight": 1.05,
+                  "textAlign": "center",
+                  "fontFamily": "$font-display",
+                  "fontSize": 56,
+                  "fontWeight": "800"
+                },
+                {
+                  "type": "text",
+                  "id": "n11cwG",
+                  "name": "Stop Name (dinner, name from BUILD-PLAN)",
+                  "fill": "$accent",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Supagetti",
+                  "lineHeight": 1,
+                  "textAlign": "center",
+                  "fontFamily": "$font-hand",
+                  "fontSize": 64,
+                  "fontWeight": "700"
+                }
+              ]
+            },
+            {
+              "id": "UWHUD",
+              "type": "ref",
+              "ref": "Hs1Ix",
+              "name": "Continue Button",
+              "width": "fill_container",
+              "height": 64,
+              "descendants": {
+                "HsIhc": {
+                  "icon": "arrow_forward"
+                },
+                "C3TJA": {
+                  "content": "Continue",
+                  "fontSize": 22
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "Sx2XY",
+          "layoutPosition": "absolute",
+          "x": 133,
+          "y": 62,
+          "name": "Admin tap zone (invisible)",
+          "width": 124,
+          "height": 56
+        },
+        {
+          "type": "icon",
+          "id": "vVU6U",
+          "layoutPosition": "absolute",
+          "x": 24,
+          "y": 340,
+          "name": "Ornament Sun Gold",
+          "width": 30,
+          "height": 30,
+          "icon": "sunny",
+          "library": "Material Symbols Rounded",
+          "weight": 600,
+          "fill": "$gold"
+        },
+        {
+          "type": "icon",
+          "id": "T6jssM",
+          "layoutPosition": "absolute",
+          "x": 338,
+          "y": 340,
+          "name": "Ornament Cake Gold",
+          "rotation": 8,
+          "width": 30,
+          "height": 30,
+          "icon": "cake",
+          "library": "Material Symbols Rounded",
+          "weight": 600,
+          "fill": "$gold"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "D1Nrg",
+      "x": 1760,
+      "y": 5820,
+      "name": "Last-Stop congratulation - Stage 2",
+      "clip": true,
+      "width": 390,
+      "fill": "$ground",
+      "layout": "vertical",
+      "children": [
+        {
+          "id": "HBRBC",
+          "type": "ref",
+          "ref": "s2Vhb",
+          "name": "Ornament Flower Bottom Left",
+          "layoutPosition": "absolute",
+          "x": -44,
+          "y": 1050
+        },
+        {
+          "id": "Uqq1Q",
+          "type": "ref",
+          "ref": "s2Vhb",
+          "name": "Ornament Flower Bottom Left",
+          "layoutPosition": "absolute",
+          "x": -44,
+          "y": 590
+        },
+        {
+          "id": "WbBdd",
+          "type": "ref",
+          "ref": "s2Vhb",
+          "name": "Ornament Flower Top Right",
+          "layoutPosition": "absolute",
+          "x": 300,
+          "y": 66
+        },
+        {
+          "id": "TZ55o",
+          "type": "ref",
+          "ref": "s2Vhb",
+          "name": "Ornament Flower Top Right",
+          "layoutPosition": "absolute",
+          "x": 120,
+          "y": -48
+        },
+        {
+          "type": "icon",
+          "id": "t1Fny0",
+          "layoutPosition": "absolute",
+          "x": 27.20944533000784,
+          "y": 66,
+          "name": "Ornament Star Gold",
+          "rotation": -10,
+          "width": 30,
+          "height": 30,
+          "icon": "star",
+          "library": "Material Symbols Rounded",
+          "weight": 600,
+          "fill": "$gold"
+        },
+        {
+          "type": "icon",
+          "id": "zRaTY",
+          "layoutPosition": "absolute",
+          "x": 180,
+          "y": 975,
+          "name": "Ornament Heart Red",
+          "rotation": 8,
+          "width": 26,
+          "height": 26,
+          "icon": "favorite",
+          "library": "Material Symbols Rounded",
+          "weight": 600,
+          "fill": "$accent"
+        },
+        {
+          "id": "G1rfA",
+          "type": "ref",
+          "ref": "VhrqG",
+          "name": "Status Bar"
+        },
+        {
+          "type": "frame",
+          "id": "RVBTJ",
+          "name": "Content",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": "$radius-control",
+          "padding": [
+            0,
+            20,
+            28,
+            20
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "I2PQmp",
+              "name": "Wording",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 20,
+              "padding": [
+                46,
+                0,
+                0,
+                0
+              ],
+              "justifyContent": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "k2n9OM",
+                  "name": "Heading Handwritten",
+                  "fill": "$accent",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "before we eat...",
+                  "lineHeight": 1,
+                  "fontFamily": "$font-hand",
+                  "fontSize": 54,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "frame",
+                  "id": "suZVt",
+                  "name": "Text Card",
+                  "width": "fill_container",
+                  "fill": "$surface",
+                  "cornerRadius": "$radius-control",
+                  "stroke": "$ink",
+                  "strokeWidth": 2,
+                  "strokeAlignment": "inner",
+                  "layout": "vertical",
+                  "padding": 28,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "PV4NO",
+                      "name": "Wording",
+                      "fill": "$ink",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "I would like to extend my deepest gratitude to you. You have been my sunshine for all my gloomy days. Semoga kita langgeng terus ya dan tetap melanjutkan hari-hari ulang tahun ke depannya bersama.\n\nMakasih udah mau sabar sama aku yang dimana aku tau kadang sifat aku bikin km geleng2 kepala hehe.\n\nMungkin kita berdua masih banyak kekurangan dan harus terus belajar satu sama lain, jadi sabar2 ya dan terus mengenal satu sama lain.\n\nMaaf ya kalo kadonya atau hadiahnya masih banyak kekurangan. Let's get on to next year's chapter, shall we? I love you sayang🤍. Makan yuk.",
+                      "lineHeight": 1.35,
+                      "fontFamily": "$font-body",
+                      "fontSize": 20
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "F5cmO8",
+              "type": "ref",
+              "ref": "Hs1Ix",
+              "name": "Continue Button",
+              "width": "fill_container",
+              "height": 64,
+              "descendants": {
+                "HsIhc": {
+                  "icon": "arrow_forward"
+                },
+                "C3TJA": {
+                  "content": "Continue",
+                  "fontSize": 22
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "gfXx0",
+          "layoutPosition": "absolute",
+          "x": 133,
+          "y": 62,
+          "name": "Admin tap zone (invisible)",
+          "width": 124,
+          "height": 56
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "J0TZTk",
+      "x": 2200,
+      "y": 5820,
+      "name": "Last-Stop congratulation - Stage 3",
+      "clip": true,
+      "width": 390,
+      "height": 844,
+      "fill": "$ground",
+      "layout": "vertical",
+      "children": [
+        {
+          "id": "Ajmsq",
+          "type": "ref",
+          "ref": "R271s",
+          "name": "Ornament Lily Top Left",
+          "layoutPosition": "absolute",
+          "x": -60,
+          "y": 66
+        },
+        {
+          "id": "SoD71",
+          "type": "ref",
+          "ref": "s2Vhb",
+          "name": "Ornament Flower Bottom Right",
+          "layoutPosition": "absolute",
+          "x": 310,
+          "y": 600
+        },
+        {
+          "type": "icon",
+          "id": "Ahvpm",
+          "layoutPosition": "absolute",
+          "x": 310,
+          "y": 160,
+          "name": "Ornament Star Gold",
+          "rotation": 12.000000000000002,
+          "width": 32,
+          "height": 32,
+          "icon": "star",
+          "library": "Material Symbols Rounded",
+          "weight": 600,
+          "fill": "$gold"
+        },
+        {
+          "type": "icon",
+          "id": "H5S9cH",
+          "layoutPosition": "absolute",
+          "x": 44,
+          "y": 610,
+          "name": "Ornament Heart Red",
+          "rotation": -8,
+          "width": 26,
+          "height": 26,
+          "icon": "favorite",
+          "library": "Material Symbols Rounded",
+          "weight": 600,
+          "fill": "$accent"
+        },
+        {
+          "type": "icon",
+          "id": "Ch1qh",
+          "layoutPosition": "absolute",
+          "x": 150,
+          "y": 660,
+          "name": "Ornament Sun Gold",
+          "width": 30,
+          "height": 30,
+          "icon": "sunny",
+          "library": "Material Symbols Rounded",
+          "weight": 600,
+          "fill": "$gold"
+        },
+        {
+          "id": "M3Akk",
+          "type": "ref",
+          "ref": "VhrqG",
+          "name": "Status Bar"
+        },
+        {
+          "type": "frame",
+          "id": "FoVDd",
+          "name": "Content",
+          "width": "fill_container",
+          "height": "fill_container",
+          "layout": "vertical",
+          "padding": [
+            0,
+            20,
+            28,
+            20
+          ],
+          "justifyContent": "space_between",
+          "children": [
+            {
+              "type": "frame",
+              "id": "L7Bbef",
+              "name": "Closing",
+              "width": "fill_container",
+              "height": "fill_container",
+              "layout": "vertical",
+              "gap": 16,
+              "padding": [
+                0,
+                0,
+                80,
+                0
+              ],
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "t5buk5",
+                  "name": "Dinner Disc",
+                  "width": 200,
+                  "height": 200,
+                  "fill": "$gold",
+                  "cornerRadius": 100,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "TB3Oo",
+                      "name": "Dinner Disc Icon",
+                      "width": 112,
+                      "height": 112,
+                      "icon": "cake",
+                      "library": "Material Symbols Rounded",
+                      "weight": 700,
+                      "fill": "$ink"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "rGx1g",
+                  "name": "Title",
+                  "fill": "$ink",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Once again,\nhappy birthday, Vidiana",
+                  "lineHeight": 1.05,
+                  "textAlign": "center",
+                  "fontFamily": "$font-display",
+                  "fontSize": 48,
+                  "fontWeight": "800"
+                },
+                {
+                  "type": "text",
+                  "id": "obm7q",
+                  "name": "Sign-off Handwritten",
+                  "fill": "$accent",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "makasih ya udah nemenin aku selama hampir dua tahun ini.",
+                  "lineHeight": 1,
+                  "textAlign": "center",
+                  "fontFamily": "$font-hand",
+                  "fontSize": 40,
+                  "fontWeight": "700"
+                }
+              ]
+            },
+            {
+              "id": "CLkG7",
+              "type": "ref",
+              "ref": "Hs1Ix",
+              "name": "Continue Button",
+              "width": "fill_container",
+              "height": 64,
+              "descendants": {
+                "HsIhc": {
+                  "icon": "arrow_forward"
+                },
+                "C3TJA": {
+                  "content": "Continue",
+                  "fontSize": 22
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "joh6Y",
+          "layoutPosition": "absolute",
+          "x": 133,
+          "y": 62,
+          "name": "Admin tap zone (invisible)",
+          "width": 124,
+          "height": 56
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "BURPm",
+      "x": 880,
+      "y": 6907,
+      "name": "Photo check - Capture",
+      "clip": true,
+      "width": 390,
+      "height": 844,
+      "fill": "$ground",
+      "layout": "vertical",
+      "children": [
+        {
+          "id": "f47vtO",
+          "type": "ref",
+          "ref": "s2Vhb",
+          "name": "Ornament Flower Top Right",
+          "layoutPosition": "absolute",
+          "x": 300,
+          "y": 70
+        },
+        {
+          "type": "icon",
+          "id": "e2MYs4",
+          "layoutPosition": "absolute",
+          "x": 34,
+          "y": 600,
+          "name": "Ornament Star Gold",
+          "rotation": -10,
+          "width": 28,
+          "height": 28,
+          "icon": "star",
+          "library": "Material Symbols Rounded",
+          "weight": 600,
+          "fill": "$gold"
+        },
+        {
+          "type": "icon",
+          "id": "boRNo",
+          "layoutPosition": "absolute",
+          "x": 322,
+          "y": 610,
+          "name": "Ornament Heart Red",
+          "rotation": 8,
+          "width": 24,
+          "height": 24,
+          "icon": "favorite",
+          "library": "Material Symbols Rounded",
+          "weight": 600,
+          "fill": "$accent"
+        },
+        {
+          "id": "yBXj1",
+          "type": "ref",
+          "ref": "VhrqG",
+          "name": "Status Bar"
+        },
+        {
+          "type": "frame",
+          "id": "ejn7Q",
+          "name": "Content",
+          "width": "fill_container",
+          "height": "fill_container",
+          "layout": "vertical",
+          "padding": [
+            0,
+            20,
+            28,
+            20
+          ],
+          "justifyContent": "space_between",
+          "children": [
+            {
+              "type": "frame",
+              "id": "X0FVPi",
+              "name": "Body",
+              "width": "fill_container",
+              "height": "fill_container",
+              "layout": "vertical",
+              "gap": 16,
+              "padding": [
+                46,
+                0,
+                0,
+                0
+              ],
+              "justifyContent": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "RDNdd",
+                  "name": "Camera Disc",
+                  "width": 112,
+                  "height": 112,
+                  "fill": "$gold",
+                  "cornerRadius": 56,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "Rsm1W",
+                      "name": "Camera Disc Icon",
+                      "width": 64,
+                      "height": 64,
+                      "icon": "photo_camera",
+                      "library": "Material Symbols Rounded",
+                      "weight": 700,
+                      "fill": "$ink"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "f4iaH",
+                  "name": "Title",
+                  "fill": "$ink",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "The GPS is probably unreliable right now. Show me the place.",
+                  "lineHeight": 1.05,
+                  "fontFamily": "$font-display",
+                  "fontSize": 40,
+                  "fontWeight": "800"
+                },
+                {
+                  "type": "text",
+                  "id": "BJpPp",
+                  "name": "Handwritten",
+                  "fill": "$accent",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "take a photo of it",
+                  "lineHeight": 1,
+                  "fontFamily": "$font-hand",
+                  "fontSize": 48,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "D15R37",
+                  "name": "Body",
+                  "fill": "$ink",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Stand where you can see it.",
+                  "lineHeight": 1.35,
+                  "fontFamily": "$font-body",
+                  "fontSize": 20,
+                  "fontWeight": "500"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "SHVUZ",
+              "name": "Actions",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 12,
+              "children": [
+                {
+                  "id": "wqdRh",
+                  "type": "ref",
+                  "ref": "Hs1Ix",
+                  "name": "Take a Photo Button",
+                  "width": "fill_container",
+                  "height": 64,
+                  "descendants": {
+                    "HsIhc": {
+                      "icon": "photo_camera"
+                    },
+                    "C3TJA": {
+                      "content": "Take a photo",
+                      "fontSize": 22
+                    }
+                  }
+                },
+                {
+                  "id": "yx92E",
+                  "type": "ref",
+                  "ref": "Y8Xu2",
+                  "name": "Back Button",
+                  "width": "fill_container",
+                  "height": 60,
+                  "descendants": {
+                    "KIbA9": {
+                      "icon": "arrow_back"
+                    },
+                    "S07f7": {
+                      "content": "Back to the Puzzle",
+                      "fontSize": 20
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "E1bnS",
+          "layoutPosition": "absolute",
+          "x": 133,
+          "y": 62,
+          "name": "Admin tap zone (invisible)",
+          "width": 124,
+          "height": 56
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "RAB92",
+      "x": 1320,
+      "y": 6907,
+      "name": "Photo check - Checking",
+      "clip": true,
+      "width": 390,
+      "height": 844,
+      "fill": "$ground",
+      "layout": "vertical",
+      "children": [
+        {
+          "id": "xv181",
+          "type": "ref",
+          "ref": "R271s",
+          "name": "Ornament Lily Top Right",
+          "layoutPosition": "absolute",
+          "x": 300,
+          "y": 70
+        },
+        {
+          "type": "icon",
+          "id": "C5u4p",
+          "layoutPosition": "absolute",
+          "x": 40,
+          "y": 650,
+          "name": "Ornament Star Gold",
+          "rotation": 10,
+          "width": 28,
+          "height": 28,
+          "icon": "star",
+          "library": "Material Symbols Rounded",
+          "weight": 600,
+          "fill": "$gold"
+        },
+        {
+          "id": "PKdjF",
+          "type": "ref",
+          "ref": "s2Vhb",
+          "name": "Ornament Flower Bottom Right",
+          "layoutPosition": "absolute",
+          "x": 310,
+          "y": 620
+        },
+        {
+          "id": "H2TYI5",
+          "type": "ref",
+          "ref": "VhrqG",
+          "name": "Status Bar"
+        },
+        {
+          "type": "frame",
+          "id": "ncXke",
+          "name": "Content",
+          "width": "fill_container",
+          "height": "fill_container",
+          "layout": "vertical",
+          "padding": [
+            0,
+            20,
+            28,
+            20
+          ],
+          "justifyContent": "space_between",
+          "children": [
+            {
+              "type": "frame",
+              "id": "SUi0K",
+              "name": "Body",
+              "width": "fill_container",
+              "height": "fill_container",
+              "layout": "vertical",
+              "gap": 16,
+              "padding": [
+                46,
+                0,
+                0,
+                0
+              ],
+              "justifyContent": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "tbxH8",
+                  "name": "Checking Disc",
+                  "width": 112,
+                  "height": 112,
+                  "fill": "$gold",
+                  "cornerRadius": 56,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "z7RxrO",
+                      "name": "Checking Disc Icon",
+                      "width": 64,
+                      "height": 64,
+                      "icon": "hourglass_top",
+                      "library": "Material Symbols Rounded",
+                      "weight": 700,
+                      "fill": "$ink"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "H2q8c",
+                  "name": "Title",
+                  "fill": "$ink",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Looking at it",
+                  "lineHeight": 1.05,
+                  "fontFamily": "$font-display",
+                  "fontSize": 40,
+                  "fontWeight": "800"
+                },
+                {
+                  "type": "text",
+                  "id": "IOm6n",
+                  "name": "Handwritten",
+                  "fill": "$accent",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "one moment...",
+                  "lineHeight": 1,
+                  "fontFamily": "$font-hand",
+                  "fontSize": 48,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "qyQCi",
+                  "name": "Body",
+                  "fill": "$ink",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Comparing it with the place.",
+                  "lineHeight": 1.35,
+                  "fontFamily": "$font-body",
+                  "fontSize": 20,
+                  "fontWeight": "500"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "LYs6o",
+          "layoutPosition": "absolute",
+          "x": 133,
+          "y": 62,
+          "name": "Admin tap zone (invisible)",
+          "width": 124,
+          "height": 56
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "FrgkI",
+      "x": 1760,
+      "y": 6907,
+      "name": "Photo check - No match",
+      "clip": true,
+      "width": 390,
+      "height": 844,
+      "fill": "$ground",
+      "layout": "vertical",
+      "children": [
+        {
+          "id": "ksTZU",
+          "type": "ref",
+          "ref": "s2Vhb",
+          "name": "Ornament Flower Top Right",
+          "layoutPosition": "absolute",
+          "x": 300,
+          "y": 70
+        },
+        {
+          "type": "icon",
+          "id": "y3OIv",
+          "layoutPosition": "absolute",
+          "x": 40,
+          "y": 620,
+          "name": "Ornament Sun Gold",
+          "width": 30,
+          "height": 30,
+          "icon": "sunny",
+          "library": "Material Symbols Rounded",
+          "weight": 600,
+          "fill": "$gold"
+        },
+        {
+          "type": "icon",
+          "id": "VhYyd",
+          "layoutPosition": "absolute",
+          "x": 322,
+          "y": 610,
+          "name": "Ornament Heart Red",
+          "rotation": -8,
+          "width": 24,
+          "height": 24,
+          "icon": "favorite",
+          "library": "Material Symbols Rounded",
+          "weight": 600,
+          "fill": "$accent"
+        },
+        {
+          "id": "sQuUE",
+          "type": "ref",
+          "ref": "VhrqG",
+          "name": "Status Bar"
+        },
+        {
+          "type": "frame",
+          "id": "B4sLNH",
+          "name": "Content",
+          "width": "fill_container",
+          "height": "fill_container",
+          "layout": "vertical",
+          "padding": [
+            0,
+            20,
+            28,
+            20
+          ],
+          "justifyContent": "space_between",
+          "children": [
+            {
+              "type": "frame",
+              "id": "m0c4d",
+              "name": "Body",
+              "width": "fill_container",
+              "height": "fill_container",
+              "layout": "vertical",
+              "gap": 16,
+              "padding": [
+                46,
+                0,
+                0,
+                0
+              ],
+              "justifyContent": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "D2YyX",
+                  "name": "No Match Disc",
+                  "width": 112,
+                  "height": 112,
+                  "fill": "$gold",
+                  "cornerRadius": 56,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "ajHzv",
+                      "name": "No Match Disc Icon",
+                      "width": 64,
+                      "height": 64,
+                      "icon": "photo_camera",
+                      "library": "Material Symbols Rounded",
+                      "weight": 700,
+                      "fill": "$ink"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "RH9gJ",
+                  "name": "Title",
+                  "fill": "$ink",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Hmm, I'm not sure that's it.",
+                  "lineHeight": 1.05,
+                  "fontFamily": "$font-display",
+                  "fontSize": 40,
+                  "fontWeight": "800"
+                },
+                {
+                  "type": "text",
+                  "id": "CNfOc",
+                  "name": "Handwritten",
+                  "fill": "$accent",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Try another angle?",
+                  "lineHeight": 1,
+                  "fontFamily": "$font-hand",
+                  "fontSize": 48,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "doxQb",
+                  "name": "Body",
+                  "fill": "$ink",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Step back, or try from the side.",
+                  "lineHeight": 1.35,
+                  "fontFamily": "$font-body",
+                  "fontSize": 20,
+                  "fontWeight": "500"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "D9pgK",
+              "name": "Actions",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 12,
+              "children": [
+                {
+                  "id": "k49iR",
+                  "type": "ref",
+                  "ref": "Hs1Ix",
+                  "name": "Try Again Button",
+                  "width": "fill_container",
+                  "height": 64,
+                  "descendants": {
+                    "HsIhc": {
+                      "icon": "photo_camera"
+                    },
+                    "C3TJA": {
+                      "content": "Take another photo",
+                      "fontSize": 22
+                    }
+                  }
+                },
+                {
+                  "id": "kcPie",
+                  "type": "ref",
+                  "ref": "Y8Xu2",
+                  "name": "Back Button",
+                  "width": "fill_container",
+                  "height": 60,
+                  "descendants": {
+                    "KIbA9": {
+                      "icon": "arrow_back"
+                    },
+                    "S07f7": {
+                      "content": "Back to the Puzzle",
+                      "fontSize": 20
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "K2oDX",
+          "layoutPosition": "absolute",
+          "x": 133,
+          "y": 62,
+          "name": "Admin tap zone (invisible)",
+          "width": 124,
+          "height": 56
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "s0aLh",
+      "x": 2200,
+      "y": 6907,
+      "name": "Outline photo",
+      "clip": true,
+      "width": 390,
+      "height": 844,
+      "fill": "$ground",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "icon",
+          "id": "MzSjp",
+          "layoutPosition": "absolute",
+          "x": 316,
+          "y": 74,
+          "name": "Ornament Star Gold",
+          "rotation": -10,
+          "width": 28,
+          "height": 28,
+          "icon": "star",
+          "library": "Material Symbols Rounded",
+          "weight": 600,
+          "fill": "$gold"
+        },
+        {
+          "type": "icon",
+          "id": "uCKZu",
+          "layoutPosition": "absolute",
+          "x": 34,
+          "y": 76,
+          "name": "Ornament Heart Red",
+          "rotation": 8,
+          "width": 24,
+          "height": 24,
+          "icon": "favorite",
+          "library": "Material Symbols Rounded",
+          "weight": 600,
+          "fill": "$accent"
+        },
+        {
+          "id": "R0ahs",
+          "type": "ref",
+          "ref": "VhrqG",
+          "name": "Status Bar"
+        },
+        {
+          "type": "frame",
+          "id": "PLCoy",
+          "name": "Content",
+          "width": "fill_container",
+          "height": "fill_container",
+          "layout": "vertical",
+          "padding": [
+            0,
+            20,
+            28,
+            20
+          ],
+          "justifyContent": "space_between",
+          "children": [
+            {
+              "type": "frame",
+              "id": "CWWDn",
+              "name": "Body",
+              "width": "fill_container",
+              "height": "fill_container",
+              "layout": "vertical",
+              "gap": 16,
+              "padding": [
+                46,
+                0,
+                0,
+                0
+              ],
+              "justifyContent": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "RfRew",
+                  "name": "Title",
+                  "fill": "$ink",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Match the shape",
+                  "lineHeight": 1.05,
+                  "fontFamily": "$font-display",
+                  "fontSize": 40,
+                  "fontWeight": "800"
+                },
+                {
+                  "type": "text",
+                  "id": "SFEVJ",
+                  "name": "Handwritten",
+                  "fill": "$accent",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "photograph this",
+                  "lineHeight": 1,
+                  "fontFamily": "$font-hand",
+                  "fontSize": 48,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "frame",
+                  "id": "aUej5",
+                  "name": "Outline Card",
+                  "width": "fill_container",
+                  "height": 300,
+                  "fill": "$surface",
+                  "cornerRadius": "$radius-control",
+                  "stroke": "$ink",
+                  "strokeWidth": 2,
+                  "strokeAlignment": "inner",
+                  "layout": "vertical",
+                  "gap": 8,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "jLBvR",
+                      "name": "Outline Icon",
+                      "width": 56,
+                      "height": 56,
+                      "icon": "landscape",
+                      "library": "Material Symbols Rounded",
+                      "weight": 600,
+                      "fill": "$ink-soft"
+                    },
+                    {
+                      "type": "text",
+                      "id": "s0oi1B",
+                      "name": "Outline Image Label",
+                      "fill": "$ink-soft",
+                      "content": "Outline image goes here",
+                      "fontFamily": "$font-body",
+                      "fontSize": 20,
+                      "fontWeight": "600"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "BdKap",
+                  "name": "Body",
+                  "fill": "$ink",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Find this shape, then photograph it.",
+                  "lineHeight": 1.35,
+                  "fontFamily": "$font-body",
+                  "fontSize": 20,
+                  "fontWeight": "500"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "wQs6W",
+              "name": "Actions",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 12,
+              "children": [
+                {
+                  "id": "S2ibbh",
+                  "type": "ref",
+                  "ref": "Hs1Ix",
+                  "name": "Open Camera Button",
+                  "width": "fill_container",
+                  "height": 64,
+                  "descendants": {
+                    "HsIhc": {
+                      "icon": "photo_camera"
+                    },
+                    "C3TJA": {
+                      "content": "Open the camera",
+                      "fontSize": 22
+                    }
+                  }
+                },
+                {
+                  "id": "umGhe",
+                  "type": "ref",
+                  "ref": "Y8Xu2",
+                  "name": "Back Button",
+                  "width": "fill_container",
+                  "height": 60,
+                  "descendants": {
+                    "KIbA9": {
+                      "icon": "arrow_back"
+                    },
+                    "S07f7": {
+                      "content": "Back to the Puzzle",
+                      "fontSize": 20
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "FVLJr",
+          "layoutPosition": "absolute",
+          "x": 133,
+          "y": 62,
+          "name": "Admin tap zone (invisible)",
+          "width": 124,
+          "height": 56
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "gYyK8",
+      "x": 880,
+      "y": 7907,
+      "name": "Code",
+      "clip": true,
+      "width": 390,
+      "height": 844,
+      "fill": "$ground",
+      "layout": "vertical",
+      "children": [
+        {
+          "id": "MbkNf",
+          "type": "ref",
+          "ref": "s2Vhb",
+          "name": "Ornament Flower Bottom Right",
+          "layoutPosition": "absolute",
+          "x": 310,
+          "y": 560
+        },
+        {
+          "type": "icon",
+          "id": "w7m0l1",
+          "layoutPosition": "absolute",
+          "x": 34,
+          "y": 520,
+          "name": "Ornament Star Gold",
+          "rotation": -10,
+          "width": 28,
+          "height": 28,
+          "icon": "star",
+          "library": "Material Symbols Rounded",
+          "weight": 600,
+          "fill": "$gold"
+        },
+        {
+          "type": "icon",
+          "id": "TEYHR",
+          "layoutPosition": "absolute",
+          "x": 40,
+          "y": 640,
+          "name": "Ornament Heart Red",
+          "rotation": 8,
+          "width": 24,
+          "height": 24,
+          "icon": "favorite",
+          "library": "Material Symbols Rounded",
+          "weight": 600,
+          "fill": "$accent"
+        },
+        {
+          "id": "fgzFj",
+          "type": "ref",
+          "ref": "VhrqG",
+          "name": "Status Bar"
+        },
+        {
+          "type": "frame",
+          "id": "o7A9l4",
+          "name": "Content",
+          "width": "fill_container",
+          "height": "fill_container",
+          "layout": "vertical",
+          "padding": [
+            0,
+            20,
+            28,
+            20
+          ],
+          "justifyContent": "space_between",
+          "children": [
+            {
+              "type": "frame",
+              "id": "mqEl7",
+              "name": "Body",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 16,
+              "padding": [
+                76,
+                0,
+                0,
+                0
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "DagPW",
+                  "name": "Title",
+                  "fill": "$ink",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Enter the Code",
+                  "lineHeight": 1.05,
+                  "fontFamily": "$font-display",
+                  "fontSize": 40,
+                  "fontWeight": "800"
+                },
+                {
+                  "type": "text",
+                  "id": "h65K0",
+                  "name": "Handwritten",
+                  "fill": "$accent",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "ask me for it",
+                  "lineHeight": 1,
+                  "fontFamily": "$font-hand",
+                  "fontSize": 48,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "frame",
+                  "id": "bNyzE",
+                  "name": "Code Field",
+                  "width": "fill_container",
+                  "height": 64,
+                  "fill": "$surface",
+                  "cornerRadius": "$radius-control",
+                  "stroke": "$ink",
+                  "strokeWidth": 2,
+                  "strokeAlignment": "inner",
+                  "gap": 12,
+                  "padding": [
+                    0,
+                    20
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "bX48h",
+                      "name": "Key Icon",
+                      "width": 26,
+                      "height": 26,
+                      "icon": "key",
+                      "library": "Material Symbols Rounded",
+                      "weight": 600,
+                      "fill": "$ink"
+                    },
+                    {
+                      "type": "text",
+                      "id": "c3tafP",
+                      "name": "Field Hint",
+                      "fill": "$ink-soft",
+                      "content": "Code",
+                      "fontFamily": "$font-body",
+                      "fontSize": 24,
+                      "fontWeight": "600"
+                    }
+                  ]
+                },
+                {
+                  "id": "qMBUT",
+                  "type": "ref",
+                  "ref": "Hs1Ix",
+                  "name": "Check Code Button",
+                  "width": "fill_container",
+                  "height": 64,
+                  "descendants": {
+                    "HsIhc": {
+                      "icon": "check"
+                    },
+                    "C3TJA": {
+                      "content": "Check code",
+                      "fontSize": 22
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "FfJwO",
+              "name": "Actions",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 12,
+              "children": [
+                {
+                  "id": "UDj8A",
+                  "type": "ref",
+                  "ref": "Y8Xu2",
+                  "name": "Back Button",
+                  "width": "fill_container",
+                  "height": 60,
+                  "descendants": {
+                    "KIbA9": {
+                      "icon": "arrow_back"
+                    },
+                    "S07f7": {
+                      "content": "Back to the Puzzle",
+                      "fontSize": 20
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "Wjkn3",
+          "layoutPosition": "absolute",
+          "x": 133,
+          "y": 62,
+          "name": "Admin tap zone (invisible)",
+          "width": 124,
+          "height": 56
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "n8ivu",
+      "x": 1320,
+      "y": 7907,
+      "name": "Code - Wrong code",
+      "clip": true,
+      "width": 390,
+      "height": 844,
+      "fill": "$ground",
+      "layout": "vertical",
+      "children": [
+        {
+          "id": "kbOTW",
+          "type": "ref",
+          "ref": "s2Vhb",
+          "name": "Ornament Flower Bottom Right",
+          "layoutPosition": "absolute",
+          "x": 310,
+          "y": 560
+        },
+        {
+          "type": "icon",
+          "id": "w1E454",
+          "layoutPosition": "absolute",
+          "x": 34,
+          "y": 520,
+          "name": "Ornament Star Gold",
+          "rotation": -10,
+          "width": 28,
+          "height": 28,
+          "icon": "star",
+          "library": "Material Symbols Rounded",
+          "weight": 600,
+          "fill": "$gold"
+        },
+        {
+          "type": "icon",
+          "id": "T25Fu",
+          "layoutPosition": "absolute",
+          "x": 40,
+          "y": 640,
+          "name": "Ornament Heart Red",
+          "rotation": 8,
+          "width": 24,
+          "height": 24,
+          "icon": "favorite",
+          "library": "Material Symbols Rounded",
+          "weight": 600,
+          "fill": "$accent"
+        },
+        {
+          "id": "r3IZB1",
+          "type": "ref",
+          "ref": "VhrqG",
+          "name": "Status Bar"
+        },
+        {
+          "type": "frame",
+          "id": "O8CR53",
+          "name": "Content",
+          "width": "fill_container",
+          "height": "fill_container",
+          "layout": "vertical",
+          "padding": [
+            0,
+            20,
+            28,
+            20
+          ],
+          "justifyContent": "space_between",
+          "children": [
+            {
+              "type": "frame",
+              "id": "O3mqW",
+              "name": "Body",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 16,
+              "padding": [
+                76,
+                0,
+                0,
+                0
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "eHdSZ",
+                  "name": "Title",
+                  "fill": "$ink",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Enter the Code",
+                  "lineHeight": 1.05,
+                  "fontFamily": "$font-display",
+                  "fontSize": 40,
+                  "fontWeight": "800"
+                },
+                {
+                  "type": "text",
+                  "id": "V9fsV",
+                  "name": "Handwritten",
+                  "fill": "$accent",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "ask me for it",
+                  "lineHeight": 1,
+                  "fontFamily": "$font-hand",
+                  "fontSize": 48,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "frame",
+                  "id": "KCtcj",
+                  "name": "Code Field",
+                  "width": "fill_container",
+                  "height": 64,
+                  "fill": "$surface",
+                  "cornerRadius": "$radius-control",
+                  "stroke": "$accent",
+                  "strokeWidth": 3,
+                  "strokeAlignment": "inner",
+                  "gap": 12,
+                  "padding": [
+                    0,
+                    20
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "iSmCu",
+                      "name": "Key Icon",
+                      "width": 26,
+                      "height": 26,
+                      "icon": "key",
+                      "library": "Material Symbols Rounded",
+                      "weight": 600,
+                      "fill": "$ink"
+                    },
+                    {
+                      "type": "text",
+                      "id": "YHuqO",
+                      "name": "Entered Value",
+                      "fill": "$ink",
+                      "content": "ABCDE",
+                      "fontFamily": "$font-body",
+                      "fontSize": 24,
+                      "fontWeight": "600",
+                      "letterSpacing": 4
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "hRFhU",
+                  "name": "Error Message",
+                  "gap": 8,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "LOLkg",
+                      "name": "Error Icon",
+                      "width": 24,
+                      "height": 24,
+                      "icon": "error",
+                      "library": "Material Symbols Rounded",
+                      "weight": 600,
+                      "fill": "$accent"
+                    },
+                    {
+                      "type": "text",
+                      "id": "aWaEk",
+                      "name": "Error Text",
+                      "fill": "$accent",
+                      "content": "That's not the Code. Try again?",
+                      "fontFamily": "$font-body",
+                      "fontSize": 18,
+                      "fontWeight": "700"
+                    }
+                  ]
+                },
+                {
+                  "id": "asiyn",
+                  "type": "ref",
+                  "ref": "Hs1Ix",
+                  "name": "Check Code Button",
+                  "width": "fill_container",
+                  "height": 64,
+                  "descendants": {
+                    "HsIhc": {
+                      "icon": "check"
+                    },
+                    "C3TJA": {
+                      "content": "Check code",
+                      "fontSize": 22
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "Q2Z6W",
+              "name": "Actions",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 12,
+              "children": [
+                {
+                  "id": "ckjnw",
+                  "type": "ref",
+                  "ref": "Y8Xu2",
+                  "name": "Back Button",
+                  "width": "fill_container",
+                  "height": 60,
+                  "descendants": {
+                    "KIbA9": {
+                      "icon": "arrow_back"
+                    },
+                    "S07f7": {
+                      "content": "Back to the Puzzle",
+                      "fontSize": 20
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "tm6xZ",
+          "layoutPosition": "absolute",
+          "x": 133,
+          "y": 62,
+          "name": "Admin tap zone (invisible)",
+          "width": 124,
+          "height": 56
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "Q5GlVa",
+      "x": 1760,
+      "y": 7907,
+      "name": "Code - Master code typed",
+      "clip": true,
+      "width": 390,
+      "height": 844,
+      "fill": "$ground",
+      "layout": "vertical",
+      "children": [
+        {
+          "id": "eZJYg",
+          "type": "ref",
+          "ref": "s2Vhb",
+          "name": "Ornament Flower Bottom Right",
+          "layoutPosition": "absolute",
+          "x": 310,
+          "y": 560
+        },
+        {
+          "type": "icon",
+          "id": "C2CXxB",
+          "layoutPosition": "absolute",
+          "x": 34,
+          "y": 520,
+          "name": "Ornament Star Gold",
+          "rotation": -10,
+          "width": 28,
+          "height": 28,
+          "icon": "star",
+          "library": "Material Symbols Rounded",
+          "weight": 600,
+          "fill": "$gold"
+        },
+        {
+          "type": "icon",
+          "id": "H7s3O",
+          "layoutPosition": "absolute",
+          "x": 40,
+          "y": 640,
+          "name": "Ornament Heart Red",
+          "rotation": 8,
+          "width": 24,
+          "height": 24,
+          "icon": "favorite",
+          "library": "Material Symbols Rounded",
+          "weight": 600,
+          "fill": "$accent"
+        },
+        {
+          "id": "Mfv4t",
+          "type": "ref",
+          "ref": "VhrqG",
+          "name": "Status Bar"
+        },
+        {
+          "type": "frame",
+          "id": "r30aCJ",
+          "name": "Content",
+          "width": "fill_container",
+          "height": "fill_container",
+          "layout": "vertical",
+          "padding": [
+            0,
+            20,
+            28,
+            20
+          ],
+          "justifyContent": "space_between",
+          "children": [
+            {
+              "type": "frame",
+              "id": "m2dtkL",
+              "name": "Body",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 16,
+              "padding": [
+                76,
+                0,
+                0,
+                0
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "PFCVI",
+                  "name": "Title",
+                  "fill": "$ink",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Enter the Code",
+                  "lineHeight": 1.05,
+                  "fontFamily": "$font-display",
+                  "fontSize": 40,
+                  "fontWeight": "800"
+                },
+                {
+                  "type": "text",
+                  "id": "WuVqR",
+                  "name": "Handwritten",
+                  "fill": "$accent",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "ask me for it",
+                  "lineHeight": 1,
+                  "fontFamily": "$font-hand",
+                  "fontSize": 48,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "frame",
+                  "id": "aYZ93",
+                  "name": "Code Field",
+                  "width": "fill_container",
+                  "height": 64,
+                  "fill": "$surface",
+                  "cornerRadius": "$radius-control",
+                  "stroke": "$ink",
+                  "strokeWidth": 2,
+                  "strokeAlignment": "inner",
+                  "gap": 12,
+                  "padding": [
+                    0,
+                    20
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "wgiBp",
+                      "name": "Key Icon",
+                      "width": 26,
+                      "height": 26,
+                      "icon": "key",
+                      "library": "Material Symbols Rounded",
+                      "weight": 600,
+                      "fill": "$ink"
+                    },
+                    {
+                      "type": "text",
+                      "id": "MrkB7",
+                      "name": "Entered Value",
+                      "fill": "$ink",
+                      "content": "••••••••",
+                      "fontFamily": "$font-body",
+                      "fontSize": 24,
+                      "fontWeight": "600",
+                      "letterSpacing": 4
+                    }
+                  ]
+                },
+                {
+                  "id": "rBw7J",
+                  "type": "ref",
+                  "ref": "Hs1Ix",
+                  "name": "Check Code Button",
+                  "width": "fill_container",
+                  "height": 64,
+                  "descendants": {
+                    "HsIhc": {
+                      "icon": "check"
+                    },
+                    "C3TJA": {
+                      "content": "Check code",
+                      "fontSize": 22
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "OhLR8",
+              "name": "Actions",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 12,
+              "children": [
+                {
+                  "id": "m61ms",
+                  "type": "ref",
+                  "ref": "Y8Xu2",
+                  "name": "Back Button",
+                  "width": "fill_container",
+                  "height": 60,
+                  "descendants": {
+                    "KIbA9": {
+                      "icon": "arrow_back"
+                    },
+                    "S07f7": {
+                      "content": "Back to the Puzzle",
+                      "fontSize": 20
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "v17ti",
+          "layoutPosition": "absolute",
+          "x": 133,
+          "y": 62,
+          "name": "Admin tap zone (invisible)",
+          "width": 124,
+          "height": 56
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "roWnq",
+      "x": 2640,
+      "y": 5820,
+      "name": "Final - Boxes total",
+      "clip": true,
+      "width": 390,
+      "height": 844,
+      "fill": "$ground",
+      "layout": "vertical",
+      "children": [
+        {
+          "id": "Af7jV",
+          "type": "ref",
+          "ref": "s2Vhb",
+          "name": "Ornament Flower Top Left",
+          "layoutPosition": "absolute",
+          "x": -44,
+          "y": 66
+        },
+        {
+          "id": "vNfN6",
+          "type": "ref",
+          "ref": "s2Vhb",
+          "name": "Ornament Flower Bottom Right",
+          "layoutPosition": "absolute",
+          "x": 310,
+          "y": 736
+        },
+        {
+          "type": "icon",
+          "id": "XUhDJ",
+          "layoutPosition": "absolute",
+          "x": 316,
+          "y": 150,
+          "name": "Ornament Star Gold",
+          "rotation": 12.000000000000002,
+          "width": 32,
+          "height": 32,
+          "icon": "star",
+          "library": "Material Symbols Rounded",
+          "weight": 600,
+          "fill": "$gold"
+        },
+        {
+          "type": "icon",
+          "id": "YdRO4",
+          "layoutPosition": "absolute",
+          "x": 40,
+          "y": 720,
+          "name": "Ornament Heart Red",
+          "rotation": -8,
+          "width": 26,
+          "height": 26,
+          "icon": "favorite",
+          "library": "Material Symbols Rounded",
+          "weight": 600,
+          "fill": "$accent"
+        },
+        {
+          "type": "icon",
+          "id": "ILUMk",
+          "layoutPosition": "absolute",
+          "x": 150,
+          "y": 740,
+          "name": "Ornament Cake Gold",
+          "rotation": 8,
+          "width": 32,
+          "height": 32,
+          "icon": "cake",
+          "library": "Material Symbols Rounded",
+          "weight": 600,
+          "fill": "$gold"
+        },
+        {
+          "id": "Ohglx",
+          "type": "ref",
+          "ref": "VhrqG",
+          "name": "Status Bar"
+        },
+        {
+          "type": "frame",
+          "id": "ols1i",
+          "name": "Content",
+          "width": "fill_container",
+          "height": "fill_container",
+          "layout": "vertical",
+          "padding": [
+            0,
+            20,
+            60,
+            20
+          ],
+          "justifyContent": "space_between",
+          "children": [
+            {
+              "type": "frame",
+              "id": "sX8DR",
+              "name": "Boxes Total",
+              "width": "fill_container",
+              "height": "fill_container",
+              "layout": "vertical",
+              "gap": 12,
+              "padding": [
+                0,
+                0,
+                60,
+                0
+              ],
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "ndDz9",
+                  "name": "Lead-in",
+                  "fill": "$ink",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "You handed out",
+                  "textAlign": "center",
+                  "fontFamily": "$font-body",
+                  "fontSize": 24,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "frame",
+                  "id": "UYubH",
+                  "name": "Total Disc",
+                  "width": 220,
+                  "height": 220,
+                  "fill": "$gold",
+                  "cornerRadius": 110,
+                  "layout": "vertical",
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "PrtBP",
+                      "name": "Total",
+                      "fill": "$ink",
+                      "content": "14",
+                      "lineHeight": 1,
+                      "fontFamily": "$font-display",
+                      "fontSize": 112,
+                      "fontWeight": "800"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "d0EoK8",
+                  "name": "Unit",
+                  "fill": "$ink",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "boxes",
+                  "lineHeight": 1.05,
+                  "textAlign": "center",
+                  "fontFamily": "$font-display",
+                  "fontSize": 44,
+                  "fontWeight": "800"
+                },
+                {
+                  "type": "text",
+                  "id": "Lic2b",
+                  "name": "Handwritten",
+                  "fill": "$accent",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "ke orang-orang yang beruntung ketemu kamu hari ini",
+                  "lineHeight": 1,
+                  "textAlign": "center",
+                  "fontFamily": "$font-hand",
+                  "fontSize": 44,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "frame",
+                  "id": "nQhmV",
+                  "name": "Text Card",
+                  "width": "fill_container",
+                  "fill": "$surface",
+                  "cornerRadius": "$radius-control",
+                  "stroke": "$ink",
+                  "strokeWidth": 2,
+                  "strokeAlignment": "inner",
+                  "layout": "vertical",
+                  "padding": 28,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "oOLGY",
+                      "name": "Handwritten",
+                      "fill": "$ink",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "semoga orang-orang yang kamu berikan nasi kotak dilancarkan terus rezekinya dan dimudahkan segala urusannya.",
+                      "lineHeight": 1,
+                      "fontFamily": "$font-body",
+                      "fontSize": 20,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "XVOw6",
+          "layoutPosition": "absolute",
+          "x": 133,
+          "y": 62,
+          "name": "Admin tap zone (invisible)",
+          "width": 124,
+          "height": 56
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "XdhpR",
+      "x": 3080,
+      "y": 7907,
+      "name": "Admin - PIN",
+      "clip": true,
+      "width": 390,
+      "height": 844,
+      "fill": "$ground",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "icon",
+          "id": "bCx7i",
+          "layoutPosition": "absolute",
+          "x": 332,
+          "y": 366,
+          "name": "Ornament Party Popper Red",
+          "rotation": -10,
+          "width": 30,
+          "height": 30,
+          "icon": "celebration",
+          "library": "Material Symbols Rounded",
+          "weight": 600,
+          "fill": "$accent"
+        },
+        {
+          "type": "icon",
+          "id": "z07Krt",
+          "layoutPosition": "absolute",
+          "x": 22,
+          "y": 372,
+          "name": "Ornament Star Gold",
+          "rotation": 12.000000000000002,
+          "width": 28,
+          "height": 28,
+          "icon": "star",
+          "library": "Material Symbols Rounded",
+          "weight": 600,
+          "fill": "$gold"
+        },
+        {
+          "id": "z0BJs3",
+          "type": "ref",
+          "ref": "s2Vhb",
+          "name": "Ornament Flower Bottom Right",
+          "layoutPosition": "absolute",
+          "x": 304,
+          "y": 440
+        },
+        {
+          "id": "nbuop",
+          "type": "ref",
+          "ref": "VhrqG",
+          "name": "Status Bar"
+        },
+        {
+          "type": "frame",
+          "id": "JfPzf",
+          "name": "Content",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 16,
+          "padding": [
+            76,
+            20,
+            20,
+            20
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "q19J9",
+              "name": "Puzzle (Plan A, Stop 1)",
+              "width": "fill_container",
+              "layout": "vertical",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "n6Io9j",
+                  "name": "Puzzle Line 1",
+                  "fill": "$ink",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Where do you usually",
+                  "lineHeight": 1.1,
+                  "fontFamily": "$font-display",
+                  "fontSize": 34,
+                  "fontWeight": "800"
+                },
+                {
+                  "type": "text",
+                  "id": "Lhzyk",
+                  "name": "Puzzle Handwritten Phrase",
+                  "fill": "$accent",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "buy kue cucur?",
+                  "lineHeight": 1,
+                  "fontFamily": "$font-hand",
+                  "fontSize": 54,
+                  "fontWeight": "800"
+                }
+              ]
+            },
+            {
+              "id": "PDWWc",
+              "type": "ref",
+              "ref": "Hs1Ix",
+              "name": "Clue Button",
+              "width": "fill_container"
+            },
+            {
+              "type": "frame",
+              "id": "H4Eds",
+              "name": "Pointer",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 2,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "wb06U",
+                  "name": "Pointer Disc",
+                  "width": 236,
+                  "height": 236,
+                  "fill": "$gold",
+                  "cornerRadius": 118,
+                  "layout": "none",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "z157W",
+                      "x": 110.5,
+                      "y": 20.5,
+                      "name": "Pointer Arrow",
+                      "rotation": -28,
+                      "width": 128,
+                      "height": 128,
+                      "icon": "navigation",
+                      "library": "Material Symbols Rounded",
+                      "weight": 700,
+                      "fill": "$ink"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "q1RS5",
+                  "name": "Distance",
+                  "fill": "$ink",
+                  "content": "450 m",
+                  "fontFamily": "$font-display",
+                  "fontSize": 64,
+                  "fontWeight": "800"
+                }
+              ]
+            },
+            {
+              "id": "QUZMA",
+              "type": "ref",
+              "ref": "Y8Xu2",
+              "name": "Refresh Location Button",
+              "width": "fill_container"
+            },
+            {
+              "id": "ao9ms",
+              "type": "ref",
+              "ref": "ThVhw",
+              "name": "Having Trouble Link",
+              "width": "fill_container"
+            }
+          ]
+        },
+        {
+          "id": "WjV5n",
+          "type": "ref",
+          "ref": "el64L",
+          "name": "Boxes Counter",
+          "layoutPosition": "absolute",
+          "x": 67,
+          "y": 58,
+          "descendants": {
+            "V6JvNj": {
+              "content": "0 boxes"
+            }
+          }
+        },
+        {
+          "type": "frame",
+          "id": "Kume2",
+          "layoutPosition": "absolute",
+          "x": 0,
+          "y": 0,
+          "name": "Scrim (dims the screen)",
+          "width": 390,
+          "height": 844,
+          "fill": "#231815A6"
+        },
+        {
+          "type": "frame",
+          "id": "nwTpu",
+          "layoutPosition": "absolute",
+          "x": 20,
+          "y": 130,
+          "name": "Admin Modal",
+          "width": 350,
+          "fill": "$surface",
+          "cornerRadius": "$radius-control",
+          "stroke": "$ink",
+          "strokeWidth": 2,
+          "strokeAlignment": "inner",
+          "layout": "vertical",
+          "gap": 16,
+          "padding": [
+            28,
+            24,
+            24,
+            24
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "Sc3UT",
+              "name": "Admin Heading",
+              "fill": "$accent",
+              "content": "Admin",
+              "fontFamily": "$font-hand",
+              "fontSize": 48,
+              "fontWeight": "800"
+            },
+            {
+              "type": "text",
+              "id": "BtNpg",
+              "name": "PIN Prompt",
+              "fill": "$ink",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Enter the PIN.",
+              "lineHeight": 1.3,
+              "fontFamily": "$font-body",
+              "fontSize": 22,
+              "fontWeight": "600"
+            },
+            {
+              "type": "frame",
+              "id": "aFSLy",
+              "name": "PIN Boxes",
+              "width": "fill_container",
+              "gap": 12,
+              "justifyContent": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "HY8Ay",
+                  "name": "PIN Box 1",
+                  "width": 60,
+                  "height": 68,
+                  "fill": "$surface",
+                  "cornerRadius": "$radius-control",
+                  "stroke": "$ink",
+                  "strokeWidth": 3,
+                  "strokeAlignment": "inner",
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "ellipse",
+                      "id": "CE3YE",
+                      "name": "PIN Dot",
+                      "fill": "$ink",
+                      "width": 16,
+                      "height": 16
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "tPAUG",
+                  "name": "PIN Box 2",
+                  "width": 60,
+                  "height": 68,
+                  "fill": "$surface",
+                  "cornerRadius": "$radius-control",
+                  "stroke": "$ink",
+                  "strokeWidth": 3,
+                  "strokeAlignment": "inner",
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "ellipse",
+                      "id": "qz2ON",
+                      "name": "PIN Dot",
+                      "fill": "$ink",
+                      "width": 16,
+                      "height": 16
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "i0a9HA",
+                  "name": "PIN Box 3",
+                  "width": 60,
+                  "height": 68,
+                  "fill": "$surface",
+                  "cornerRadius": "$radius-control",
+                  "stroke": "$ink",
+                  "strokeWidth": 2,
+                  "strokeAlignment": "inner",
+                  "justifyContent": "center",
+                  "alignItems": "center"
+                },
+                {
+                  "type": "frame",
+                  "id": "p2CbM0",
+                  "name": "PIN Box 4",
+                  "width": 60,
+                  "height": 68,
+                  "fill": "$surface",
+                  "cornerRadius": "$radius-control",
+                  "stroke": "$ink",
+                  "strokeWidth": 2,
+                  "strokeAlignment": "inner",
+                  "justifyContent": "center",
+                  "alignItems": "center"
+                }
+              ]
+            },
+            {
+              "id": "wyYbC",
+              "type": "ref",
+              "ref": "Hs1Ix",
+              "name": "Open Button",
+              "width": "fill_container",
+              "height": 64,
+              "descendants": {
+                "HsIhc": {
+                  "icon": "lock_open"
+                },
+                "C3TJA": {
+                  "content": "Open",
+                  "fontSize": 22
+                }
+              }
+            },
+            {
+              "id": "LOnRc",
+              "type": "ref",
+              "ref": "Y8Xu2",
+              "name": "Close Button",
+              "width": "fill_container",
+              "height": 60,
+              "descendants": {
+                "KIbA9": {
+                  "icon": "close"
+                },
+                "S07f7": {
+                  "content": "Close",
+                  "fontSize": 20
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "Q43IGA",
+          "layoutPosition": "absolute",
+          "x": 133,
+          "y": 62,
+          "name": "Admin tap zone (invisible)",
+          "width": 124,
+          "height": 56
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "DdTZ8",
+      "x": 3520,
+      "y": 7907,
+      "name": "Admin - Tools",
+      "clip": true,
+      "width": 390,
+      "height": 844,
+      "fill": "$ground",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "icon",
+          "id": "ninI1",
+          "layoutPosition": "absolute",
+          "x": 332,
+          "y": 366,
+          "name": "Ornament Party Popper Red",
+          "rotation": -10,
+          "width": 30,
+          "height": 30,
+          "icon": "celebration",
+          "library": "Material Symbols Rounded",
+          "weight": 600,
+          "fill": "$accent"
+        },
+        {
+          "type": "icon",
+          "id": "f5CT3",
+          "layoutPosition": "absolute",
+          "x": 22,
+          "y": 372,
+          "name": "Ornament Star Gold",
+          "rotation": 12.000000000000002,
+          "width": 28,
+          "height": 28,
+          "icon": "star",
+          "library": "Material Symbols Rounded",
+          "weight": 600,
+          "fill": "$gold"
+        },
+        {
+          "id": "n9fRa",
+          "type": "ref",
+          "ref": "s2Vhb",
+          "name": "Ornament Flower Bottom Right",
+          "layoutPosition": "absolute",
+          "x": 304,
+          "y": 440
+        },
+        {
+          "id": "i4VAhi",
+          "type": "ref",
+          "ref": "VhrqG",
+          "name": "Status Bar"
+        },
+        {
+          "type": "frame",
+          "id": "jAFdU",
+          "name": "Content",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 16,
+          "padding": [
+            76,
+            20,
+            20,
+            20
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "QpLSR",
+              "name": "Puzzle (Plan A, Stop 1)",
+              "width": "fill_container",
+              "layout": "vertical",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "qsurQ",
+                  "name": "Puzzle Line 1",
+                  "fill": "$ink",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Where do you usually",
+                  "lineHeight": 1.1,
+                  "fontFamily": "$font-display",
+                  "fontSize": 34,
+                  "fontWeight": "800"
+                },
+                {
+                  "type": "text",
+                  "id": "A23n7",
+                  "name": "Puzzle Handwritten Phrase",
+                  "fill": "$accent",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "buy kue cucur?",
+                  "lineHeight": 1,
+                  "fontFamily": "$font-hand",
+                  "fontSize": 54,
+                  "fontWeight": "800"
+                }
+              ]
+            },
+            {
+              "id": "akRCc",
+              "type": "ref",
+              "ref": "Hs1Ix",
+              "name": "Clue Button",
+              "width": "fill_container"
+            },
+            {
+              "type": "frame",
+              "id": "inHV9",
+              "name": "Pointer",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 2,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "QlRhc",
+                  "name": "Pointer Disc",
+                  "width": 236,
+                  "height": 236,
+                  "fill": "$gold",
+                  "cornerRadius": 118,
+                  "layout": "none",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "ZUrS2",
+                      "x": 110.5,
+                      "y": 20.5,
+                      "name": "Pointer Arrow",
+                      "rotation": -28,
+                      "width": 128,
+                      "height": 128,
+                      "icon": "navigation",
+                      "library": "Material Symbols Rounded",
+                      "weight": 700,
+                      "fill": "$ink"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "haSwL",
+                  "name": "Distance",
+                  "fill": "$ink",
+                  "content": "450 m",
+                  "fontFamily": "$font-display",
+                  "fontSize": 64,
+                  "fontWeight": "800"
+                }
+              ]
+            },
+            {
+              "id": "WB4ae",
+              "type": "ref",
+              "ref": "Y8Xu2",
+              "name": "Refresh Location Button",
+              "width": "fill_container"
+            },
+            {
+              "id": "Nfvq6",
+              "type": "ref",
+              "ref": "ThVhw",
+              "name": "Having Trouble Link",
+              "width": "fill_container"
+            }
+          ]
+        },
+        {
+          "id": "AqkOf",
+          "type": "ref",
+          "ref": "el64L",
+          "name": "Boxes Counter",
+          "layoutPosition": "absolute",
+          "x": 67,
+          "y": 58,
+          "descendants": {
+            "V6JvNj": {
+              "content": "0 boxes"
+            }
+          }
+        },
+        {
+          "type": "frame",
+          "id": "B6UFY",
+          "layoutPosition": "absolute",
+          "x": 0,
+          "y": 0,
+          "name": "Scrim (dims the screen)",
+          "width": 390,
+          "height": 844,
+          "fill": "#231815A6"
+        },
+        {
+          "type": "frame",
+          "id": "waYej",
+          "layoutPosition": "absolute",
+          "x": 20,
+          "y": 130,
+          "name": "Admin Modal",
+          "width": 350,
+          "fill": "$surface",
+          "cornerRadius": "$radius-control",
+          "stroke": "$ink",
+          "strokeWidth": 2,
+          "strokeAlignment": "inner",
+          "layout": "vertical",
+          "gap": 16,
+          "padding": [
+            28,
+            24,
+            24,
+            24
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "w50uCU",
+              "name": "Admin Heading",
+              "fill": "$accent",
+              "content": "Admin",
+              "fontFamily": "$font-hand",
+              "fontSize": 48,
+              "fontWeight": "800"
+            },
+            {
+              "type": "frame",
+              "id": "Sk84j",
+              "name": "Force Arrival Row",
+              "width": "fill_container",
+              "height": 56,
+              "fill": "$surface",
+              "cornerRadius": "$radius-control",
+              "stroke": "$ink",
+              "strokeWidth": 2,
+              "strokeAlignment": "inner",
+              "gap": 12,
+              "padding": [
+                0,
+                16
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon",
+                  "id": "V851r",
+                  "name": "Icon",
+                  "width": 24,
+                  "height": 24,
+                  "icon": "bolt",
+                  "library": "Material Symbols Rounded",
+                  "weight": 600,
+                  "fill": "$ink"
+                },
+                {
+                  "type": "text",
+                  "id": "jxsIv",
+                  "name": "Label",
+                  "fill": "$ink",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Force Arrival",
+                  "fontFamily": "$font-body",
+                  "fontSize": 18,
+                  "fontWeight": "700"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "Jmmys",
+              "name": "Jump to Stop Row",
+              "width": "fill_container",
+              "height": 56,
+              "fill": "$surface",
+              "cornerRadius": "$radius-control",
+              "stroke": "$ink",
+              "strokeWidth": 2,
+              "strokeAlignment": "inner",
+              "gap": 12,
+              "padding": [
+                0,
+                16
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon",
+                  "id": "vs0Lu",
+                  "name": "Icon",
+                  "width": 24,
+                  "height": 24,
+                  "icon": "swap_horiz",
+                  "library": "Material Symbols Rounded",
+                  "weight": 600,
+                  "fill": "$ink"
+                },
+                {
+                  "type": "text",
+                  "id": "KA5HU",
+                  "name": "Label",
+                  "fill": "$ink",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Jump to Stop",
+                  "fontFamily": "$font-body",
+                  "fontSize": 18,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "nX2SD",
+                  "name": "Value",
+                  "fill": "$ink",
+                  "content": "Stop 1",
+                  "fontFamily": "$font-body",
+                  "fontSize": 18,
+                  "fontWeight": "600"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "shS5I",
+              "name": "Boxes count Row",
+              "width": "fill_container",
+              "height": 56,
+              "fill": "$surface",
+              "cornerRadius": "$radius-control",
+              "stroke": "$ink",
+              "strokeWidth": 2,
+              "strokeAlignment": "inner",
+              "gap": 12,
+              "padding": [
+                0,
+                16
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon",
+                  "id": "JG7U5",
+                  "name": "Icon",
+                  "width": 24,
+                  "height": 24,
+                  "icon": "takeout_dining",
+                  "library": "Material Symbols Rounded",
+                  "weight": 600,
+                  "fill": "$ink"
+                },
+                {
+                  "type": "text",
+                  "id": "u1cU1",
+                  "name": "Label",
+                  "fill": "$ink",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Boxes count",
+                  "fontFamily": "$font-body",
+                  "fontSize": 18,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "FKbPT",
+                  "name": "Value",
+                  "fill": "$ink",
+                  "content": "14",
+                  "fontFamily": "$font-body",
+                  "fontSize": 18,
+                  "fontWeight": "600"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "l2SI5j",
+              "name": "Plan Row",
+              "width": "fill_container",
+              "height": 56,
+              "fill": "$surface",
+              "cornerRadius": "$radius-control",
+              "stroke": "$ink",
+              "strokeWidth": 2,
+              "strokeAlignment": "inner",
+              "gap": 12,
+              "padding": [
+                0,
+                16
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon",
+                  "id": "aiFXF",
+                  "name": "Icon",
+                  "width": 24,
+                  "height": 24,
+                  "icon": "alt_route",
+                  "library": "Material Symbols Rounded",
+                  "weight": 600,
+                  "fill": "$ink"
+                },
+                {
+                  "type": "text",
+                  "id": "VvqUt",
+                  "name": "Label",
+                  "fill": "$ink",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Plan",
+                  "fontFamily": "$font-body",
+                  "fontSize": 18,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "i9wCyY",
+                  "name": "Value",
+                  "fill": "$ink",
+                  "content": "A",
+                  "fontFamily": "$font-body",
+                  "fontSize": 18,
+                  "fontWeight": "600"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "QBK4L",
+              "name": "Capture here Row",
+              "width": "fill_container",
+              "height": 56,
+              "fill": "$surface",
+              "cornerRadius": "$radius-control",
+              "stroke": "$ink",
+              "strokeWidth": 2,
+              "strokeAlignment": "inner",
+              "gap": 12,
+              "padding": [
+                0,
+                16
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon",
+                  "id": "IA3jp",
+                  "name": "Icon",
+                  "width": 24,
+                  "height": 24,
+                  "icon": "my_location",
+                  "library": "Material Symbols Rounded",
+                  "weight": 600,
+                  "fill": "$ink"
+                },
+                {
+                  "type": "text",
+                  "id": "R7XB9",
+                  "name": "Label",
+                  "fill": "$ink",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Capture here",
+                  "fontFamily": "$font-body",
+                  "fontSize": 18,
+                  "fontWeight": "700"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "auXQp",
+              "name": "Build and log Row",
+              "width": "fill_container",
+              "height": 56,
+              "fill": "$surface",
+              "cornerRadius": "$radius-control",
+              "stroke": "$ink",
+              "strokeWidth": 2,
+              "strokeAlignment": "inner",
+              "gap": 12,
+              "padding": [
+                0,
+                16
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon",
+                  "id": "C3SV2t",
+                  "name": "Icon",
+                  "width": 24,
+                  "height": 24,
+                  "icon": "article",
+                  "library": "Material Symbols Rounded",
+                  "weight": 600,
+                  "fill": "$ink"
+                },
+                {
+                  "type": "text",
+                  "id": "vmAuJ",
+                  "name": "Label",
+                  "fill": "$ink",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Build and log",
+                  "fontFamily": "$font-body",
+                  "fontSize": 18,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "GZH4c",
+                  "name": "Value",
+                  "fill": "$ink",
+                  "content": "a1b2c3d",
+                  "fontFamily": "$font-body",
+                  "fontSize": 18,
+                  "fontWeight": "600"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "ico0F",
+              "name": "Reset progress Row",
+              "width": "fill_container",
+              "height": 56,
+              "fill": "$surface",
+              "cornerRadius": "$radius-control",
+              "stroke": "$ink",
+              "strokeWidth": 2,
+              "strokeAlignment": "inner",
+              "gap": 12,
+              "padding": [
+                0,
+                16
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon",
+                  "id": "E9fdG",
+                  "name": "Icon",
+                  "width": 24,
+                  "height": 24,
+                  "icon": "restart_alt",
+                  "library": "Material Symbols Rounded",
+                  "weight": 600,
+                  "fill": "$ink"
+                },
+                {
+                  "type": "text",
+                  "id": "ZLKHe",
+                  "name": "Label",
+                  "fill": "$ink",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Reset progress",
+                  "fontFamily": "$font-body",
+                  "fontSize": 18,
+                  "fontWeight": "700"
+                }
+              ]
+            },
+            {
+              "id": "PRcOm",
+              "type": "ref",
+              "ref": "Y8Xu2",
+              "name": "Close Button",
+              "width": "fill_container",
+              "height": 60,
+              "descendants": {
+                "KIbA9": {
+                  "icon": "close"
+                },
+                "S07f7": {
+                  "content": "Close",
+                  "fontSize": 20
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "PYChm",
+          "layoutPosition": "absolute",
+          "x": 133,
+          "y": 62,
+          "name": "Admin tap zone (invisible)",
+          "width": 124,
+          "height": 56
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "T4Eic",
+      "x": 3960,
+      "y": 7907,
+      "name": "Admin - Capture here",
+      "clip": true,
+      "width": 390,
+      "height": 844,
+      "fill": "$ground",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "icon",
+          "id": "kiqs2",
+          "layoutPosition": "absolute",
+          "x": 332,
+          "y": 366,
+          "name": "Ornament Party Popper Red",
+          "rotation": -10,
+          "width": 30,
+          "height": 30,
+          "icon": "celebration",
+          "library": "Material Symbols Rounded",
+          "weight": 600,
+          "fill": "$accent"
+        },
+        {
+          "type": "icon",
+          "id": "z5gofu",
+          "layoutPosition": "absolute",
+          "x": 22,
+          "y": 372,
+          "name": "Ornament Star Gold",
+          "rotation": 12.000000000000002,
+          "width": 28,
+          "height": 28,
+          "icon": "star",
+          "library": "Material Symbols Rounded",
+          "weight": 600,
+          "fill": "$gold"
+        },
+        {
+          "id": "nLR5f",
+          "type": "ref",
+          "ref": "s2Vhb",
+          "name": "Ornament Flower Bottom Right",
+          "layoutPosition": "absolute",
+          "x": 304,
+          "y": 440
+        },
+        {
+          "id": "qENA7",
+          "type": "ref",
+          "ref": "VhrqG",
+          "name": "Status Bar"
+        },
+        {
+          "type": "frame",
+          "id": "pS3uQ",
+          "name": "Content",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 16,
+          "padding": [
+            76,
+            20,
+            20,
+            20
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "CmFXC",
+              "name": "Puzzle (Plan A, Stop 1)",
+              "width": "fill_container",
+              "layout": "vertical",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "XM6WR",
+                  "name": "Puzzle Line 1",
+                  "fill": "$ink",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Where do you usually",
+                  "lineHeight": 1.1,
+                  "fontFamily": "$font-display",
+                  "fontSize": 34,
+                  "fontWeight": "800"
+                },
+                {
+                  "type": "text",
+                  "id": "psKox",
+                  "name": "Puzzle Handwritten Phrase",
+                  "fill": "$accent",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "buy kue cucur?",
+                  "lineHeight": 1,
+                  "fontFamily": "$font-hand",
+                  "fontSize": 54,
+                  "fontWeight": "800"
+                }
+              ]
+            },
+            {
+              "id": "EoGpF",
+              "type": "ref",
+              "ref": "Hs1Ix",
+              "name": "Clue Button",
+              "width": "fill_container"
+            },
+            {
+              "type": "frame",
+              "id": "C1hzY",
+              "name": "Pointer",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 2,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "TEMbF",
+                  "name": "Pointer Disc",
+                  "width": 236,
+                  "height": 236,
+                  "fill": "$gold",
+                  "cornerRadius": 118,
+                  "layout": "none",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "G6laj",
+                      "x": 110.5,
+                      "y": 20.5,
+                      "name": "Pointer Arrow",
+                      "rotation": -28,
+                      "width": 128,
+                      "height": 128,
+                      "icon": "navigation",
+                      "library": "Material Symbols Rounded",
+                      "weight": 700,
+                      "fill": "$ink"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "QJWyP",
+                  "name": "Distance",
+                  "fill": "$ink",
+                  "content": "450 m",
+                  "fontFamily": "$font-display",
+                  "fontSize": 64,
+                  "fontWeight": "800"
+                }
+              ]
+            },
+            {
+              "id": "xJFqe",
+              "type": "ref",
+              "ref": "Y8Xu2",
+              "name": "Refresh Location Button",
+              "width": "fill_container"
+            },
+            {
+              "id": "v0gaW",
+              "type": "ref",
+              "ref": "ThVhw",
+              "name": "Having Trouble Link",
+              "width": "fill_container"
+            }
+          ]
+        },
+        {
+          "id": "Zpsz1",
+          "type": "ref",
+          "ref": "el64L",
+          "name": "Boxes Counter",
+          "layoutPosition": "absolute",
+          "x": 67,
+          "y": 58,
+          "descendants": {
+            "V6JvNj": {
+              "content": "0 boxes"
+            }
+          }
+        },
+        {
+          "type": "frame",
+          "id": "U7cWx",
+          "layoutPosition": "absolute",
+          "x": 0,
+          "y": 0,
+          "name": "Scrim (dims the screen)",
+          "width": 390,
+          "height": 844,
+          "fill": "#231815A6"
+        },
+        {
+          "type": "frame",
+          "id": "z9uKVC",
+          "layoutPosition": "absolute",
+          "x": 20,
+          "y": 130,
+          "name": "Admin Modal",
+          "width": 350,
+          "fill": "$surface",
+          "cornerRadius": "$radius-control",
+          "stroke": "$ink",
+          "strokeWidth": 2,
+          "strokeAlignment": "inner",
+          "layout": "vertical",
+          "gap": 16,
+          "padding": [
+            28,
+            24,
+            24,
+            24
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "h5w34e",
+              "name": "Admin Heading",
+              "fill": "$accent",
+              "content": "Capture here",
+              "fontFamily": "$font-hand",
+              "fontSize": 48,
+              "fontWeight": "800"
+            },
+            {
+              "type": "text",
+              "id": "ImQPw",
+              "name": "Instruction",
+              "fill": "$ink",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Stand at the Stop and write these down.",
+              "lineHeight": 1.3,
+              "fontFamily": "$font-body",
+              "fontSize": 20,
+              "fontWeight": "600"
+            },
+            {
+              "type": "frame",
+              "id": "ys6yy",
+              "name": "Latitude Row",
+              "width": "fill_container",
+              "height": 56,
+              "fill": "$surface",
+              "cornerRadius": "$radius-control",
+              "stroke": "$ink",
+              "strokeWidth": 2,
+              "strokeAlignment": "inner",
+              "gap": 12,
+              "padding": [
+                0,
+                16
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "C9aQu3",
+                  "name": "Label",
+                  "fill": "$ink",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Latitude",
+                  "fontFamily": "$font-body",
+                  "fontSize": 18,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "fOLxV",
+                  "name": "Value",
+                  "fill": "$ink",
+                  "content": "[from GPS]",
+                  "fontFamily": "$font-body",
+                  "fontSize": 18,
+                  "fontWeight": "600"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "X2u5Pg",
+              "name": "Longitude Row",
+              "width": "fill_container",
+              "height": 56,
+              "fill": "$surface",
+              "cornerRadius": "$radius-control",
+              "stroke": "$ink",
+              "strokeWidth": 2,
+              "strokeAlignment": "inner",
+              "gap": 12,
+              "padding": [
+                0,
+                16
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "kUe7o",
+                  "name": "Label",
+                  "fill": "$ink",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Longitude",
+                  "fontFamily": "$font-body",
+                  "fontSize": 18,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "vuadS",
+                  "name": "Value",
+                  "fill": "$ink",
+                  "content": "[from GPS]",
+                  "fontFamily": "$font-body",
+                  "fontSize": 18,
+                  "fontWeight": "600"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "fqKaU",
+              "name": "Accuracy Row",
+              "width": "fill_container",
+              "height": 56,
+              "fill": "$surface",
+              "cornerRadius": "$radius-control",
+              "stroke": "$ink",
+              "strokeWidth": 2,
+              "strokeAlignment": "inner",
+              "gap": 12,
+              "padding": [
+                0,
+                16
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "TyuNJ",
+                  "name": "Label",
+                  "fill": "$ink",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Accuracy",
+                  "fontFamily": "$font-body",
+                  "fontSize": 18,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "N7don",
+                  "name": "Value",
+                  "fill": "$ink",
+                  "content": "[from GPS] m",
+                  "fontFamily": "$font-body",
+                  "fontSize": 18,
+                  "fontWeight": "600"
+                }
+              ]
+            },
+            {
+              "id": "TIAJI",
+              "type": "ref",
+              "ref": "Y8Xu2",
+              "name": "Refresh Button",
+              "width": "fill_container",
+              "height": 60,
+              "descendants": {
+                "KIbA9": {
+                  "icon": "refresh"
+                },
+                "S07f7": {
+                  "content": "Refresh reading",
+                  "fontSize": 20
+                }
+              }
+            },
+            {
+              "id": "AE301",
+              "type": "ref",
+              "ref": "Y8Xu2",
+              "name": "Close Button",
+              "width": "fill_container",
+              "height": 60,
+              "descendants": {
+                "KIbA9": {
+                  "icon": "close"
+                },
+                "S07f7": {
+                  "content": "Close",
+                  "fontSize": 20
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "n1fzv",
           "layoutPosition": "absolute",
           "x": 133,
           "y": 62,
