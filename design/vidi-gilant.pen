@@ -2604,6 +2604,2109 @@
           "height": 56
         }
       ]
+    },
+    {
+      "type": "frame",
+      "id": "ga32r",
+      "x": 880,
+      "y": 2915,
+      "name": "Puzzle - Puzzle",
+      "clip": true,
+      "width": 390,
+      "fill": "$ground",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "icon",
+          "id": "BT2e8",
+          "layoutPosition": "absolute",
+          "x": 332,
+          "y": 366,
+          "name": "Ornament Party Popper Red",
+          "rotation": -10,
+          "width": 30,
+          "height": 30,
+          "icon": "celebration",
+          "library": "Material Symbols Rounded",
+          "weight": 600,
+          "fill": "$accent"
+        },
+        {
+          "type": "icon",
+          "id": "o5DjY8",
+          "layoutPosition": "absolute",
+          "x": 22,
+          "y": 372,
+          "name": "Ornament Star Gold",
+          "rotation": 12.000000000000002,
+          "width": 28,
+          "height": 28,
+          "icon": "star",
+          "library": "Material Symbols Rounded",
+          "weight": 600,
+          "fill": "$gold"
+        },
+        {
+          "id": "oX6VV",
+          "type": "ref",
+          "ref": "s2Vhb",
+          "name": "Ornament Flower Bottom Right",
+          "layoutPosition": "absolute",
+          "x": 304,
+          "y": 440
+        },
+        {
+          "id": "nI7zg",
+          "type": "ref",
+          "ref": "VhrqG",
+          "name": "Status Bar"
+        },
+        {
+          "type": "frame",
+          "id": "Avu2h",
+          "name": "Content",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 16,
+          "padding": [
+            76,
+            20,
+            20,
+            20
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "GKjoh",
+              "name": "Puzzle (Plan A, Stop 1)",
+              "width": "fill_container",
+              "layout": "vertical",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "db6gN",
+                  "name": "Puzzle Line 1",
+                  "fill": "$ink",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Where do you usually",
+                  "lineHeight": 1.1,
+                  "fontFamily": "$font-display",
+                  "fontSize": 34,
+                  "fontWeight": "800"
+                },
+                {
+                  "type": "text",
+                  "id": "kfOgS",
+                  "name": "Puzzle Handwritten Phrase",
+                  "fill": "$accent",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "buy kue cucur?",
+                  "lineHeight": 1,
+                  "fontFamily": "$font-hand",
+                  "fontSize": 54,
+                  "fontWeight": "800"
+                }
+              ]
+            },
+            {
+              "id": "znhhd",
+              "type": "ref",
+              "ref": "Hs1Ix",
+              "name": "Clue Button",
+              "width": "fill_container"
+            },
+            {
+              "type": "frame",
+              "id": "M5l9Rd",
+              "name": "Pointer",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 2,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "LMLSv",
+                  "name": "Pointer Disc",
+                  "width": 236,
+                  "height": 236,
+                  "fill": "$gold",
+                  "cornerRadius": 118,
+                  "layout": "none",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "E2qG2",
+                      "x": 110.5,
+                      "y": 20.5,
+                      "name": "Pointer Arrow",
+                      "rotation": -28,
+                      "width": 128,
+                      "height": 128,
+                      "icon": "navigation",
+                      "library": "Material Symbols Rounded",
+                      "weight": 700,
+                      "fill": "$ink"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "FAObv",
+                  "name": "Distance (placeholder)",
+                  "fill": "$ink",
+                  "content": "450 m",
+                  "fontFamily": "$font-display",
+                  "fontSize": 64,
+                  "fontWeight": "800"
+                }
+              ]
+            },
+            {
+              "id": "ya2X2",
+              "type": "ref",
+              "ref": "Y8Xu2",
+              "name": "Refresh Location Button",
+              "width": "fill_container"
+            },
+            {
+              "id": "LCKNE",
+              "type": "ref",
+              "ref": "ThVhw",
+              "name": "Having Trouble Link",
+              "width": "fill_container"
+            }
+          ]
+        },
+        {
+          "id": "YSnrG",
+          "type": "ref",
+          "ref": "el64L",
+          "name": "Boxes Counter",
+          "layoutPosition": "absolute",
+          "x": 67,
+          "y": 58,
+          "descendants": {
+            "V6JvNj": {
+              "content": "0 boxes"
+            }
+          }
+        },
+        {
+          "type": "frame",
+          "id": "isfzt",
+          "layoutPosition": "absolute",
+          "x": 133,
+          "y": 62,
+          "name": "Admin tap zone (invisible)",
+          "width": 124,
+          "height": 56
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "DQzjS",
+      "x": 1320,
+      "y": 2915,
+      "name": "Puzzle - Clue",
+      "clip": true,
+      "width": 390,
+      "fill": "$ground",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "icon",
+          "id": "Q2rd0e",
+          "layoutPosition": "absolute",
+          "x": 332,
+          "y": 366,
+          "name": "Ornament Party Popper Red",
+          "rotation": -10,
+          "width": 30,
+          "height": 30,
+          "icon": "celebration",
+          "library": "Material Symbols Rounded",
+          "weight": 600,
+          "fill": "$accent"
+        },
+        {
+          "type": "icon",
+          "id": "tvGZG",
+          "layoutPosition": "absolute",
+          "x": 22,
+          "y": 372,
+          "name": "Ornament Star Gold",
+          "rotation": 12.000000000000002,
+          "width": 28,
+          "height": 28,
+          "icon": "star",
+          "library": "Material Symbols Rounded",
+          "weight": 600,
+          "fill": "$gold"
+        },
+        {
+          "id": "p4CP9t",
+          "type": "ref",
+          "ref": "s2Vhb",
+          "name": "Ornament Flower Bottom Right",
+          "layoutPosition": "absolute",
+          "x": 304,
+          "y": 440
+        },
+        {
+          "id": "KWDqp",
+          "type": "ref",
+          "ref": "VhrqG",
+          "name": "Status Bar"
+        },
+        {
+          "type": "frame",
+          "id": "nFkMb",
+          "name": "Content",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 16,
+          "padding": [
+            76,
+            20,
+            20,
+            20
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "AAt0U",
+              "name": "Puzzle (Plan A, Stop 1)",
+              "width": "fill_container",
+              "layout": "vertical",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "UaNsz",
+                  "name": "Puzzle Line 1",
+                  "fill": "$ink",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Where do you usually",
+                  "lineHeight": 1.1,
+                  "fontFamily": "$font-display",
+                  "fontSize": 34,
+                  "fontWeight": "800"
+                },
+                {
+                  "type": "text",
+                  "id": "ABzQe",
+                  "name": "Puzzle Handwritten Phrase",
+                  "fill": "$accent",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "buy kue cucur?",
+                  "lineHeight": 1,
+                  "fontFamily": "$font-hand",
+                  "fontSize": 54,
+                  "fontWeight": "800"
+                }
+              ]
+            },
+            {
+              "id": "LnQPu",
+              "type": "ref",
+              "ref": "Hs1Ix",
+              "name": "Clue Button",
+              "width": "fill_container"
+            },
+            {
+              "type": "frame",
+              "id": "GEe29",
+              "name": "Pointer",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 2,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "NdpSK",
+                  "name": "Pointer Disc",
+                  "width": 236,
+                  "height": 236,
+                  "fill": "$gold",
+                  "cornerRadius": 118,
+                  "layout": "none",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "Qj4iz",
+                      "x": 110.5,
+                      "y": 20.5,
+                      "name": "Pointer Arrow",
+                      "rotation": -28,
+                      "width": 128,
+                      "height": 128,
+                      "icon": "navigation",
+                      "library": "Material Symbols Rounded",
+                      "weight": 700,
+                      "fill": "$ink"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "NRXZL",
+                  "name": "Distance (placeholder)",
+                  "fill": "$ink",
+                  "content": "450 m",
+                  "fontFamily": "$font-display",
+                  "fontSize": 64,
+                  "fontWeight": "800"
+                }
+              ]
+            },
+            {
+              "id": "sQT51",
+              "type": "ref",
+              "ref": "Y8Xu2",
+              "name": "Refresh Location Button",
+              "width": "fill_container"
+            },
+            {
+              "id": "XDg9R",
+              "type": "ref",
+              "ref": "ThVhw",
+              "name": "Having Trouble Link",
+              "width": "fill_container"
+            }
+          ]
+        },
+        {
+          "id": "D46xAR",
+          "type": "ref",
+          "ref": "el64L",
+          "name": "Boxes Counter",
+          "layoutPosition": "absolute",
+          "x": 67,
+          "y": 58,
+          "descendants": {
+            "V6JvNj": {
+              "content": "0 boxes"
+            }
+          }
+        },
+        {
+          "type": "frame",
+          "id": "DkYPV",
+          "layoutPosition": "absolute",
+          "x": 0,
+          "y": 0,
+          "name": "Scrim (dims the screen, tap closes)",
+          "opacity": 0.65,
+          "width": 390,
+          "height": 808,
+          "fill": "$ink"
+        },
+        {
+          "type": "frame",
+          "id": "h5GLtA",
+          "layoutPosition": "absolute",
+          "x": 20,
+          "y": 330,
+          "name": "Clue Card",
+          "width": 350,
+          "fill": "$surface",
+          "cornerRadius": "$radius-control",
+          "stroke": "$ink",
+          "strokeWidth": 2,
+          "strokeAlignment": "inner",
+          "layout": "vertical",
+          "gap": 20,
+          "padding": [
+            28,
+            24,
+            24,
+            24
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "BDWZB",
+              "name": "Clue Heading",
+              "fill": "$accent",
+              "content": "Clue",
+              "fontFamily": "$font-hand",
+              "fontSize": 48,
+              "fontWeight": "800"
+            },
+            {
+              "type": "text",
+              "id": "NMG1s",
+              "name": "Clue Text (Plan A, Stop 1)",
+              "fill": "$ink",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Your “safe space”, yang di mana kamu takut kalau tiba-tiba ketemu orang tua aku wkwk.",
+              "lineHeight": 1.3,
+              "fontFamily": "$font-body",
+              "fontSize": 24,
+              "fontWeight": "600"
+            },
+            {
+              "id": "V0X0KF",
+              "type": "ref",
+              "ref": "Hs1Ix",
+              "name": "Close Button",
+              "width": "fill_container",
+              "descendants": {
+                "HsIhc": {
+                  "icon": "check"
+                },
+                "C3TJA": {
+                  "content": "Got it"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "ASfYP",
+          "layoutPosition": "absolute",
+          "x": 133,
+          "y": 62,
+          "name": "Admin tap zone (invisible)",
+          "width": 124,
+          "height": 56
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "nSya1",
+      "x": 1760,
+      "y": 2915,
+      "name": "Puzzle - Location Updating",
+      "clip": true,
+      "width": 390,
+      "fill": "$ground",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "icon",
+          "id": "fJ13n",
+          "layoutPosition": "absolute",
+          "x": 332,
+          "y": 366,
+          "name": "Ornament Party Popper Red",
+          "rotation": -10,
+          "width": 30,
+          "height": 30,
+          "icon": "celebration",
+          "library": "Material Symbols Rounded",
+          "weight": 600,
+          "fill": "$accent"
+        },
+        {
+          "type": "icon",
+          "id": "cjXxh",
+          "layoutPosition": "absolute",
+          "x": 22,
+          "y": 372,
+          "name": "Ornament Star Gold",
+          "rotation": 12.000000000000002,
+          "width": 28,
+          "height": 28,
+          "icon": "star",
+          "library": "Material Symbols Rounded",
+          "weight": 600,
+          "fill": "$gold"
+        },
+        {
+          "id": "Jw4ci",
+          "type": "ref",
+          "ref": "s2Vhb",
+          "name": "Ornament Flower Bottom Right",
+          "layoutPosition": "absolute",
+          "x": 304,
+          "y": 440
+        },
+        {
+          "id": "ntQRM",
+          "type": "ref",
+          "ref": "VhrqG",
+          "name": "Status Bar"
+        },
+        {
+          "type": "frame",
+          "id": "XcjrF",
+          "name": "Content",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 16,
+          "padding": [
+            76,
+            20,
+            20,
+            20
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "S1ABC",
+              "name": "Puzzle (Plan A, Stop 1)",
+              "width": "fill_container",
+              "layout": "vertical",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "ksecR",
+                  "name": "Puzzle Line 1",
+                  "fill": "$ink",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Where do you usually",
+                  "lineHeight": 1.1,
+                  "fontFamily": "$font-display",
+                  "fontSize": 34,
+                  "fontWeight": "800"
+                },
+                {
+                  "type": "text",
+                  "id": "x9MBm",
+                  "name": "Puzzle Handwritten Phrase",
+                  "fill": "$accent",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "buy kue cucur?",
+                  "lineHeight": 1,
+                  "fontFamily": "$font-hand",
+                  "fontSize": 54,
+                  "fontWeight": "800"
+                }
+              ]
+            },
+            {
+              "id": "X4D91d",
+              "type": "ref",
+              "ref": "Hs1Ix",
+              "name": "Clue Button",
+              "width": "fill_container"
+            },
+            {
+              "type": "frame",
+              "id": "gW0um",
+              "name": "Pointer",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 2,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "V4u8cS",
+                  "name": "Pointer Disc",
+                  "width": 236,
+                  "height": 236,
+                  "fill": "$gold",
+                  "cornerRadius": 118,
+                  "layout": "none",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "GnS4R",
+                      "x": 110.5,
+                      "y": 20.5,
+                      "name": "Pointer Arrow",
+                      "opacity": 0.3,
+                      "rotation": -28,
+                      "width": 128,
+                      "height": 128,
+                      "icon": "navigation",
+                      "library": "Material Symbols Rounded",
+                      "weight": 700,
+                      "fill": "$ink"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "wJMFU",
+                  "name": "Distance (Updating)",
+                  "fill": "$ink",
+                  "content": "Updating…",
+                  "fontFamily": "$font-display",
+                  "fontSize": 64,
+                  "fontWeight": "800"
+                }
+              ]
+            },
+            {
+              "id": "YPPQA",
+              "type": "ref",
+              "ref": "Y8Xu2",
+              "name": "Refresh Location Button",
+              "width": "fill_container"
+            },
+            {
+              "id": "a0mlc",
+              "type": "ref",
+              "ref": "ThVhw",
+              "name": "Having Trouble Link",
+              "width": "fill_container"
+            }
+          ]
+        },
+        {
+          "id": "V90lCC",
+          "type": "ref",
+          "ref": "el64L",
+          "name": "Boxes Counter",
+          "layoutPosition": "absolute",
+          "x": 67,
+          "y": 58,
+          "descendants": {
+            "V6JvNj": {
+              "content": "0 boxes"
+            }
+          }
+        },
+        {
+          "type": "frame",
+          "id": "GYQVb",
+          "layoutPosition": "absolute",
+          "x": 133,
+          "y": 62,
+          "name": "Admin tap zone (invisible)",
+          "width": 124,
+          "height": 56
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "c9ua7",
+      "x": 2200,
+      "y": 2915,
+      "name": "Puzzle - Weak signal",
+      "clip": true,
+      "width": 390,
+      "fill": "$ground",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "icon",
+          "id": "q5dAC3",
+          "layoutPosition": "absolute",
+          "x": 332,
+          "y": 366,
+          "name": "Ornament Party Popper Red",
+          "rotation": -10,
+          "width": 30,
+          "height": 30,
+          "icon": "celebration",
+          "library": "Material Symbols Rounded",
+          "weight": 600,
+          "fill": "$accent"
+        },
+        {
+          "type": "icon",
+          "id": "BjRGD",
+          "layoutPosition": "absolute",
+          "x": 22,
+          "y": 372,
+          "name": "Ornament Star Gold",
+          "rotation": 12.000000000000002,
+          "width": 28,
+          "height": 28,
+          "icon": "star",
+          "library": "Material Symbols Rounded",
+          "weight": 600,
+          "fill": "$gold"
+        },
+        {
+          "id": "MndIA",
+          "type": "ref",
+          "ref": "s2Vhb",
+          "name": "Ornament Flower Bottom Right",
+          "layoutPosition": "absolute",
+          "x": 304,
+          "y": 440
+        },
+        {
+          "id": "eoXQb",
+          "type": "ref",
+          "ref": "VhrqG",
+          "name": "Status Bar"
+        },
+        {
+          "type": "frame",
+          "id": "cHBCs",
+          "name": "Content",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 16,
+          "padding": [
+            76,
+            20,
+            20,
+            20
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "J8bJr",
+              "name": "Puzzle (Plan A, Stop 1)",
+              "width": "fill_container",
+              "layout": "vertical",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "rE8ER",
+                  "name": "Puzzle Line 1",
+                  "fill": "$ink",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Where do you usually",
+                  "lineHeight": 1.1,
+                  "fontFamily": "$font-display",
+                  "fontSize": 34,
+                  "fontWeight": "800"
+                },
+                {
+                  "type": "text",
+                  "id": "Bie5R",
+                  "name": "Puzzle Handwritten Phrase",
+                  "fill": "$accent",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "buy kue cucur?",
+                  "lineHeight": 1,
+                  "fontFamily": "$font-hand",
+                  "fontSize": 54,
+                  "fontWeight": "800"
+                }
+              ]
+            },
+            {
+              "id": "OwFXp",
+              "type": "ref",
+              "ref": "Hs1Ix",
+              "name": "Clue Button",
+              "width": "fill_container"
+            },
+            {
+              "type": "frame",
+              "id": "xKatN",
+              "name": "Pointer",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 2,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "uiEgb",
+                  "name": "Pointer Disc",
+                  "width": 236,
+                  "height": 236,
+                  "fill": "$gold",
+                  "cornerRadius": 118,
+                  "layout": "none",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "pEtIQ",
+                      "x": 110.5,
+                      "y": 20.5,
+                      "name": "Pointer Arrow",
+                      "rotation": -28,
+                      "width": 128,
+                      "height": 128,
+                      "icon": "navigation",
+                      "library": "Material Symbols Rounded",
+                      "weight": 700,
+                      "fill": "$ink"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "yEhH0",
+                  "name": "Distance (placeholder)",
+                  "fill": "$ink",
+                  "content": "450 m",
+                  "fontFamily": "$font-display",
+                  "fontSize": 64,
+                  "fontWeight": "800"
+                },
+                {
+                  "type": "text",
+                  "id": "zCdCe",
+                  "name": "Weak Signal Note (draft)",
+                  "fill": "$ink",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Weak signal.\nThis distance may be off.",
+                  "lineHeight": 1.3,
+                  "textAlign": "center",
+                  "fontFamily": "$font-body",
+                  "fontSize": 22,
+                  "fontWeight": "600"
+                }
+              ]
+            },
+            {
+              "id": "rdFU5",
+              "type": "ref",
+              "ref": "Y8Xu2",
+              "name": "Refresh Location Button",
+              "width": "fill_container"
+            },
+            {
+              "id": "ETAWK",
+              "type": "ref",
+              "ref": "ThVhw",
+              "name": "Having Trouble Link",
+              "width": "fill_container"
+            }
+          ]
+        },
+        {
+          "id": "ht3ei",
+          "type": "ref",
+          "ref": "el64L",
+          "name": "Boxes Counter",
+          "layoutPosition": "absolute",
+          "x": 67,
+          "y": 58,
+          "descendants": {
+            "V6JvNj": {
+              "content": "0 boxes"
+            }
+          }
+        },
+        {
+          "type": "frame",
+          "id": "UqBuB",
+          "layoutPosition": "absolute",
+          "x": 133,
+          "y": 62,
+          "name": "Admin tap zone (invisible)",
+          "width": 124,
+          "height": 56
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "IWUXj",
+      "x": 2640,
+      "y": 2915,
+      "name": "Puzzle - No location",
+      "clip": true,
+      "width": 390,
+      "fill": "$ground",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "icon",
+          "id": "RF2lU",
+          "layoutPosition": "absolute",
+          "x": 332,
+          "y": 366,
+          "name": "Ornament Party Popper Red",
+          "rotation": -10,
+          "width": 30,
+          "height": 30,
+          "icon": "celebration",
+          "library": "Material Symbols Rounded",
+          "weight": 600,
+          "fill": "$accent"
+        },
+        {
+          "type": "icon",
+          "id": "GdKol",
+          "layoutPosition": "absolute",
+          "x": 22,
+          "y": 372,
+          "name": "Ornament Star Gold",
+          "rotation": 12.000000000000002,
+          "width": 28,
+          "height": 28,
+          "icon": "star",
+          "library": "Material Symbols Rounded",
+          "weight": 600,
+          "fill": "$gold"
+        },
+        {
+          "id": "YNixW",
+          "type": "ref",
+          "ref": "s2Vhb",
+          "name": "Ornament Flower Bottom Right",
+          "layoutPosition": "absolute",
+          "x": 304,
+          "y": 440
+        },
+        {
+          "id": "b9dyA",
+          "type": "ref",
+          "ref": "VhrqG",
+          "name": "Status Bar"
+        },
+        {
+          "type": "frame",
+          "id": "ugiay",
+          "name": "Content",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 16,
+          "padding": [
+            76,
+            20,
+            20,
+            20
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "dYX4D",
+              "name": "Puzzle (Plan A, Stop 1)",
+              "width": "fill_container",
+              "layout": "vertical",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "b4f2I",
+                  "name": "Puzzle Line 1",
+                  "fill": "$ink",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Where do you usually",
+                  "lineHeight": 1.1,
+                  "fontFamily": "$font-display",
+                  "fontSize": 34,
+                  "fontWeight": "800"
+                },
+                {
+                  "type": "text",
+                  "id": "riq3G",
+                  "name": "Puzzle Handwritten Phrase",
+                  "fill": "$accent",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "buy kue cucur?",
+                  "lineHeight": 1,
+                  "fontFamily": "$font-hand",
+                  "fontSize": 54,
+                  "fontWeight": "800"
+                }
+              ]
+            },
+            {
+              "id": "P04oYL",
+              "type": "ref",
+              "ref": "Hs1Ix",
+              "name": "Clue Button",
+              "width": "fill_container"
+            },
+            {
+              "type": "frame",
+              "id": "n5Qf8",
+              "name": "Pointer",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 2,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "WoQWF",
+                  "name": "Pointer Disc",
+                  "width": 236,
+                  "height": 236,
+                  "fill": "$gold",
+                  "cornerRadius": 118,
+                  "layout": "none",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "AxtWz",
+                      "x": 54,
+                      "y": 54,
+                      "name": "Pointer Arrow",
+                      "width": 128,
+                      "height": 128,
+                      "icon": "location_off",
+                      "library": "Material Symbols Rounded",
+                      "weight": 700,
+                      "fill": "$ink"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "b7Q143",
+                  "name": "Distance (On hold)",
+                  "fill": "$ink",
+                  "content": "On hold",
+                  "fontFamily": "$font-display",
+                  "fontSize": 64,
+                  "fontWeight": "800"
+                },
+                {
+                  "type": "text",
+                  "id": "N2pfz",
+                  "name": "On Hold Note (draft)",
+                  "fill": "$ink",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Your location isn't coming through right now.",
+                  "lineHeight": 1.3,
+                  "textAlign": "center",
+                  "fontFamily": "$font-body",
+                  "fontSize": 22,
+                  "fontWeight": "600"
+                }
+              ]
+            },
+            {
+              "id": "N3aDK",
+              "type": "ref",
+              "ref": "Y8Xu2",
+              "name": "Refresh Location Button",
+              "width": "fill_container"
+            },
+            {
+              "id": "M3ULsj",
+              "type": "ref",
+              "ref": "ThVhw",
+              "name": "Having Trouble Link",
+              "width": "fill_container"
+            }
+          ]
+        },
+        {
+          "id": "Pt9cY",
+          "type": "ref",
+          "ref": "el64L",
+          "name": "Boxes Counter",
+          "layoutPosition": "absolute",
+          "x": 67,
+          "y": 58,
+          "descendants": {
+            "V6JvNj": {
+              "content": "0 boxes"
+            }
+          }
+        },
+        {
+          "type": "frame",
+          "id": "I3Zdx",
+          "layoutPosition": "absolute",
+          "x": 133,
+          "y": 62,
+          "name": "Admin tap zone (invisible)",
+          "width": 124,
+          "height": 56
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "rwycC",
+      "x": 3080,
+      "y": 2915,
+      "name": "Puzzle - No compass",
+      "clip": true,
+      "width": 390,
+      "fill": "$ground",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "icon",
+          "id": "c3OOS",
+          "layoutPosition": "absolute",
+          "x": 332,
+          "y": 366,
+          "name": "Ornament Party Popper Red",
+          "rotation": -10,
+          "width": 30,
+          "height": 30,
+          "icon": "celebration",
+          "library": "Material Symbols Rounded",
+          "weight": 600,
+          "fill": "$accent"
+        },
+        {
+          "type": "icon",
+          "id": "Episs",
+          "layoutPosition": "absolute",
+          "x": 22,
+          "y": 372,
+          "name": "Ornament Star Gold",
+          "rotation": 12.000000000000002,
+          "width": 28,
+          "height": 28,
+          "icon": "star",
+          "library": "Material Symbols Rounded",
+          "weight": 600,
+          "fill": "$gold"
+        },
+        {
+          "id": "Y4GOo",
+          "type": "ref",
+          "ref": "s2Vhb",
+          "name": "Ornament Flower Bottom Right",
+          "layoutPosition": "absolute",
+          "x": 304,
+          "y": 440
+        },
+        {
+          "id": "H9yUO",
+          "type": "ref",
+          "ref": "VhrqG",
+          "name": "Status Bar"
+        },
+        {
+          "type": "frame",
+          "id": "lr33y",
+          "name": "Content",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 16,
+          "padding": [
+            76,
+            20,
+            20,
+            20
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "rWjNf",
+              "name": "Puzzle (Plan A, Stop 1)",
+              "width": "fill_container",
+              "layout": "vertical",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "jXf57",
+                  "name": "Puzzle Line 1",
+                  "fill": "$ink",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Where do you usually",
+                  "lineHeight": 1.1,
+                  "fontFamily": "$font-display",
+                  "fontSize": 34,
+                  "fontWeight": "800"
+                },
+                {
+                  "type": "text",
+                  "id": "iKBb4",
+                  "name": "Puzzle Handwritten Phrase",
+                  "fill": "$accent",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "buy kue cucur?",
+                  "lineHeight": 1,
+                  "fontFamily": "$font-hand",
+                  "fontSize": 54,
+                  "fontWeight": "800"
+                }
+              ]
+            },
+            {
+              "id": "v7d6z",
+              "type": "ref",
+              "ref": "Hs1Ix",
+              "name": "Clue Button",
+              "width": "fill_container"
+            },
+            {
+              "type": "frame",
+              "id": "T2mBCh",
+              "name": "Pointer",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 2,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "rrto1",
+                  "name": "Pointer Disc",
+                  "width": 236,
+                  "height": 236,
+                  "fill": "$gold",
+                  "cornerRadius": 118,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "ey1nu",
+                      "name": "Distance (placeholder)",
+                      "fill": "$ink",
+                      "content": "450 m",
+                      "fontFamily": "$font-display",
+                      "fontSize": 64,
+                      "fontWeight": "800"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "gDVdW",
+              "type": "ref",
+              "ref": "Y8Xu2",
+              "name": "Refresh Location Button",
+              "width": "fill_container"
+            },
+            {
+              "id": "sMr8u",
+              "type": "ref",
+              "ref": "ThVhw",
+              "name": "Having Trouble Link",
+              "width": "fill_container"
+            }
+          ]
+        },
+        {
+          "id": "jdPSN",
+          "type": "ref",
+          "ref": "el64L",
+          "name": "Boxes Counter",
+          "layoutPosition": "absolute",
+          "x": 67,
+          "y": 58,
+          "descendants": {
+            "V6JvNj": {
+              "content": "0 boxes"
+            }
+          }
+        },
+        {
+          "type": "frame",
+          "id": "TjuSr",
+          "layoutPosition": "absolute",
+          "x": 133,
+          "y": 62,
+          "name": "Admin tap zone (invisible)",
+          "width": 124,
+          "height": 56
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "G8PAv",
+      "x": 3520,
+      "y": 2915,
+      "name": "Puzzle - Over 1 km",
+      "clip": true,
+      "width": 390,
+      "fill": "$ground",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "icon",
+          "id": "nwX4c",
+          "layoutPosition": "absolute",
+          "x": 332,
+          "y": 366,
+          "name": "Ornament Party Popper Red",
+          "rotation": -10,
+          "width": 30,
+          "height": 30,
+          "icon": "celebration",
+          "library": "Material Symbols Rounded",
+          "weight": 600,
+          "fill": "$accent"
+        },
+        {
+          "type": "icon",
+          "id": "azc1t",
+          "layoutPosition": "absolute",
+          "x": 22,
+          "y": 372,
+          "name": "Ornament Star Gold",
+          "rotation": 12.000000000000002,
+          "width": 28,
+          "height": 28,
+          "icon": "star",
+          "library": "Material Symbols Rounded",
+          "weight": 600,
+          "fill": "$gold"
+        },
+        {
+          "id": "VQnIO",
+          "type": "ref",
+          "ref": "s2Vhb",
+          "name": "Ornament Flower Bottom Right",
+          "layoutPosition": "absolute",
+          "x": 304,
+          "y": 440
+        },
+        {
+          "id": "RHY2S",
+          "type": "ref",
+          "ref": "VhrqG",
+          "name": "Status Bar"
+        },
+        {
+          "type": "frame",
+          "id": "kzl8l",
+          "name": "Content",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 16,
+          "padding": [
+            76,
+            20,
+            20,
+            20
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "J479CY",
+              "name": "Puzzle (Plan A, Stop 1)",
+              "width": "fill_container",
+              "layout": "vertical",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "DMIMn",
+                  "name": "Puzzle Line 1",
+                  "fill": "$ink",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Where do you usually",
+                  "lineHeight": 1.1,
+                  "fontFamily": "$font-display",
+                  "fontSize": 34,
+                  "fontWeight": "800"
+                },
+                {
+                  "type": "text",
+                  "id": "HKyxa",
+                  "name": "Puzzle Handwritten Phrase",
+                  "fill": "$accent",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "buy kue cucur?",
+                  "lineHeight": 1,
+                  "fontFamily": "$font-hand",
+                  "fontSize": 54,
+                  "fontWeight": "800"
+                }
+              ]
+            },
+            {
+              "id": "l3noT",
+              "type": "ref",
+              "ref": "Hs1Ix",
+              "name": "Clue Button",
+              "width": "fill_container"
+            },
+            {
+              "type": "frame",
+              "id": "NJYOR",
+              "name": "Pointer",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 2,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "APDdr",
+                  "name": "Pointer Disc",
+                  "width": 236,
+                  "height": 236,
+                  "fill": "$gold",
+                  "cornerRadius": 118,
+                  "layout": "none",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "SM1ME",
+                      "x": 110.5,
+                      "y": 20.5,
+                      "name": "Pointer Arrow",
+                      "rotation": -28,
+                      "width": 128,
+                      "height": 128,
+                      "icon": "navigation",
+                      "library": "Material Symbols Rounded",
+                      "weight": 700,
+                      "fill": "$ink"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "X2JLnR",
+                  "name": "Distance (over 1 km)",
+                  "fill": "$ink",
+                  "content": "1.2 km",
+                  "fontFamily": "$font-display",
+                  "fontSize": 64,
+                  "fontWeight": "800"
+                },
+                {
+                  "type": "text",
+                  "id": "m3zC2F",
+                  "name": "Far Note (draft)",
+                  "fill": "$accent",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "still a way to go",
+                  "lineHeight": 1,
+                  "textAlign": "center",
+                  "fontFamily": "$font-hand",
+                  "fontSize": 40,
+                  "fontWeight": "700"
+                }
+              ]
+            },
+            {
+              "id": "Qj7BP",
+              "type": "ref",
+              "ref": "Y8Xu2",
+              "name": "Refresh Location Button",
+              "width": "fill_container"
+            },
+            {
+              "id": "PYrrg",
+              "type": "ref",
+              "ref": "ThVhw",
+              "name": "Having Trouble Link",
+              "width": "fill_container"
+            }
+          ]
+        },
+        {
+          "id": "CvKg2",
+          "type": "ref",
+          "ref": "el64L",
+          "name": "Boxes Counter",
+          "layoutPosition": "absolute",
+          "x": 67,
+          "y": 58,
+          "descendants": {
+            "V6JvNj": {
+              "content": "0 boxes"
+            }
+          }
+        },
+        {
+          "type": "frame",
+          "id": "eZM5o",
+          "layoutPosition": "absolute",
+          "x": 133,
+          "y": 62,
+          "name": "Admin tap zone (invisible)",
+          "width": 124,
+          "height": 56
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "YUThp",
+      "x": 3960,
+      "y": 2915,
+      "name": "Puzzle - Arrival range",
+      "clip": true,
+      "width": 390,
+      "fill": "$ground",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "icon",
+          "id": "WAsrt",
+          "layoutPosition": "absolute",
+          "x": 332,
+          "y": 366,
+          "name": "Ornament Party Popper Red",
+          "rotation": -10,
+          "width": 30,
+          "height": 30,
+          "icon": "celebration",
+          "library": "Material Symbols Rounded",
+          "weight": 600,
+          "fill": "$accent"
+        },
+        {
+          "type": "icon",
+          "id": "HzvgL",
+          "layoutPosition": "absolute",
+          "x": 22,
+          "y": 372,
+          "name": "Ornament Star Gold",
+          "rotation": 12.000000000000002,
+          "width": 28,
+          "height": 28,
+          "icon": "star",
+          "library": "Material Symbols Rounded",
+          "weight": 600,
+          "fill": "$gold"
+        },
+        {
+          "id": "TYGdo",
+          "type": "ref",
+          "ref": "s2Vhb",
+          "name": "Ornament Flower Bottom Right",
+          "layoutPosition": "absolute",
+          "x": 304,
+          "y": 440
+        },
+        {
+          "id": "ufV7O",
+          "type": "ref",
+          "ref": "VhrqG",
+          "name": "Status Bar"
+        },
+        {
+          "type": "frame",
+          "id": "OPZGW",
+          "name": "Content",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 16,
+          "padding": [
+            76,
+            20,
+            20,
+            20
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "ddeOx",
+              "name": "Puzzle (Plan A, Stop 1)",
+              "width": "fill_container",
+              "layout": "vertical",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "xk4sn",
+                  "name": "Puzzle Line 1",
+                  "fill": "$ink",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Where do you usually",
+                  "lineHeight": 1.1,
+                  "fontFamily": "$font-display",
+                  "fontSize": 34,
+                  "fontWeight": "800"
+                },
+                {
+                  "type": "text",
+                  "id": "JMwIF",
+                  "name": "Puzzle Handwritten Phrase",
+                  "fill": "$accent",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "buy kue cucur?",
+                  "lineHeight": 1,
+                  "fontFamily": "$font-hand",
+                  "fontSize": 54,
+                  "fontWeight": "800"
+                }
+              ]
+            },
+            {
+              "id": "RrFe7",
+              "type": "ref",
+              "ref": "Hs1Ix",
+              "name": "Clue Button",
+              "width": "fill_container"
+            },
+            {
+              "type": "frame",
+              "id": "VI6rF",
+              "name": "Pointer",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 2,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "IUFpG",
+                  "name": "Pointer Disc",
+                  "width": 236,
+                  "height": 236,
+                  "fill": "$gold",
+                  "cornerRadius": 118,
+                  "layout": "none",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "p5nDbP",
+                      "x": 110.5,
+                      "y": 20.5,
+                      "name": "Pointer Arrow",
+                      "rotation": -28,
+                      "width": 128,
+                      "height": 128,
+                      "icon": "navigation",
+                      "library": "Material Symbols Rounded",
+                      "weight": 700,
+                      "fill": "$ink"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "GFGPp",
+                  "name": "Distance (under 50 m)",
+                  "fill": "$accent",
+                  "content": "You're here!",
+                  "fontFamily": "$font-hand",
+                  "fontSize": 64,
+                  "fontWeight": "800"
+                }
+              ]
+            },
+            {
+              "id": "D8S00N",
+              "type": "ref",
+              "ref": "Y8Xu2",
+              "name": "Refresh Location Button",
+              "width": "fill_container"
+            },
+            {
+              "id": "h27FQ1",
+              "type": "ref",
+              "ref": "ThVhw",
+              "name": "Having Trouble Link",
+              "width": "fill_container"
+            }
+          ]
+        },
+        {
+          "id": "sIDFi",
+          "type": "ref",
+          "ref": "el64L",
+          "name": "Boxes Counter",
+          "layoutPosition": "absolute",
+          "x": 67,
+          "y": 58,
+          "descendants": {
+            "V6JvNj": {
+              "content": "0 boxes"
+            }
+          }
+        },
+        {
+          "type": "frame",
+          "id": "G4rNY5",
+          "layoutPosition": "absolute",
+          "x": 133,
+          "y": 62,
+          "name": "Admin tap zone (invisible)",
+          "width": 124,
+          "height": 56
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "xJ4oB",
+      "x": 880,
+      "y": 3847,
+      "name": "Puzzle - Plan B Puzzle (counter hidden)",
+      "clip": true,
+      "width": 390,
+      "fill": "$ground",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "icon",
+          "id": "OTvQ1",
+          "layoutPosition": "absolute",
+          "x": 332,
+          "y": 366,
+          "name": "Ornament Party Popper Red",
+          "rotation": -10,
+          "width": 30,
+          "height": 30,
+          "icon": "celebration",
+          "library": "Material Symbols Rounded",
+          "weight": 600,
+          "fill": "$accent"
+        },
+        {
+          "type": "icon",
+          "id": "HSUMV",
+          "layoutPosition": "absolute",
+          "x": 22,
+          "y": 372,
+          "name": "Ornament Star Gold",
+          "rotation": 12.000000000000002,
+          "width": 28,
+          "height": 28,
+          "icon": "star",
+          "library": "Material Symbols Rounded",
+          "weight": 600,
+          "fill": "$gold"
+        },
+        {
+          "id": "fqBbI",
+          "type": "ref",
+          "ref": "s2Vhb",
+          "name": "Ornament Flower Bottom Right",
+          "layoutPosition": "absolute",
+          "x": 304,
+          "y": 440
+        },
+        {
+          "id": "MXjKE",
+          "type": "ref",
+          "ref": "VhrqG",
+          "name": "Status Bar"
+        },
+        {
+          "type": "frame",
+          "id": "pi1kG",
+          "name": "Content",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 16,
+          "padding": [
+            76,
+            20
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "S2ZZe",
+              "name": "Puzzle (Plan B, Stop 1)",
+              "width": "fill_container",
+              "layout": "vertical",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "SByBf",
+                  "name": "Puzzle Line 1",
+                  "fill": "$ink",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Where do we usually",
+                  "lineHeight": 1.1,
+                  "fontFamily": "$font-display",
+                  "fontSize": 34,
+                  "fontWeight": "800"
+                },
+                {
+                  "type": "text",
+                  "id": "G61q0x",
+                  "name": "Puzzle Handwritten Phrase",
+                  "fill": "$accent",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "go sightseeing?",
+                  "lineHeight": 1,
+                  "fontFamily": "$font-hand",
+                  "fontSize": 54,
+                  "fontWeight": "800"
+                }
+              ]
+            },
+            {
+              "id": "XKj21",
+              "type": "ref",
+              "ref": "Hs1Ix",
+              "name": "Clue Button",
+              "width": "fill_container"
+            },
+            {
+              "type": "frame",
+              "id": "IDUeI",
+              "name": "Pointer",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 2,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "mRX2T",
+                  "name": "Pointer Disc",
+                  "width": 236,
+                  "height": 236,
+                  "fill": "$gold",
+                  "cornerRadius": 118,
+                  "layout": "none",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "HdtJ7",
+                      "x": 54,
+                      "y": 54,
+                      "name": "Pointer Arrow",
+                      "width": 128,
+                      "height": 128,
+                      "icon": "location_searching",
+                      "library": "Material Symbols Rounded",
+                      "weight": 700,
+                      "fill": "$ink"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "Pmvc5",
+                  "name": "Distance (placeholder)",
+                  "fill": "$ink",
+                  "content": "450 m",
+                  "fontFamily": "$font-display",
+                  "fontSize": 64,
+                  "fontWeight": "800"
+                }
+              ]
+            },
+            {
+              "id": "L1rzPF",
+              "type": "ref",
+              "ref": "Y8Xu2",
+              "name": "Refresh Location Button",
+              "width": "fill_container"
+            },
+            {
+              "id": "OcZwz",
+              "type": "ref",
+              "ref": "ThVhw",
+              "name": "Having Trouble Link",
+              "width": "fill_container"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "MpiNW",
+          "layoutPosition": "absolute",
+          "x": 133,
+          "y": 62,
+          "name": "Admin tap zone (invisible)",
+          "width": 124,
+          "height": 56
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "y0kQu",
+      "x": 1760,
+      "y": 3847,
+      "name": "Arrival",
+      "clip": true,
+      "width": 390,
+      "height": 844,
+      "fill": "$ground",
+      "layout": "vertical",
+      "children": [
+        {
+          "id": "XYifw",
+          "type": "ref",
+          "ref": "s2Vhb",
+          "name": "Ornament Flower Top Left",
+          "layoutPosition": "absolute",
+          "x": -40,
+          "y": 70
+        },
+        {
+          "id": "nnJNF",
+          "type": "ref",
+          "ref": "R271s",
+          "name": "Ornament Lily Bottom Right",
+          "layoutPosition": "absolute",
+          "x": 300,
+          "y": 612
+        },
+        {
+          "type": "icon",
+          "id": "rS4VI",
+          "layoutPosition": "absolute",
+          "x": 310,
+          "y": 160,
+          "name": "Ornament Star Gold",
+          "rotation": 12.000000000000002,
+          "width": 30,
+          "height": 30,
+          "icon": "star",
+          "library": "Material Symbols Rounded",
+          "weight": 600,
+          "fill": "$gold"
+        },
+        {
+          "type": "icon",
+          "id": "YJhfL",
+          "layoutPosition": "absolute",
+          "x": 322,
+          "y": 340,
+          "name": "Ornament Party Popper Red",
+          "rotation": -10,
+          "width": 32,
+          "height": 32,
+          "icon": "celebration",
+          "library": "Material Symbols Rounded",
+          "weight": 600,
+          "fill": "$accent"
+        },
+        {
+          "type": "icon",
+          "id": "AD4vW",
+          "layoutPosition": "absolute",
+          "x": 44,
+          "y": 300,
+          "name": "Ornament Heart Red",
+          "rotation": -8,
+          "width": 26,
+          "height": 26,
+          "icon": "favorite",
+          "library": "Material Symbols Rounded",
+          "weight": 600,
+          "fill": "$accent"
+        },
+        {
+          "id": "Cd6Lb",
+          "type": "ref",
+          "ref": "VhrqG",
+          "name": "Status Bar"
+        },
+        {
+          "type": "frame",
+          "id": "BNn6I",
+          "name": "Content",
+          "width": "fill_container",
+          "height": "fill_container",
+          "layout": "vertical",
+          "padding": [
+            0,
+            20,
+            28,
+            20
+          ],
+          "justifyContent": "space_between",
+          "children": [
+            {
+              "type": "frame",
+              "id": "pbHie",
+              "name": "Congratulation",
+              "width": "fill_container",
+              "height": "fill_container",
+              "layout": "vertical",
+              "gap": 16,
+              "padding": [
+                0,
+                0,
+                80,
+                0
+              ],
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "Xy0Wy",
+                  "name": "Arrival Disc",
+                  "width": 200,
+                  "height": 200,
+                  "fill": "$gold",
+                  "cornerRadius": 100,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "rEHTG",
+                      "name": "Arrival Check",
+                      "width": 128,
+                      "height": 128,
+                      "icon": "check",
+                      "library": "Material Symbols Rounded",
+                      "weight": 700,
+                      "fill": "$ink"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "gxTtA",
+                  "name": "Arrival Title (draft)",
+                  "fill": "$ink",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "You found it!",
+                  "lineHeight": 1.05,
+                  "textAlign": "center",
+                  "fontFamily": "$font-display",
+                  "fontSize": 48,
+                  "fontWeight": "800"
+                },
+                {
+                  "type": "text",
+                  "id": "YOW9T",
+                  "name": "Stop Name (Plan A, Stop 1)",
+                  "fill": "$accent",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Pandan Haur",
+                  "lineHeight": 1,
+                  "textAlign": "center",
+                  "fontFamily": "$font-hand",
+                  "fontSize": 54,
+                  "fontWeight": "700"
+                }
+              ]
+            },
+            {
+              "id": "zZSJQ",
+              "type": "ref",
+              "ref": "Hs1Ix",
+              "name": "Continue Button",
+              "width": "fill_container",
+              "height": 64,
+              "descendants": {
+                "HsIhc": {
+                  "icon": "arrow_forward"
+                },
+                "C3TJA": {
+                  "content": "Continue",
+                  "fontSize": 22
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "qvQrQ",
+          "layoutPosition": "absolute",
+          "x": 133,
+          "y": 62,
+          "name": "Admin tap zone (invisible)",
+          "width": 124,
+          "height": 56
+        }
+      ]
+    },
     }
   ],
   "variables": {
