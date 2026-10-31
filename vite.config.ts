@@ -5,6 +5,6 @@ import { defineConfig } from 'vite'
 
 export default defineConfig({
   plugins: [react(), tailwindcss(), cloudflare()],
-  server: { port: 5183, strictPort: true },
-  preview: { port: 4183, strictPort: true },
+  server: { host: '127.0.0.1', port: 5183, strictPort: true },
+  preview: { host: '127.0.0.1', port: 4183, strictPort: true },
 })
