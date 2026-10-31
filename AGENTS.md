@@ -13,4 +13,4 @@ Vocabulary lives in [GLOSSARY.md](./GLOSSARY.md). Use those terms exactly (Stop,
 
 This project uses npm. Commands (created in the foundation phase): `npm test`, `npm run typecheck`, `npm run build`.
 
-Never push a git tag or run `wrangler deploy`: a tag deploys to her phone, and only the user decides when. Dev ports are pinned in config; the harness injects `PORT` and `NODE_ENV`, so don't trust them.
+Never push a git tag or run `wrangler deploy`: a tag deploys to her phone, and only the user decides when. Dev ports are pinned in config.

@@ -14,7 +14,7 @@ Vite, React, TSX and Tailwind v4, on one Cloudflare Worker with static assets. S
 - Deploys: tag-triggered, so pushing a tag is the only way a version reaches her phone. Planned mechanism is a GitHub Actions workflow on tag push using `cloudflare/wrangler-action`, with `CLOUDFLARE_API_TOKEN` and `CLOUDFLARE_ACCOUNT_ID` stored as GitHub secrets, never in the repo. Cloudflare's own Workers Builds docs describe deploys on pushes to a production branch and say nothing about tags. The tag trigger is untested: verify it before relying on it.
 - Cloudflare account: free plan (unconfirmed). The Rate Limiting binding, Workers AI and KV limits on it are listed in [WORKER.md](./WORKER.md).
 - Repo is public, never commit `.dev.vars`, tokens or the log-page token. Raw uncompressed originals go in `media-raw/`, which `.gitignore` excludes; only compressed copies are committed.
-- Dev ports are pinned in config (the harness injects `PORT=4099` and `NODE_ENV=production`).
+- Dev ports are pinned in config.
 - Tests: Vitest for logic and Worker, Playwright for visual regression.
 
 ## Order
