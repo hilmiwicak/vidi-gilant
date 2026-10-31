@@ -1,0 +1,15 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-ground: #ffffff;
+  --color-surface: #ffffff;
+  --color-ink: #231815;
+  --color-ink-soft: #5a4a44;
+  --color-accent: #b8290f;
+  --color-gold: #ffb627;
+  --color-on-ink: #ffffff;
+  --color-flower-tint: #b8290f1a;
+
+  --radius-control: 20px;
+  --radius-pill: 28px;
+}
