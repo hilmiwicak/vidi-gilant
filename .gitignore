@@ -11,9 +11,10 @@ media-raw/
 node_modules/
 dist/
 
-# Test output (committed Playwright snapshot baselines are NOT ignored)
-playwright-report/
-test-results/
+# Ralph runtime state and local logs
+ralph/.ralph-runner/
+ralph/.ralph-runner-archive/
+ralph/RALPH_PROGRESS.md
 
 .DS_Store
 
