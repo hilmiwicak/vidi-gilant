@@ -10,6 +10,8 @@
     "typecheck": "npm run cf-typegen && tsc -b",
     "test": "vitest run",
     "lint": "oxlint",
+    "format": "prettier --write \"src/**/*.{ts,tsx}\" \"worker/**/*.ts\" \"*.ts\"",
+    "format:check": "prettier --check \"src/**/*.{ts,tsx}\" \"worker/**/*.ts\" \"*.ts\"",
     "cf-typegen": "wrangler types"
   },
   "dependencies": {
@@ -24,6 +26,7 @@
     "@types/react-dom": "^19.3.0",
     "@vitejs/plugin-react": "^6.1.2",
     "oxlint": "^1.88.0",
+    "prettier": "^3.10.1",
     "tailwindcss": "^4.3.3",
     "typescript": "~6.0.3",
     "vite": "^8.3.4",

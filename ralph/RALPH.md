@@ -16,6 +16,10 @@ commands:
     run: npm run lint
     timeout: 120
     acceptance: true
+  - name: format
+    run: npm run format:check
+    timeout: 120
+    acceptance: true
   - name: git-state
     run: git status --short && git branch --show-current && git log --oneline -10
     timeout: 30
@@ -118,7 +122,7 @@ Work on one small, complete vertical slice per iteration. Add or update automate
 
 When Phase 3 is complete:
 
-1. Run `npm test`, `npm run typecheck`, `npm run build`, and `npm run lint`.
+1. Run `npm test`, `npm run typecheck`, `npm run build`, `npm run lint`, and `npm run format:check`.
 2. For every implemented screen, capture the running localhost screen and compare it with the corresponding approved Pencil frame. Fix meaningful differences before continuing.
 3. Mark only Phase 3 complete in `docs/BUILD-PLAN.md` when the Phase 3 PR is ready.
 4. Push only `phase-3-core-hunt` and open its PR targeting `main`. If either operation fails, do not emit the completion promise.

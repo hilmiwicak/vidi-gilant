@@ -7,7 +7,7 @@ The phases in [BUILD-PLAN.md](./BUILD-PLAN.md) are the work list. There are no G
 - One branch and one pull request per phase, named `phase-<n>-<slug>`, for example `phase-4-pointer`.
 - A new phase branch starts from the current `main` only after the previous phase's PR has been merged into `main`.
 - Every phase PR targets `main`. The user reviews, resolves conversations and merges PRs. The agent never merges.
-- Open the PR when the phase's checks pass (`npm test`, `npm run typecheck`, `npm run build`).
+- Open the PR when the phase's checks pass (`npm test`, `npm run typecheck`, `npm run build`, `npm run lint`, `npm run format:check`).
 - When a phase is finished, mark it done in `BUILD-PLAN.md` so a fresh iteration knows where to resume.
 - After merging a phase PR, delete its remote branch and update local `main` before starting the next phase.
 

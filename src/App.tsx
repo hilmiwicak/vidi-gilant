@@ -3,5 +3,5 @@ export default function App() {
     <main className="flex min-h-dvh items-center justify-center bg-ground text-ink">
       <h1 className="text-4xl font-bold">Vidi</h1>
     </main>
-  )
+  );
 }

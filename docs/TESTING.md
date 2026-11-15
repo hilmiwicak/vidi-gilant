@@ -2,7 +2,7 @@
 
 ## Automated (the Ralph loop can run these)
 
-Each phase ends with tests, typecheck and build passing.
+Each phase ends with tests, typecheck, build, lint and Prettier (`npm run format:check`) passing. Code style is Prettier's, configured in `.prettierrc.json`; do not hand-format around it.
 
 - Distance and bearing, meters vs km formatting
 - Arrival rule: radius, accuracy limits, two consecutive readings

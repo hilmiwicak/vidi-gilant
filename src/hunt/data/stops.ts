@@ -1,4 +1,4 @@
-import type { Stop } from '../types'
+import type { Stop } from '../types';
 
 // Coordinates are placeholders. Replace each with its Capture here value on a scouting visit.
 // Photos, outlines and Codes are placeholders too: the files do not exist yet.
@@ -8,7 +8,7 @@ function stop(id: string, fields: Omit<Stop, 'id' | 'referencePhoto' | 'outlineI
     referencePhoto: `/stops/${id}/reference.jpg`,
     outlineImage: `/stops/${id}/outline.svg`,
     ...fields,
-  }
+  };
 }
 
 export const pandanHaur = stop('pandan-haur', {
@@ -20,7 +20,7 @@ export const pandanHaur = stop('pandan-haur', {
     clue: 'Your "safe space", yang di mana kamu takut kalau tiba-tiba ketemu orang tua aku wkwk.',
   },
   code: 'PLACEHOLDER-PANDAN-HAUR',
-})
+});
 
 export const popeyes = stop('popeyes-parigi', {
   name: 'Popeyes Bintaro, Parigi',
@@ -31,7 +31,7 @@ export const popeyes = stop('popeyes-parigi', {
     clue: 'Ada burger yang gak abis, jadi aku bawa pulang. Besoknya Idul Adha.',
   },
   code: 'PLACEHOLDER-POPEYES',
-})
+});
 
 export const naomiYura = stop('naomi-yura', {
   name: 'Naomi Yura Agency',
@@ -42,7 +42,7 @@ export const naomiYura = stop('naomi-yura', {
     clue: 'Vintage, Kebayoran.',
   },
   code: 'PLACEHOLDER-NAOMI-YURA',
-})
+});
 
 export const coldMoo = stop('cold-moo', {
   name: 'Cold Moo, Dharmawangsa',
@@ -53,7 +53,7 @@ export const coldMoo = stop('cold-moo', {
     clue: 'Kamu marah that day gara-gara aku telat wkwk.',
   },
   code: 'PLACEHOLDER-COLD-MOO',
-})
+});
 
 export const lot17 = stop('lot-17', {
   name: 'Lot 17 parking lot, SCBD',
@@ -64,7 +64,7 @@ export const lot17 = stop('lot-17', {
     clue: 'Banyak orang minum dan nongkrong dgn bagasi mobilnya dibuka di sini',
   },
   code: 'PLACEHOLDER-LOT-17',
-})
+});
 
 export const supagetti = stop('supagetti', {
   name: 'Supagetti, Prapanca',
@@ -75,4 +75,4 @@ export const supagetti = stop('supagetti', {
     clue: 'Italian and Japanese mix, near Daring Deli.',
   },
   code: 'PLACEHOLDER-SUPAGETTI',
-})
+});
