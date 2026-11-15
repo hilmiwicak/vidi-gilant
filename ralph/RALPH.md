@@ -36,14 +36,18 @@ completion_promise: PHASE_3_READY_FOR_REVIEW
 completion_gate: required
 required_outputs:
   - OPEN_QUESTIONS.md
-stop_on_error: true
+stop_on_error: false
 guardrails:
   block_commands:
-    - 'git\s+push\s+(?:[^\n]*\s)?main(?:\s|$)'
+    - 'git\s+push\b[^\n]*(?:\bmain\b|:main\b|refs/heads/main)'
     - 'git\s+push\s+.*--tags'
     - 'git\s+tag(?:\s|$)'
     - 'git\s+push\s+.*--force'
     - 'git\s+reset\s+--hard'
+    - 'git\s+checkout\s+\.'
+    - 'git\s+restore\s+\.'
+    - 'git\s+clean\s+-[a-z]*f'
+    - 'git\s+stash\s+(?:drop|clear)'
     - 'git\s+merge(?:\s|$)'
     - 'gh\s+pr\s+merge(?:\s|$)'
     - 'gh\s+pr\s+close(?:\s|$)'
@@ -118,7 +122,7 @@ Start from the current `main` and create `phase-3-core-hunt` if it does not alre
 
 Before each iteration, inspect the current branch and PR state. If an open Phase 3 PR already exists, do not change it unless the user explicitly asks for fixes. If the working tree is unrelated or the branch is not based on current `main`, stop instead of guessing.
 
-Work on one small, complete vertical slice per iteration. Add or update automated tests with behavior changes. Run the relevant checks before committing. Commit only passing iterations using the Conventional Commit rules in `docs/GIT.md`, with Phase 3 in the commit body.
+Work on one small, complete vertical slice per iteration. Add or update automated tests with behavior changes. Run the relevant checks before committing. Commit only passing iterations using the Conventional Commit rules in `docs/GIT.md`, with Phase 3 in the commit body. If the session ends mid-slice, the next iteration must be able to find it, so checkpoint an unfinished slice with `git stash push -m wip` or a `wip:` commit that you squash before the PR opens.
 
 When Phase 3 is complete:
 
@@ -153,6 +157,7 @@ The user must merge the PR. This run must not begin Phase 4.
 - Do not resolve PR conversations or approve a PR. The user reviews, resolves, and merges.
 - Do not mark a phase complete merely because code exists. Require the checks and the PR boundary described above.
 - Do not claim a manual iPhone check passed unless the user reports it.
+- Checkpoint before you risk losing work. A slice that is not yet passing must still exist somewhere durable: commit it with a `wip:` prefix on the phase branch, or `git stash push -m wip`. Uncommitted files do not survive the session ending, and a fresh iteration cannot see work that was only in a previous context.
 
 ## Completion
 

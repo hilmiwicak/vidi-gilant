@@ -12,6 +12,7 @@ node_modules/
 dist/
 
 # Ralph runtime state and local logs
+.ralph-runner/
 ralph/.ralph-runner/
 ralph/.ralph-runner-archive/
 ralph/RALPH_PROGRESS.md
