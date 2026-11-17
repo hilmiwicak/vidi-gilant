@@ -1,39 +1,42 @@
 import type { PlanId, Stop } from './types';
 
+const welcomeStages = ['greeting', 'introduction'] as const;
+const missionStages = ['your-mission', 'keep-a-count', 'no-pressure'] as const;
 const lastStopStages = ['you-made-it', 'before-we-eat', 'once-again'] as const;
+
+type WelcomeStage = (typeof welcomeStages)[number];
+type MissionStage = (typeof missionStages)[number];
+type LastStopStage = (typeof lastStopStages)[number];
 
 /** There is a single path through the Hunt, so the order lives in `screens()`. */
 export type Screen =
-  | { kind: 'welcome'; stage: 'greeting' | 'introduction' }
-  | { kind: 'mission'; stage: 'your-mission' | 'keep-a-count' | 'no-pressure' }
+  | { kind: 'welcome'; stage: WelcomeStage }
+  | { kind: 'mission'; stage: MissionStage }
   | { kind: 'puzzle'; stop: number }
   | { kind: 'arrival'; stop: number }
   | { kind: 'reveal'; stop: number }
   | { kind: 'headedToLast' }
-  | { kind: 'lastStop'; stage: (typeof lastStopStages)[number] }
+  | { kind: 'lastStop'; stage: LastStopStage }
   | { kind: 'final' };
 
 /**
- * Each Stop gets Puzzle, Arrival, Reveal. The last Stop has no Reveal: its letter is the
- * Last-Stop congratulation, so it gets Puzzle, Arrival and three Stages.
+ * Each Stop gets Puzzle, Arrival and Reveal. The last Stop also gets its three
+ * Last-Stop congratulation Stages after its Reveal, before the ending screen.
  */
-export function screens(stops: readonly Stop[]): Screen[] {
-  const list: Screen[] = [
-    { kind: 'welcome', stage: 'greeting' },
-    { kind: 'welcome', stage: 'introduction' },
-    { kind: 'mission', stage: 'your-mission' },
-    { kind: 'mission', stage: 'keep-a-count' },
-    { kind: 'mission', stage: 'no-pressure' },
-  ];
+export function screens(stops: readonly Stop[], plan: PlanId = 'a'): Screen[] {
+  const list: Screen[] = welcomeStages.map((stage): Screen => ({ kind: 'welcome', stage }));
+
+  if (plan === 'a') {
+    list.push(...missionStages.map((stage): Screen => ({ kind: 'mission', stage })));
+  }
 
   const last = stops.length - 1;
-  for (let i = 0; i < last; i += 1) {
+  for (let i = 0; i <= last; i += 1) {
+    if (i === last && last > 0) list.push({ kind: 'headedToLast' });
     list.push({ kind: 'puzzle', stop: i }, { kind: 'arrival', stop: i }, { kind: 'reveal', stop: i });
   }
-  if (last > 0) list.push({ kind: 'headedToLast' });
   if (last >= 0) {
-    list.push({ kind: 'puzzle', stop: last }, { kind: 'arrival', stop: last });
-    for (const stage of lastStopStages) list.push({ kind: 'lastStop', stage });
+    list.push(...lastStopStages.map((stage): Screen => ({ kind: 'lastStop', stage })));
   }
   list.push({ kind: 'final' });
   return list;
@@ -64,7 +67,7 @@ export function reduce(state: HuntState, action: HuntAction, stops: readonly Sto
     return boxes === state.boxes ? state : { ...state, boxes };
   }
 
-  const list = screens(stops);
+  const list = screens(stops, state.plan);
   const current = list[state.at];
   if (!current) return state;
 
@@ -77,7 +80,7 @@ export function reduce(state: HuntState, action: HuntAction, stops: readonly Sto
 }
 
 export function currentStop(state: HuntState, stops: readonly Stop[]): Stop | undefined {
-  const screen = screens(stops)[state.at];
+  const screen = screens(stops, state.plan)[state.at];
   if (!screen) return undefined;
   if (screen.kind === 'lastStop') return stops[stops.length - 1];
   if (screen.kind === 'puzzle' || screen.kind === 'arrival' || screen.kind === 'reveal') return stops[screen.stop];

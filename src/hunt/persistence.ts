@@ -41,7 +41,7 @@ export function restoreHunt(
   // Reset to her Plan, not the default one: a corrupted value must not move her to Plan A.
   const reset = stored.plan === plan ? fallback : initialHuntState(stored.plan);
 
-  const screenCount = screens(stopsFor(stored.plan)).length;
+  const screenCount = screens(stopsFor(stored.plan), stored.plan).length;
   const at = stored.at;
   if (typeof at !== 'number' || !Number.isInteger(at) || at < 0 || at >= screenCount) return reset;
 

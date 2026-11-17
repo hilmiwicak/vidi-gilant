@@ -1,4 +1,5 @@
 import { describe, expect, it } from 'vitest';
+import type { PlanId } from './types';
 import { planA, planB } from './data/plans';
 import { currentStop, initialHuntState, reduce, screens, type HuntAction, type HuntState } from './state';
 
@@ -6,17 +7,17 @@ const stops = planA;
 const advance: HuntAction = { type: 'advance' };
 const imHere: HuntAction = { type: 'imHere' };
 
-function kindAt(state: HuntState, plan = stops) {
-  return screens(plan)[state.at].kind;
+function kindAt(state: HuntState, plan: PlanId = state.plan, planStops = stops) {
+  return screens(planStops, plan)[state.at].kind;
 }
 
 /** Play forward to the first screen of this kind, pressing "I'm here" on Puzzles. */
-function playTo(kind: string, plan = stops, from = initialHuntState()) {
+function playTo(kind: string, plan: PlanId = 'a', planStops = stops, from = initialHuntState(plan)) {
   let state = from;
   for (let i = 0; i < 200; i += 1) {
-    if (kindAt(state, plan) === kind) return state;
-    const action = kindAt(state, plan) === 'puzzle' ? imHere : advance;
-    const next = reduce(state, action, plan);
+    if (kindAt(state, plan, planStops) === kind) return state;
+    const action = kindAt(state, plan, planStops) === 'puzzle' ? imHere : advance;
+    const next = reduce(state, action, planStops);
     if (next === state) break;
     state = next;
   }
@@ -24,8 +25,8 @@ function playTo(kind: string, plan = stops, from = initialHuntState()) {
 }
 
 describe('screens', () => {
-  it('opens with two Welcome Stages, then three Mission Stages', () => {
-    expect(screens(stops).slice(0, 5)).toEqual([
+  it('opens with two Welcome Stages, then three Mission Stages for Plan A', () => {
+    expect(screens(stops, 'a').slice(0, 5)).toEqual([
       { kind: 'welcome', stage: 'greeting' },
       { kind: 'welcome', stage: 'introduction' },
       { kind: 'mission', stage: 'your-mission' },
@@ -34,19 +35,20 @@ describe('screens', () => {
     ]);
   });
 
-  it('gives each Stop Puzzle, Arrival and Reveal, except the last', () => {
-    const list = screens(stops);
+  it('gives every Stop Puzzle, Arrival and Reveal, then the final congratulation', () => {
+    const list = screens(stops, 'a');
     const forStop = (stop: number) => list.filter((s) => 'stop' in s && s.stop === stop).map((s) => s.kind);
     expect(forStop(0)).toEqual(['puzzle', 'arrival', 'reveal']);
     expect(forStop(stops.length - 2)).toEqual(['puzzle', 'arrival', 'reveal']);
-    expect(forStop(stops.length - 1)).toEqual(['puzzle', 'arrival']);
+    expect(forStop(stops.length - 1)).toEqual(['puzzle', 'arrival', 'reveal']);
   });
 
-  it('puts "one Stop to go" before the last Puzzle, and three Last-Stop Stages after its Arrival', () => {
-    expect(screens(stops).slice(-7)).toEqual([
+  it('puts the last-Stop flow before the final screen', () => {
+    expect(screens(stops, 'a').slice(-8)).toEqual([
       { kind: 'headedToLast' },
       { kind: 'puzzle', stop: stops.length - 1 },
       { kind: 'arrival', stop: stops.length - 1 },
+      { kind: 'reveal', stop: stops.length - 1 },
       { kind: 'lastStop', stage: 'you-made-it' },
       { kind: 'lastStop', stage: 'before-we-eat' },
       { kind: 'lastStop', stage: 'once-again' },
@@ -54,8 +56,8 @@ describe('screens', () => {
     ]);
   });
 
-  it('drops "one Stop to go" for a Plan with a single Stop', () => {
-    const kinds = screens([planA[0]]).map((s) => s.kind);
+  it('drops the heading screen for a Plan with a single Stop', () => {
+    const kinds = screens([planA[0]], 'a').map((s) => s.kind);
     expect(kinds).not.toContain('headedToLast');
     expect(kinds.filter((k) => k === 'lastStop')).toHaveLength(3);
   });
@@ -132,7 +134,17 @@ describe('currentStop', () => {
 
 describe('Plan B', () => {
   it('walks to the final screen through its own Stops', () => {
-    expect(kindAt(playTo('final', planB), planB)).toBe('final');
+    expect(kindAt(playTo('final', 'b', planB), 'b', planB)).toBe('final');
     expect(initialHuntState('b').plan).toBe('b');
+  });
+
+  it('skips the optional Mission in Plan B', () => {
+    const list = screens(planB, 'b');
+    expect(list.slice(0, 3)).toEqual([
+      { kind: 'welcome', stage: 'greeting' },
+      { kind: 'welcome', stage: 'introduction' },
+      { kind: 'puzzle', stop: 0 },
+    ]);
+    expect(list.some((screen) => screen.kind === 'mission')).toBe(false);
   });
 });

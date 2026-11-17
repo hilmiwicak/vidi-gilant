@@ -28,7 +28,7 @@ describe('restoreHunt', () => {
   });
 
   it('returns her to exactly where she was, including the last screen', () => {
-    const lastAt = screens(planB).length - 1;
+    const lastAt = screens(planB, 'b').length - 1;
     const state: HuntState = { plan: 'b', at: lastAt, boxes: 4 };
     const storage = memoryStorage();
     saveHunt(storage, state);
@@ -37,7 +37,7 @@ describe('restoreHunt', () => {
 
   it('round-trips every screen in both Plans', () => {
     for (const plan of [planA, planB]) {
-      screens(plan).forEach((_screen, at) => {
+      screens(plan, plan === planA ? 'a' : 'b').forEach((_screen, at) => {
         const storage = memoryStorage();
         const state: HuntState = { plan: plan === planA ? 'a' : 'b', at, boxes: 2 };
         saveHunt(storage, state);
@@ -67,7 +67,7 @@ describe('restoreHunt', () => {
   });
 
   it('discards a screen index that the saved Plan does not have', () => {
-    const tooFar = JSON.stringify({ version: 1, plan: 'b', at: screens(planB).length, boxes: 0 });
+    const tooFar = JSON.stringify({ version: 1, plan: 'b', at: screens(planB, 'b').length, boxes: 0 });
     expect(restore(memoryStorage(tooFar))).toEqual(initialHuntState('b'));
   });
 
