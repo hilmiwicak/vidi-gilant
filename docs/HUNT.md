@@ -67,7 +67,7 @@ Each Reveal frame has a handwritten heading (draft), one card, and "Continue". T
 
 ## Mission and Boxes counter
 
-She hands out 10 to 20 prepared food boxes. The counter has +1 and -1, no target, no verification, and never gates progress. The ending screen shows the total (only if the counter was used).
+She hands out 10 to 20 prepared food boxes. The counter has +1 and -1, no target, no verification, and never gates progress. The ending screen shows the total.
 
 ## Admin mode
 
