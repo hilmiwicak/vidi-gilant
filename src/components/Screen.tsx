@@ -1,6 +1,5 @@
 import type { ReactNode } from 'react';
 import { Icon } from './Icon';
-import { StatusBar } from './StatusBar';
 
 /** One small gold or red decorative icon, placed absolutely inside the screen. */
 export function Ornament({
@@ -57,7 +56,6 @@ export function Screen({
     <div className={`flex justify-center bg-ground ${scroll ? 'h-dvh' : 'min-h-dvh'}`}>
       <div className={`relative flex w-full max-w-[390px] flex-col overflow-hidden ${scroll ? 'h-full' : ''}`}>
         {ornaments}
-        <StatusBar />
         <div className={`flex flex-1 flex-col ${scroll ? 'min-h-0 overflow-y-auto' : ''}`}>{children}</div>
         {floating}
         {overlay}
