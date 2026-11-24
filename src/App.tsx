@@ -3,6 +3,7 @@ import type { HuntAction, HuntState, Screen } from './hunt/state';
 import { MissionKeepCount } from './screens/MissionKeepCount';
 import { MissionNoPressure } from './screens/MissionNoPressure';
 import { MissionYourMission } from './screens/MissionYourMission';
+import { Puzzle } from './screens/Puzzle';
 import { WelcomeGreeting } from './screens/WelcomeGreeting';
 import { WelcomeIntroduction } from './screens/WelcomeIntroduction';
 
@@ -67,7 +68,13 @@ function DebugShell({
 }
 
 export default function App() {
-  const { state, screen, dispatch } = useHunt();
+  const { state, stops, screen, dispatch } = useHunt();
+
+  const counter = {
+    boxes: state.boxes,
+    onSubtract: () => dispatch({ type: 'boxes', delta: -1 }),
+    onAdd: () => dispatch({ type: 'boxes', delta: 1 }),
+  };
 
   if (screen.kind === 'welcome' && screen.stage === 'greeting') {
     return <WelcomeGreeting onNext={() => dispatch({ type: 'advance' })} />;
@@ -78,16 +85,15 @@ export default function App() {
   }
 
   if (screen.kind === 'mission') {
-    const counter = {
-      boxes: state.boxes,
-      onSubtract: () => dispatch({ type: 'boxes', delta: -1 }),
-      onAdd: () => dispatch({ type: 'boxes', delta: 1 }),
-    };
     const onNext = () => dispatch({ type: 'advance' });
 
     if (screen.stage === 'your-mission') return <MissionYourMission onNext={onNext} />;
     if (screen.stage === 'keep-a-count') return <MissionKeepCount {...counter} onNext={onNext} />;
     return <MissionNoPressure {...counter} onNext={onNext} />;
+  }
+
+  if (screen.kind === 'puzzle') {
+    return <Puzzle stop={stops[screen.stop]} showCounter={state.plan === 'a'} {...counter} />;
   }
 
   return <DebugShell state={state} screen={screen} dispatch={dispatch} />;

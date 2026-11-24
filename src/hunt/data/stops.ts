@@ -18,7 +18,7 @@ export const pandanHaur = stop('pandan-haur', {
   puzzle: {
     lead: 'Where do you usually',
     phrase: 'buy kue cucur?',
-    clue: 'Your "safe space", yang di mana kamu takut kalau tiba-tiba ketemu orang tua aku wkwk.',
+    clue: 'Your “safe space”, yang di mana kamu takut kalau tiba-tiba ketemu orang tua aku wkwk.',
   },
   code: 'PLACEHOLDER-PANDAN-HAUR',
 });

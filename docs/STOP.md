@@ -4,7 +4,7 @@
 
 | Stop | Where | Puzzle | Clue |
 |---|---|---|---|
-| Stop 1 | Pandan Haur, Fresh Market Emerald Bintaro | Where do you usually buy kue cucur? | Your "safe space", yang di mana kamu takut kalau tiba-tiba ketemu orang tua aku wkwk. |
+| Stop 1 | Pandan Haur, Fresh Market Emerald Bintaro | Where do you usually buy kue cucur? | Your “safe space”, yang di mana kamu takut kalau tiba-tiba ketemu orang tua aku wkwk. |
 | Stop 2 | Popeyes Bintaro, Parigi | Where did we eat together for the first time? | Ada burger yang gak abis, jadi aku bawa pulang. Besoknya Idul Adha. |
 | Stop 3 | Naomi Yura Agency | Where did we go for our first photobox? | Vintage, Kebayoran. |
 | Stop 4 | Cold Moo, Dharmawangsa | Where did we go on our first ice cream date? | Kamu marah that day gara-gara aku telat wkwk. |
