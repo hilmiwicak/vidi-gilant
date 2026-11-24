@@ -1,6 +1,6 @@
 import { FlowerLilyWhite, FlowerRedGold } from '../components/Art';
 import { ButtonPrimary } from '../components/ButtonPrimary';
-import { Ornament, Screen } from '../components/Screen';
+import { Ornament, OrnamentBox, Screen } from '../components/Screen';
 import { requestPointerPermissions } from '../hunt/permissions';
 
 /** Welcome Stage 2, the approved "Welcome - Stage 2" frame. */
@@ -9,17 +9,17 @@ export function WelcomeIntroduction({ onStart }: { onStart: () => void }) {
     <Screen
       ornaments={
         <>
-          <Ornament icon="star" x={290} y={640} size={22} tone="red" rotate={12} />
-          <Ornament icon="cake" x={210} y={690} size={30} tone="gold" rotate={8} />
-          <Ornament icon="celebration" x={160} y={638} size={27} tone="gold" flipX />
+          <Ornament icon="star" x={290} size={22} tone="red" rotate={12} bottom={182} />
+          <Ornament icon="cake" x={210} size={30} tone="gold" rotate={8} bottom={124} />
+          <Ornament icon="celebration" x={160} size={27} tone="gold" flipX bottom={179} />
           <Ornament icon="favorite" x={313} y={258} size={22} tone="gold" rotate={-8} />
           <Ornament icon="star" x={34} y={112} size={30} tone="red" rotate={-10} />
-          <div className="absolute" style={{ left: -44, top: 590 }}>
+          <OrnamentBox x={-44} bottom={93}>
             <FlowerLilyWhite />
-          </div>
-          <div className="absolute" style={{ left: 290, top: 66 }}>
+          </OrnamentBox>
+          <OrnamentBox x={290} y={66}>
             <FlowerRedGold />
-          </div>
+          </OrnamentBox>
         </>
       }
     >

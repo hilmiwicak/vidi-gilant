@@ -1,7 +1,7 @@
 import { FlowerRedGold } from '../components/Art';
 import { ButtonPrimary } from '../components/ButtonPrimary';
 import { Icon } from '../components/Icon';
-import { Ornament, Screen } from '../components/Screen';
+import { Ornament, OrnamentBox, Screen } from '../components/Screen';
 
 /** Mission Stage 1, the approved "Mission - Stage 1" frame. */
 export function MissionYourMission({ onNext }: { onNext: () => void }) {
@@ -9,15 +9,15 @@ export function MissionYourMission({ onNext }: { onNext: () => void }) {
     <Screen
       ornaments={
         <>
-          <Ornament icon="star" x={306} y={650} size={28} tone="gold" rotate={12} />
-          <Ornament icon="sunny" x={206} y={690} size={30} tone="gold" />
-          <Ornament icon="favorite" x={324} y={700} size={24} tone="red" rotate={-8} />
-          <div className="absolute" style={{ left: 306, top: 64 }}>
+          <Ornament icon="star" x={306} size={28} tone="gold" rotate={12} bottom={166} />
+          <Ornament icon="sunny" x={206} size={30} tone="gold" bottom={124} />
+          <Ornament icon="favorite" x={324} size={24} tone="red" rotate={-8} bottom={120} />
+          <OrnamentBox x={306} y={64}>
             <FlowerRedGold />
-          </div>
-          <div className="absolute" style={{ left: -38, top: 640 }}>
+          </OrnamentBox>
+          <OrnamentBox x={-38} bottom={72}>
             <FlowerRedGold />
-          </div>
+          </OrnamentBox>
         </>
       }
     >

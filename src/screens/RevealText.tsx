@@ -1,6 +1,6 @@
 import { FlowerRedGold } from '../components/Art';
 import { ButtonPrimary } from '../components/ButtonPrimary';
-import { Ornament, Screen } from '../components/Screen';
+import { Ornament, OrnamentBox, Screen } from '../components/Screen';
 
 type RevealTextProps = {
   body: string;
@@ -14,10 +14,10 @@ export function RevealText({ body, onContinue }: RevealTextProps) {
       ornaments={
         <>
           <Ornament icon="star" x={310} y={110} size={30} tone="gold" rotate={-10} />
-          <Ornament icon="favorite" x={300} y={600} size={26} tone="red" rotate={8} />
-          <div className="absolute" style={{ left: -44, top: 590 }}>
+          <Ornament icon="favorite" x={300} size={26} tone="red" rotate={8} bottom={218} />
+          <OrnamentBox x={-44} bottom={122}>
             <FlowerRedGold />
-          </div>
+          </OrnamentBox>
         </>
       }
     >

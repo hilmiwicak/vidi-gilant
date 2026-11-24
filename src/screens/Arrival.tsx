@@ -1,7 +1,7 @@
 import { FlowerLilyWhite, FlowerRedGold } from '../components/Art';
 import { ButtonPrimary } from '../components/ButtonPrimary';
 import { Icon } from '../components/Icon';
-import { Ornament, Screen } from '../components/Screen';
+import { Ornament, OrnamentBox, Screen } from '../components/Screen';
 import { shortStopName } from '../hunt/format';
 import type { Stop } from '../hunt/types';
 
@@ -19,12 +19,12 @@ export function Arrival({ stop, onContinue }: ArrivalProps) {
           <Ornament icon="star" x={310} y={160} size={30} tone="gold" rotate={12} />
           <Ornament icon="celebration" x={322} y={340} size={32} tone="red" rotate={-10} />
           <Ornament icon="favorite" x={44} y={300} size={26} tone="red" rotate={-8} />
-          <div className="absolute" style={{ left: -40, top: 70 }}>
+          <OrnamentBox x={-40} y={70}>
             <FlowerRedGold />
-          </div>
-          <div className="absolute" style={{ left: 300, top: 612 }}>
+          </OrnamentBox>
+          <OrnamentBox x={300} bottom={71}>
             <FlowerLilyWhite />
-          </div>
+          </OrnamentBox>
         </>
       }
     >

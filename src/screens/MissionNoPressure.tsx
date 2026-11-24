@@ -1,7 +1,7 @@
 import { FlowerRedGold } from '../components/Art';
 import { BoxesCounter } from '../components/BoxesCounter';
 import { ButtonPrimary } from '../components/ButtonPrimary';
-import { Ornament, Screen } from '../components/Screen';
+import { Ornament, OrnamentBox, Screen } from '../components/Screen';
 
 type MissionNoPressureProps = {
   boxes: number;
@@ -21,12 +21,12 @@ export function MissionNoPressure({ boxes, onSubtract, onAdd, onNext }: MissionN
       }
       ornaments={
         <>
-          <Ornament icon="star" x={304} y={620} size={28} tone="gold" rotate={12} />
-          <Ornament icon="sunny" x={200} y={668} size={30} tone="gold" />
-          <Ornament icon="favorite" x={318} y={690} size={24} tone="red" rotate={-8} />
-          <div className="absolute" style={{ left: -38, top: 618 }}>
+          <Ornament icon="star" x={304} size={28} tone="gold" rotate={12} bottom={196} />
+          <Ornament icon="sunny" x={200} size={30} tone="gold" bottom={146} />
+          <Ornament icon="favorite" x={318} size={24} tone="red" rotate={-8} bottom={130} />
+          <OrnamentBox x={-38} bottom={94}>
             <FlowerRedGold />
-          </div>
+          </OrnamentBox>
         </>
       }
     >

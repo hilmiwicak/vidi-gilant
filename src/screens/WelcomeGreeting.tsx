@@ -1,6 +1,6 @@
 import { FlowerLilyWhite, FlowerRedGold, FlowerSprigRedGold } from '../components/Art';
 import { ButtonPrimary } from '../components/ButtonPrimary';
-import { Ornament, Screen } from '../components/Screen';
+import { Ornament, OrnamentBox, Screen } from '../components/Screen';
 
 /** Welcome Stage 1, the approved "Welcome - Stage 1" frame. */
 export function WelcomeGreeting({ onNext }: { onNext: () => void }) {
@@ -8,17 +8,17 @@ export function WelcomeGreeting({ onNext }: { onNext: () => void }) {
     <Screen
       ornaments={
         <>
-          <Ornament icon="star" x={214} y={700} size={22} tone="gold" rotate={14} />
-          <Ornament icon="sunny" x={138} y={652} size={30} tone="gold" />
-          <Ornament icon="celebration" x={296} y={640} size={36} tone="red" />
+          <Ornament icon="star" x={214} size={22} tone="gold" rotate={14} bottom={122} />
+          <Ornament icon="sunny" x={138} size={30} tone="gold" bottom={162} />
+          <Ornament icon="celebration" x={296} size={36} tone="red" bottom={168} />
           <Ornament icon="favorite" x={200} y={150} size={24} tone="red" rotate={10} />
           <Ornament icon="star" x={34} y={132} size={32} tone="gold" rotate={-12} />
-          <div className="absolute" style={{ left: -38, top: 598 }}>
+          <OrnamentBox x={-38} bottom={114}>
             <FlowerRedGold />
-          </div>
-          <div className="absolute" style={{ left: 288, top: 64 }}>
+          </OrnamentBox>
+          <OrnamentBox x={288} y={64}>
             <FlowerLilyWhite />
-          </div>
+          </OrnamentBox>
         </>
       }
     >

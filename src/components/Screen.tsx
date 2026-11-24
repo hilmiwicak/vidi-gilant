@@ -6,6 +6,7 @@ export function Ornament({
   icon,
   x,
   y,
+  bottom,
   size,
   tone,
   rotate,
@@ -13,7 +14,9 @@ export function Ornament({
 }: {
   icon: string;
   x: number;
-  y: number;
+  y?: number;
+  /** Distance from the bottom, for ornaments below the content. */
+  bottom?: number;
   size: number;
   tone: 'gold' | 'red';
   rotate?: number;
@@ -23,21 +26,43 @@ export function Ornament({
     <div
       aria-hidden="true"
       className={`absolute ${tone === 'gold' ? 'text-gold' : 'text-accent'}`}
-      style={{ left: x, top: y }}
+      style={{ left: x, ...(bottom !== undefined ? { bottom } : { top: y ?? 0 }) }}
     >
       <Icon name={icon} size={size} rotate={rotate} flipX={flipX} />
     </div>
   );
 }
 
+/** A positioned box for flower artwork, anchored to the top or the bottom. */
+export function OrnamentBox({
+  x,
+  y,
+  bottom,
+  children,
+}: {
+  x: number;
+  y?: number;
+  bottom?: number;
+  children: ReactNode;
+}) {
+  return (
+    <div className="absolute" style={{ left: x, ...(bottom !== undefined ? { bottom } : { top: y ?? 0 }) }}>
+      {children}
+    </div>
+  );
+}
+
 /**
- * One approved screen frame: the 390 px column with the drawn Status Bar, the
+ * One approved screen frame: the 390 px column with the status-bar band, the
  * content, and the invisible Admin tap zone at the top center (x 133, y 62 —
- * see docs/DESIGN.md). `floating` sits above the content (the Mission and Puzzle
- * counters), `overlay` above that (the Clue card), and the Admin tap zone above
- * everything. `scroll` pins the column to the viewport and scrolls only the
- * content, so the counter and tap zone stay in place. The tap zone is wired up
- * in the Admin mode phase.
+ * see docs/DESIGN.md). The band is kept because the frames are laid out below
+ * it; the device draws its own bar there. `floating` sits above the content (the
+ * Mission and Puzzle counters), `overlay` above that (the Clue card), and the
+ * Admin tap zone above everything. `scroll` pins the column to the viewport and
+ * scrolls only the content, so the counter and tap zone stay in place. Only the
+ * ornaments are layered (`-z-10`); the content stays in normal flow, and the
+ * positioned counter, Clue overlay and Admin tap zone paint above it in DOM
+ * order. The tap zone is wired up in the Admin mode phase.
  */
 export function Screen({
   ornaments,
@@ -54,8 +79,17 @@ export function Screen({
 }) {
   return (
     <div className={`flex justify-center bg-ground ${scroll ? 'h-dvh' : 'min-h-dvh'}`}>
-      <div className={`relative flex w-full max-w-[390px] flex-col overflow-hidden ${scroll ? 'h-full' : ''}`}>
-        {ornaments}
+      <div
+        className={`relative isolate flex w-full max-w-[390px] flex-col overflow-hidden ${
+          scroll ? 'h-full' : 'min-h-[844px]'
+        }`}
+      >
+        {ornaments ? (
+          <div aria-hidden="true" className="pointer-events-none absolute inset-0 -z-10">
+            {ornaments}
+          </div>
+        ) : null}
+        <div className="h-[62px] shrink-0" aria-hidden="true" />
         <div className={`flex flex-1 flex-col ${scroll ? 'min-h-0 overflow-y-auto' : ''}`}>{children}</div>
         {floating}
         {overlay}
