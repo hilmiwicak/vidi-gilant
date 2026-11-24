@@ -12,7 +12,7 @@ type BoxesCounterProps = {
  */
 export function BoxesCounter({ count, onSubtract, onAdd }: BoxesCounterProps) {
   return (
-    <div className="flex items-center gap-1.5 rounded-pill border-2 border-ink bg-surface p-1">
+    <div className="flex items-center gap-1.5 rounded-pill bg-surface p-1 ring-2 ring-ink ring-inset">
       <button
         type="button"
         onClick={onSubtract}

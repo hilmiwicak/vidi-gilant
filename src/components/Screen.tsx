@@ -34,15 +34,25 @@ export function Ornament({
 /**
  * One approved screen frame: the 390 px column with the drawn Status Bar, the
  * content, and the invisible Admin tap zone at the top center (x 133, y 62 —
- * see docs/DESIGN.md). The tap zone is wired up in the Admin mode phase.
+ * see docs/DESIGN.md). `floating` sits above the content (the Mission and Puzzle
+ * counters). The tap zone is wired up in the Admin mode phase.
  */
-export function Screen({ ornaments, children }: { ornaments?: ReactNode; children: ReactNode }) {
+export function Screen({
+  ornaments,
+  floating,
+  children,
+}: {
+  ornaments?: ReactNode;
+  floating?: ReactNode;
+  children: ReactNode;
+}) {
   return (
     <div className="flex min-h-dvh justify-center bg-ground">
       <div className="relative flex w-full max-w-[390px] flex-col overflow-hidden">
         {ornaments}
         <StatusBar />
         <div className="flex flex-1 flex-col">{children}</div>
+        {floating}
         <div aria-hidden="true" className="absolute left-1/2 top-[62px] h-14 w-[124px] -translate-x-1/2" />
       </div>
     </div>

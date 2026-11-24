@@ -1,5 +1,8 @@
 import { useHunt } from './hunt/useHunt';
 import type { HuntAction, HuntState, Screen } from './hunt/state';
+import { MissionKeepCount } from './screens/MissionKeepCount';
+import { MissionNoPressure } from './screens/MissionNoPressure';
+import { MissionYourMission } from './screens/MissionYourMission';
 import { WelcomeGreeting } from './screens/WelcomeGreeting';
 import { WelcomeIntroduction } from './screens/WelcomeIntroduction';
 
@@ -72,6 +75,19 @@ export default function App() {
 
   if (screen.kind === 'welcome' && screen.stage === 'introduction') {
     return <WelcomeIntroduction onStart={() => dispatch({ type: 'advance' })} />;
+  }
+
+  if (screen.kind === 'mission') {
+    const counter = {
+      boxes: state.boxes,
+      onSubtract: () => dispatch({ type: 'boxes', delta: -1 }),
+      onAdd: () => dispatch({ type: 'boxes', delta: 1 }),
+    };
+    const onNext = () => dispatch({ type: 'advance' });
+
+    if (screen.stage === 'your-mission') return <MissionYourMission onNext={onNext} />;
+    if (screen.stage === 'keep-a-count') return <MissionKeepCount {...counter} onNext={onNext} />;
+    return <MissionNoPressure {...counter} onNext={onNext} />;
   }
 
   return <DebugShell state={state} screen={screen} dispatch={dispatch} />;
