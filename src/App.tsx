@@ -1,8 +1,10 @@
 import { useHunt } from './hunt/useHunt';
-import type { Screen } from './hunt/state';
+import type { HuntAction, HuntState, Screen } from './hunt/state';
+import { WelcomeGreeting } from './screens/WelcomeGreeting';
+import { WelcomeIntroduction } from './screens/WelcomeIntroduction';
 
-// Temporary shell: proves the state machine and localStorage reach React.
-// The approved Welcome and Mission screens replace it next.
+// Temporary shell: shows every screen the Welcome phases have not reached yet.
+// The approved Mission and Puzzle screens replace it next.
 function describe(screen: Screen): string {
   switch (screen.kind) {
     case 'welcome':
@@ -24,9 +26,15 @@ function describe(screen: Screen): string {
   }
 }
 
-export default function App() {
-  const { state, screen, dispatch } = useHunt();
-
+function DebugShell({
+  state,
+  screen,
+  dispatch,
+}: {
+  state: HuntState;
+  screen: Screen;
+  dispatch: (action: HuntAction) => void;
+}) {
   const button = 'rounded-control border-2 border-ink px-4 py-3 text-base font-semibold';
 
   return (
@@ -53,4 +61,18 @@ export default function App() {
       </div>
     </main>
   );
+}
+
+export default function App() {
+  const { state, screen, dispatch } = useHunt();
+
+  if (screen.kind === 'welcome' && screen.stage === 'greeting') {
+    return <WelcomeGreeting onNext={() => dispatch({ type: 'advance' })} />;
+  }
+
+  if (screen.kind === 'welcome' && screen.stage === 'introduction') {
+    return <WelcomeIntroduction onStart={() => dispatch({ type: 'advance' })} />;
+  }
+
+  return <DebugShell state={state} screen={screen} dispatch={dispatch} />;
 }
