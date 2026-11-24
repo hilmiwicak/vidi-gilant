@@ -11,7 +11,8 @@ describe.each(Object.entries(plans))('Plan %s', (_id, stops) => {
   it('has complete Stops with a Puzzle, a Clue and a Code', () => {
     for (const s of stops) {
       expect(s.name).not.toBe('');
-      expect(s.puzzle.question).not.toBe('');
+      expect(s.puzzle.lead).not.toBe('');
+      expect(s.puzzle.phrase).not.toBe('');
       expect(s.puzzle.clue).not.toBe('');
       expect(s.code).not.toBe('');
       expect(s.referencePhoto).not.toBe('');

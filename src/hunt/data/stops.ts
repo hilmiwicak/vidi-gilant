@@ -16,7 +16,8 @@ export const pandanHaur = stop('pandan-haur', {
   lat: -6.2751914540499145,
   lng: 106.70018735152208,
   puzzle: {
-    question: 'Where do you usually buy kue cucur?',
+    lead: 'Where do you usually',
+    phrase: 'buy kue cucur?',
     clue: 'Your "safe space", yang di mana kamu takut kalau tiba-tiba ketemu orang tua aku wkwk.',
   },
   code: 'PLACEHOLDER-PANDAN-HAUR',
@@ -27,7 +28,8 @@ export const popeyes = stop('popeyes-parigi', {
   lat: -6.267461993662205,
   lng: 106.69188968161596,
   puzzle: {
-    question: 'Where did we eat together for the first time?',
+    lead: 'Where did we eat together',
+    phrase: 'for the first time?',
     clue: 'Ada burger yang gak abis, jadi aku bawa pulang. Besoknya Idul Adha.',
   },
   code: 'PLACEHOLDER-POPEYES',
@@ -38,7 +40,8 @@ export const naomiYura = stop('naomi-yura', {
   lat: -6.2522281283185865,
   lng: 106.7949374332136,
   puzzle: {
-    question: 'Where did we go for our first photobox?',
+    lead: 'Where did we go for our',
+    phrase: 'first photobox?',
     clue: 'Vintage, Kebayoran.',
   },
   code: 'PLACEHOLDER-NAOMI-YURA',
@@ -49,7 +52,8 @@ export const coldMoo = stop('cold-moo', {
   lat: -6.253226813726469,
   lng: 106.80144366204998,
   puzzle: {
-    question: 'Where did we go on our first ice cream date?',
+    lead: 'Where did we go on our',
+    phrase: 'first ice cream date?',
     clue: 'Kamu marah that day gara-gara aku telat wkwk.',
   },
   code: 'PLACEHOLDER-COLD-MOO',
@@ -60,7 +64,8 @@ export const lot17 = stop('lot-17', {
   lat: -6.22903093354103,
   lng: 106.80901387133515,
   puzzle: {
-    question: 'Where do we usually go sightseeing?',
+    lead: 'Where do we usually go',
+    phrase: 'sightseeing?',
     clue: 'Banyak orang minum dan nongkrong dgn bagasi mobilnya dibuka di sini',
   },
   code: 'PLACEHOLDER-LOT-17',
@@ -71,7 +76,8 @@ export const supagetti = stop('supagetti', {
   lat: -6.256024489702303,
   lng: 106.80581875041308,
   puzzle: {
-    question: 'What is the place that needs a reservation on Monday?',
+    lead: 'What is the place that needs',
+    phrase: 'a reservation on Monday?',
     clue: 'Italian and Japanese mix, near Daring Deli.',
   },
   code: 'PLACEHOLDER-SUPAGETTI',

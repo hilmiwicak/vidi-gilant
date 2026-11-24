@@ -92,7 +92,7 @@ type Stop = {
   lat: number;
   lng: number;
   radiusM?: number;           // overrides the 50 m default
-  puzzle: { question: string; clue: string };  // leads TO this Stop
+  puzzle: { lead: string; phrase: string; clue: string };  // leads TO this Stop; `phrase` is set in handwriting
   referencePhoto: string;     // one photo, chosen to look the same by day and night
   outlineImage: string;
   code: string;
