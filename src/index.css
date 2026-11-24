@@ -37,6 +37,13 @@
   }
 }
 
+/* Pencil renders Bricolage at its display optical size. The browser otherwise
+   maps opsz to the font size, which sets headings wider than the frames. */
+.font-display {
+  font-optical-sizing: none;
+  font-variation-settings: 'opsz' 96;
+}
+
 .material-symbols-rounded {
   font-family: 'Material Symbols Rounded';
   font-variation-settings:
