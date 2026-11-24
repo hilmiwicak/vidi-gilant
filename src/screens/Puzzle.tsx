@@ -15,6 +15,8 @@ type PuzzleProps = {
   boxes: number;
   onSubtract: () => void;
   onAdd: () => void;
+  /** Temporary Phase 3 route to Arrival; Phase 5 replaces it with the Fallback ladder. */
+  onImHere: () => void;
 };
 
 // Phase 4 replaces these with the live distance and bearing.
@@ -22,7 +24,7 @@ const PLACEHOLDER_DISTANCE = '450 m';
 const PLACEHOLDER_BEARING = 28;
 
 /** The Puzzle screen, the approved "Puzzle - Puzzle" frame. */
-export function Puzzle({ stop, showCounter, boxes, onSubtract, onAdd }: PuzzleProps) {
+export function Puzzle({ stop, showCounter, boxes, onSubtract, onAdd, onImHere }: PuzzleProps) {
   const [clueOpen, setClueOpen] = useState(false);
 
   return (
@@ -61,7 +63,7 @@ export function Puzzle({ stop, showCounter, boxes, onSubtract, onAdd }: PuzzlePr
           <p className="font-display text-[64px] font-extrabold leading-[1.2] text-ink">{PLACEHOLDER_DISTANCE}</p>
         </div>
         <ButtonOutline icon="refresh" label="Refresh location" className="w-full" />
-        <TextLink label="Having trouble" sub="at the location?" />
+        <TextLink label="Having trouble" sub="at the location?" onClick={onImHere} />
       </div>
     </Screen>
   );

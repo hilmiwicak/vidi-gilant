@@ -1,9 +1,12 @@
 import { useHunt } from './hunt/useHunt';
+import { reveals } from './hunt/data/reveals';
 import type { HuntAction, HuntState, Screen } from './hunt/state';
+import { Arrival } from './screens/Arrival';
 import { MissionKeepCount } from './screens/MissionKeepCount';
 import { MissionNoPressure } from './screens/MissionNoPressure';
 import { MissionYourMission } from './screens/MissionYourMission';
 import { Puzzle } from './screens/Puzzle';
+import { RevealText } from './screens/RevealText';
 import { WelcomeGreeting } from './screens/WelcomeGreeting';
 import { WelcomeIntroduction } from './screens/WelcomeIntroduction';
 
@@ -93,7 +96,26 @@ export default function App() {
   }
 
   if (screen.kind === 'puzzle') {
-    return <Puzzle stop={stops[screen.stop]} showCounter={state.plan === 'a'} {...counter} />;
+    return (
+      <Puzzle
+        stop={stops[screen.stop]}
+        showCounter={state.plan === 'a'}
+        {...counter}
+        onImHere={() => dispatch({ type: 'imHere' })}
+      />
+    );
+  }
+
+  if (screen.kind === 'arrival') {
+    return <Arrival stop={stops[screen.stop]} onContinue={() => dispatch({ type: 'advance' })} />;
+  }
+
+  if (screen.kind === 'reveal') {
+    const reveal = reveals[stops[screen.stop].id];
+    // Voice, video and song get their own cards once the real content exists.
+    if (reveal.type === 'text') {
+      return <RevealText body={reveal.body} onContinue={() => dispatch({ type: 'advance' })} />;
+    }
   }
 
   return <DebugShell state={state} screen={screen} dispatch={dispatch} />;
