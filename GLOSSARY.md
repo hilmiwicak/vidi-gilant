@@ -16,12 +16,8 @@ _Avoid_: Stop 0, intro, onboarding
 One tap-to-advance frame inside a screen, shown on its own before the next one. The Welcome, the Mission intro, the last-Stop congratulation and the final screen are each a sequence of Stages. Not to be confused with a Stop, which is a place.
 _Avoid_: Step, beat, slide, page
 
-**Plan**:
-One of two versions of the Hunt. He picks it before the Welcome and it never changes mid-Hunt. Plan A runs from late morning, covers Bintaro and Jakarta, includes the Mission, and ends with dinner around 5 to 6pm. Plan B starts after he picks her up from work in Jakarta, stays in Jakarta, makes the Mission optional, and ends with dinner around 8pm.
-_Avoid_: Route, mode, variant
-
 **Stop**:
-A significant place she must physically reach. The last Stop of every Plan is the dinner. Plan A has 2 to 3 Stops around Bintaro, 0 to 2 in Jakarta, then the dinner. Plan B has 2 Stops close together in Jakarta, then the dinner.
+A significant place she must physically reach. The Hunt has one fixed sequence of Stops, ending with the dinner.
 _Avoid_: Checkpoint, location, waypoint, station
 
 **Puzzle**:

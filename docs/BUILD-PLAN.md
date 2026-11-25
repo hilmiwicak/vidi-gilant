@@ -1,6 +1,6 @@
 # Build plan
 
-Target: ready by 26 November 2026. The celebration date itself is flexible (December or January is possible), and nothing about the build depends on it.
+Target: ready by 26 November 2026. The Hunt is on Saturday, 5 December 2026.
 
 ## Stack
 
@@ -21,11 +21,11 @@ Vite, React, TSX and Tailwind v4, on one Cloudflare Worker with static assets. S
 
 Mark a phase `[x]` when its PR is open and its checks pass, so a fresh iteration knows where to resume. Phase 2 is done by the user with the agent in Pencil, never by a loop. A Ralph run stops at phase 2 until the user says the designs are approved.
 
-1. [x] Foundation: project, Worker with static assets, Stop types, placeholder data for both Plans.
+1. [x] Foundation: project, Worker with static assets, Stop types and placeholder Stop data.
 2. [x] **Design every screen with the user in Pencil.** Do not start the Ralph loop until the user approves. Screens: Welcome, Mission intro, Puzzle with Pointer, Arrival moment (the congratulation before each Reveal), Reveal, last-Stop congratulation, final screen, each "Having trouble" ladder step, Admin modal, photo capture. First settle the visual direction (palette, type, how much floral).
 3. [ ] Core hunt: state machine, Welcome, Puzzle and Clue, Reveal, Boxes counter, a manual "I'm here" button, `localStorage` restore.
 4. [ ] Pointer: GPS, distance, bearing, compass, Arrival rule, "Refresh location".
-5. [ ] Fallbacks and Admin mode: Code, Master code, Admin modal, Capture here, Plan selection, `/a` and `/b`.
+5. [ ] Fallbacks and Admin mode: Code, Master code, Admin modal, Capture here.
 6. [ ] Resilience: service worker, update check, Reveal preload, on-device log.
 7. [ ] Event log: Worker routes, queue and retry, token-protected log page, rate limits.
 8. [ ] Photo check, Outline photo, then the eval script and the day-and-night test.
@@ -36,14 +36,14 @@ Use placeholder coordinates from Google Maps. Replace them with Capture here val
 
 ## Content the user must supply
 
-Choose the Stops (Plan A and Plan B) and write each Puzzle and Clue. Both Plans are drafted in [STOP.md](./STOP.md). Scout every Stop to record coordinates, one reference photo, the outline, and a Code. Prepare the shared Reveals (voice, video, song, text), the Master code and PIN, and the Welcome greeting.
+Finalize the three Stops and their Puzzles and Clues in [STOP.md](./STOP.md). Scout every Stop to record coordinates, one reference photo, the outline, and a Code. Prepare the Reveals (voice, video, song, text), the Master code and PIN, and the Welcome greeting.
 
 ## Checklists (to write properly once content exists)
 
-**As soon as the date is fixed:** confirm the date, then reserve Supagetti, Prapanca for the dinner. The Monday of the Hunt's week is the deadline. Book a slot that works for the Plan he will pick (about 5 to 6pm for Plan A, about 8pm for Plan B), or pick the Plan before booking. See the reminder at the end of [STOP.md](./STOP.md).
+**Dinner reservation:** reserve Supagetti, Prapanca by Monday, 30 November 2026. See the reminder at the end of [STOP.md](./STOP.md).
 
-**One week before:** both phones on the latest iOS; both install modes tested; real coordinates, photos, outlines and Codes in place; media compressed and under 25 MiB; full rehearsal of Plan A's Bintaro leg and Plan B's Jakarta leg; `/a` and `/b` tested; service worker update tested.
+**One week before:** both phones on the latest iOS; both install modes tested; real coordinates, photos, outlines and Codes in place; media compressed and under 25 MiB; full rehearsal, including departure from Karang Tengah and travel through all three Stops; service worker update tested.
 
 **Day before:** deployed build is the latest; weather and dinner booking checked; phones and a power bank charged.
 
-**Morning of:** pick the Plan; install to Home Screen on her phone together with her; grant location, compass and camera permissions; preload Reveals on Wi-Fi; Low Power Mode off; her Focus mode off; auto-lock set long; Codes and Master code on a note.
+**Morning of:** install to Home Screen on her phone together with her; grant location, compass and camera permissions; preload Reveals on Wi-Fi; Low Power Mode off; her Focus mode off; auto-lock set long; Codes and Master code on a note; depart from Karang Tengah.

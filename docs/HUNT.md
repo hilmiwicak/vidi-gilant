@@ -47,22 +47,14 @@ On Arrival, by any route (automatic or a Fallback), she sees a short congratulat
 
 ## Reveal
 
-Voice message, video, song (Spotify embed), or text. The play button is large and clearly labelled ("Tap to play the video"), because iOS blocks autoplay. "Continue" is always available, even if she never presses play. She may watch it later while travelling. Reveals are shared across both Plans.
+Voice message, video, song (Spotify embed), or text. The play button is large and clearly labelled ("Tap to play the video"), because iOS blocks autoplay. "Continue" is always available, even if she never presses play. She may watch it later while travelling.
 
 Each Reveal frame has a handwritten heading (draft), one card, and "Continue". Text shows the message in an outlined card. Video, Voice and Song show a large gold play disc with a label ("Tap to play the video", "Tap to play the voice message", "Tap to play the song"); Song also shows a title line (a placeholder in the design, since the Spotify embed was not drawn).
 
-## Plans
+## Stops
 
-| | Plan A | Plan B |
-|---|---|---|
-| Start | Late morning | After he picks her up from work in Jakarta |
-| Stops | 2 to 3 around Bintaro, 0 to 2 in Jakarta, then dinner | 2 close together in Jakarta, then dinner |
-| Dinner | About 5 to 6pm | About 8pm |
-| Mission | Yes | Optional (counter hidden by default, enabled in Admin mode) |
-
-- Same dinner Stop in both Plans. Stops are in linear order.
-- He picks the Plan before the Welcome, via `/a` or `/b` links (to be tested on iOS; fall back to Admin mode if the link does not persist). It never changes mid-Hunt. Switching is possible only at the Welcome and resets progress.
-- Each Stop must work at the Plan's hour: reachable and safe, something lit or recognisable for the reference photo, and it does not need to be open.
+- The Hunt uses the fixed sequence of Stops defined in [STOP.md](./STOP.md). The last Stop is the dinner.
+- Each Stop must work at the hour she reaches it: reachable and safe, something lit or recognisable for the reference photo, and it does not need to be open.
 - Keep the Hunt to about 2.5 to 3 hours before dinner.
 
 ## Mission and Boxes counter
@@ -71,11 +63,11 @@ She hands out 10 to 20 prepared food boxes. The counter has +1 and -1, no target
 
 ## Admin mode
 
-On-device only, no remote control. Opened by 5 taps within 3 seconds on a fixed invisible zone at the top center of every screen and every Stage (on the Puzzle screen it sits over the Boxes counter label, and stays in place when the counter is hidden in Plan B), then a PIN, or by typing the Master code into the Code field. The tap zone does nothing on a single tap. Shown as a modal, with no "test mode" banner. It can force Arrival, jump to any Stop, reset progress, set the Boxes count, choose the Plan, and show the build hash and the on-device log. **Capture here** shows current lat, lng and accuracy, used on scouting visits to record each Stop's real coordinates.
+On-device only, no remote control. Opened by 5 taps within 3 seconds on a fixed invisible zone at the top center of every screen and every Stage (on the Puzzle screen it sits over the Boxes counter label), then a PIN, or by typing the Master code into the Code field. The tap zone does nothing on a single tap. Shown as a modal, with no "test mode" banner. It can force Arrival, jump to any Stop, reset progress, set the Boxes count, and show the build hash and the on-device log. **Capture here** shows current lat, lng and accuracy, used on scouting visits to record each Stop's real coordinates.
 
 ## Persistence
 
-After every change, save to `localStorage`: current Stop and phase, Fallback ladder step, Boxes count, Plan. A reload returns her to exactly where she was. Home Screen and Safari storage are separate on iOS, so set the Plan inside the installed app (or install from the Plan link).
+After every change, save to `localStorage`: current Stop and phase, Fallback ladder step, and Boxes count. A reload returns her to exactly where she was. Home Screen and Safari storage are separate on iOS, so start the Hunt after installing to the Home Screen.
 
 ## Privacy
 
@@ -83,7 +75,7 @@ Her location is computed on her phone and never sent anywhere. Her photos live o
 
 ## Data shape
 
-Two arrays, `planA` and `planB`, of Stops, plus shared Reveals.
+One `stops` array in fixed Hunt order, plus the Reveals associated with those Stops.
 
 ```ts
 type Stop = {
