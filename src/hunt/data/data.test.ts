@@ -1,8 +1,13 @@
 import { describe, expect, it } from 'vitest';
-import { planA, planB, plans } from './plans';
 import { reveals } from './reveals';
+import { coldMoo, lot17, stops, supagetti } from './stops';
 
-describe.each(Object.entries(plans))('Plan %s', (_id, stops) => {
+describe('Hunt Stops', () => {
+  it('keeps the fixed Hunt order and ends at the dinner', () => {
+    expect(stops).toEqual([lot17, coldMoo, supagetti]);
+    expect(stops.at(-1)).toBe(supagetti);
+  });
+
   it('has unique Stop ids', () => {
     const ids = stops.map((s) => s.id);
     expect(new Set(ids).size).toBe(ids.length);
@@ -31,20 +36,5 @@ describe.each(Object.entries(plans))('Plan %s', (_id, stops) => {
 
   it('has a Reveal for every Stop', () => {
     for (const s of stops) expect(reveals[s.id]).toBeDefined();
-  });
-});
-
-describe('Plan shape', () => {
-  it('gives Plan A 3 to 6 Stops including the dinner', () => {
-    expect(planA.length).toBeGreaterThanOrEqual(3);
-    expect(planA.length).toBeLessThanOrEqual(6);
-  });
-
-  it('gives Plan B 2 Stops then the dinner', () => {
-    expect(planB).toHaveLength(3);
-  });
-
-  it('ends both Plans at the same dinner Stop', () => {
-    expect(planA.at(-1)).toBe(planB.at(-1));
   });
 });

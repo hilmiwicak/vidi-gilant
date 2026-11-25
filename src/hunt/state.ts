@@ -1,4 +1,4 @@
-import type { PlanId, Stop } from './types';
+import type { Stop } from './types';
 
 const welcomeStages = ['greeting', 'introduction'] as const;
 const missionStages = ['your-mission', 'keep-a-count', 'no-pressure'] as const;
@@ -23,12 +23,9 @@ export type Screen =
  * Each Stop gets Puzzle, Arrival and Reveal. The last Stop also gets its three
  * Last-Stop congratulation Stages after its Reveal, before the ending screen.
  */
-export function screens(stops: readonly Stop[], plan: PlanId = 'a'): Screen[] {
+export function screens(stops: readonly Stop[]): Screen[] {
   const list: Screen[] = welcomeStages.map((stage): Screen => ({ kind: 'welcome', stage }));
-
-  if (plan === 'a') {
-    list.push(...missionStages.map((stage): Screen => ({ kind: 'mission', stage })));
-  }
+  list.push(...missionStages.map((stage): Screen => ({ kind: 'mission', stage })));
 
   const last = stops.length - 1;
   for (let i = 0; i <= last; i += 1) {
@@ -43,7 +40,6 @@ export function screens(stops: readonly Stop[], plan: PlanId = 'a'): Screen[] {
 }
 
 export type HuntState = {
-  plan: PlanId;
   /** Index into `screens(stops)`. */
   at: number;
   /** Never gates Stop progression. The ending screen shows a total when this is above zero. */
@@ -57,8 +53,8 @@ export type HuntAction =
   | { type: 'imHere' }
   | { type: 'boxes'; delta: 1 | -1 };
 
-export function initialHuntState(plan: PlanId = 'a'): HuntState {
-  return { plan, at: 0, boxes: 0 };
+export function initialHuntState(): HuntState {
+  return { at: 0, boxes: 0 };
 }
 
 export function reduce(state: HuntState, action: HuntAction, stops: readonly Stop[]): HuntState {
@@ -67,7 +63,7 @@ export function reduce(state: HuntState, action: HuntAction, stops: readonly Sto
     return boxes === state.boxes ? state : { ...state, boxes };
   }
 
-  const list = screens(stops, state.plan);
+  const list = screens(stops);
   const current = list[state.at];
   if (!current) return state;
 
@@ -80,7 +76,7 @@ export function reduce(state: HuntState, action: HuntAction, stops: readonly Sto
 }
 
 export function currentStop(state: HuntState, stops: readonly Stop[]): Stop | undefined {
-  const screen = screens(stops, state.plan)[state.at];
+  const screen = screens(stops)[state.at];
   if (!screen) return undefined;
   if (screen.kind === 'lastStop') return stops[stops.length - 1];
   if (screen.kind === 'puzzle' || screen.kind === 'arrival' || screen.kind === 'reveal') return stops[screen.stop];

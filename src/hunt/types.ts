@@ -16,5 +16,3 @@ export type Stop = {
 
 export type Reveal =
   { type: 'text'; body: string } | { type: 'voice' | 'video'; src: string } | { type: 'song'; spotifyUri: string };
-
-export type PlanId = 'a' | 'b';

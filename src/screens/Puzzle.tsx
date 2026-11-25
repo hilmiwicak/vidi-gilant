@@ -10,8 +10,6 @@ import type { Stop } from '../hunt/types';
 
 type PuzzleProps = {
   stop: Stop;
-  /** Plan B hides the counter and leaves the top empty. */
-  showCounter: boolean;
   boxes: number;
   onSubtract: () => void;
   onAdd: () => void;
@@ -24,18 +22,16 @@ const PLACEHOLDER_DISTANCE = '450 m';
 const PLACEHOLDER_BEARING = 28;
 
 /** The Puzzle screen, the approved "Puzzle - Puzzle" frame. */
-export function Puzzle({ stop, showCounter, boxes, onSubtract, onAdd, onImHere }: PuzzleProps) {
+export function Puzzle({ stop, boxes, onSubtract, onAdd, onImHere }: PuzzleProps) {
   const [clueOpen, setClueOpen] = useState(false);
 
   return (
     <Screen
       scroll
       floating={
-        showCounter ? (
-          <div className="absolute left-[67px] top-[58px]">
-            <BoxesCounter count={boxes} onSubtract={onSubtract} onAdd={onAdd} />
-          </div>
-        ) : undefined
+        <div className="absolute left-[67px] top-[58px]">
+          <BoxesCounter count={boxes} onSubtract={onSubtract} onAdd={onAdd} />
+        </div>
       }
       overlay={clueOpen ? <Clue clue={stop.puzzle.clue} onClose={() => setClueOpen(false)} /> : undefined}
       ornaments={

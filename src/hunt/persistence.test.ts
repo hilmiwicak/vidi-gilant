@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { planA, planB, plans } from './data/plans';
+import { stops } from './data/stops';
 import { clearHunt, restoreHunt, saveHunt, storageKey } from './persistence';
 import { initialHuntState, reduce, screens, type HuntState } from './state';
 
@@ -19,7 +19,7 @@ function memoryStorage(seed?: string): Storage {
 }
 
 function restore(storage: Storage) {
-  return restoreHunt(storage, (plan) => plans[plan]);
+  return restoreHunt(storage, stops);
 }
 
 describe('restoreHunt', () => {
@@ -28,35 +28,33 @@ describe('restoreHunt', () => {
   });
 
   it('returns her to exactly where she was, including the last screen', () => {
-    const lastAt = screens(planB, 'b').length - 1;
-    const state: HuntState = { plan: 'b', at: lastAt, boxes: 4 };
+    const lastAt = screens(stops).length - 1;
+    const state: HuntState = { at: lastAt, boxes: 4 };
     const storage = memoryStorage();
     saveHunt(storage, state);
     expect(restore(storage)).toEqual(state);
   });
 
-  it('round-trips every screen in both Plans', () => {
-    for (const plan of [planA, planB]) {
-      screens(plan, plan === planA ? 'a' : 'b').forEach((_screen, at) => {
-        const storage = memoryStorage();
-        const state: HuntState = { plan: plan === planA ? 'a' : 'b', at, boxes: 2 };
-        saveHunt(storage, state);
-        expect(restore(storage)).toEqual(state);
-      });
-    }
+  it('round-trips every screen', () => {
+    screens(stops).forEach((_screen, at) => {
+      const storage = memoryStorage();
+      const state: HuntState = { at, boxes: 2 };
+      saveHunt(storage, state);
+      expect(restore(storage)).toEqual(state);
+    });
   });
 
   it('survives a reload after counting up and back down', () => {
     let state = initialHuntState();
-    state = reduce(state, { type: 'boxes', delta: 1 }, planA);
-    state = reduce(state, { type: 'boxes', delta: -1 }, planA);
+    state = reduce(state, { type: 'boxes', delta: 1 }, stops);
+    state = reduce(state, { type: 'boxes', delta: -1 }, stops);
     const storage = memoryStorage();
     saveHunt(storage, state);
     expect(restore(storage)).toEqual(state);
   });
 
   it('discards a value from a different version instead of guessing', () => {
-    const stored = JSON.stringify({ version: 2, plan: 'a', at: 3, boxes: 1 });
+    const stored = JSON.stringify({ version: 2, at: 3, boxes: 1 });
     expect(restore(memoryStorage(stored))).toEqual(initialHuntState());
   });
 
@@ -66,26 +64,21 @@ describe('restoreHunt', () => {
     }
   });
 
-  it('discards a screen index that the saved Plan does not have', () => {
-    const tooFar = JSON.stringify({ version: 1, plan: 'b', at: screens(planB, 'b').length, boxes: 0 });
-    expect(restore(memoryStorage(tooFar))).toEqual(initialHuntState('b'));
+  it('discards a screen index the Hunt does not have', () => {
+    const tooFar = JSON.stringify({ version: 1, at: screens(stops).length, boxes: 0 });
+    expect(restore(memoryStorage(tooFar))).toEqual(initialHuntState());
   });
 
-  it('keeps her Plan when the screen is corrupt', () => {
-    const corrupt = JSON.stringify({ version: 1, plan: 'b', at: -1, boxes: 0 });
-    expect(restore(memoryStorage(corrupt)).plan).toBe('b');
+  it('discards a negative or non-integer Boxes count', () => {
+    const negative = JSON.stringify({ version: 1, at: 0, boxes: -2 });
+    const fractional = JSON.stringify({ version: 1, at: 0, boxes: 1.5 });
+    expect(restore(memoryStorage(negative))).toEqual(initialHuntState());
+    expect(restore(memoryStorage(fractional))).toEqual(initialHuntState());
   });
 
-  it('discards an unknown Plan or a negative Boxes count', () => {
-    const badPlan = JSON.stringify({ version: 1, plan: 'c', at: 0, boxes: 0 });
-    const badBoxes = JSON.stringify({ version: 1, plan: 'a', at: 0, boxes: -2 });
-    expect(restore(memoryStorage(badPlan))).toEqual(initialHuntState());
-    expect(restore(memoryStorage(badBoxes))).toEqual(initialHuntState());
-  });
-
-  it('ignores fields an older build may have saved', () => {
-    const legacy = JSON.stringify({ version: 1, plan: 'a', at: 2, boxes: 6, boxesUsed: true, step: { kind: 'final' } });
-    expect(restore(memoryStorage(legacy))).toEqual({ plan: 'a', at: 2, boxes: 6 });
+  it('ignores fields an older build may have saved, including a Plan', () => {
+    const legacy = JSON.stringify({ version: 1, plan: 'a', at: 2, boxes: 6, step: { kind: 'final' } });
+    expect(restore(memoryStorage(legacy))).toEqual({ at: 2, boxes: 6 });
   });
 });
 
@@ -111,7 +104,7 @@ describe('saveHunt', () => {
 describe('clearHunt', () => {
   it('forgets the saved Hunt', () => {
     const storage = memoryStorage();
-    saveHunt(storage, { plan: 'a', at: 3, boxes: 3 });
+    saveHunt(storage, { at: 3, boxes: 3 });
     clearHunt(storage);
     expect(restore(storage)).toEqual(initialHuntState());
   });

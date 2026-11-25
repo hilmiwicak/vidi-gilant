@@ -42,14 +42,7 @@ export default function App() {
   }
 
   if (screen.kind === 'puzzle') {
-    return (
-      <Puzzle
-        stop={stops[screen.stop]}
-        showCounter={state.plan === 'a'}
-        {...counter}
-        onImHere={() => dispatch({ type: 'imHere' })}
-      />
-    );
+    return <Puzzle stop={stops[screen.stop]} {...counter} onImHere={() => dispatch({ type: 'imHere' })} />;
   }
 
   if (screen.kind === 'arrival') {
