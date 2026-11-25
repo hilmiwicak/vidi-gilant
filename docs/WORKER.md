@@ -8,7 +8,7 @@ One Cloudflare Worker serves the static site and three routes. Hosting is Worker
 | Event write | Her app | Save progress and error events |
 | Log page | He, on his phone or laptop | Read recent events, behind a token |
 
-Everything else (Codes, PIN, Master code, Admin tools, Boxes counter, Plan) is client-side.
+Everything else (Codes, PIN, Master code, Admin tools, Boxes counter) is client-side.
 
 ## Photo check
 

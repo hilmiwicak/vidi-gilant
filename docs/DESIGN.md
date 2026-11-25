@@ -72,7 +72,7 @@ A Stage is one tap-to-advance frame inside a screen. Welcome, Mission intro, the
 
 ## Admin mode tap zone
 
-Every screen and every Stage gets an invisible 124x56 px frame named "Admin tap zone (invisible)" at x 133, y 62 (top center, under the status bar). On the Puzzle screen it sits over the Boxes counter label and stays in place when the counter is hidden in Plan B. See HUNT.md for the 5 taps, 3 seconds and PIN.
+Every screen and every Stage gets an invisible 124x56 px frame named "Admin tap zone (invisible)" at x 133, y 62 (top center, under the status bar). On the Puzzle screen it sits over the Boxes counter label. See HUNT.md for the 5 taps, 3 seconds and PIN.
 
 ## Ornaments
 
@@ -83,9 +83,9 @@ Every screen and every Stage gets an invisible 124x56 px frame named "Admin tap 
 
 ## Puzzle screen order
 
-Top to bottom: Boxes counter pill (floating), Puzzle text, "Need a Clue?" button, Pointer arrow, distance, "Refresh location", "Having trouble" link with the italic sub-line "at the location?". The screen can scroll, so the link may sit below the fold. Plan B hides the counter by default and the top stays empty; the tap zone stays in place. No Maps link or place names ever. The dinner name stays hidden until Arrival. The Pointer shows "Updating..." in place of the distance while refreshing, and the arrow dims. A weak-signal note appears when accuracy is poor. Distances over 1 km show in km. The "Inspiration" frame has a reference layout.
+Top to bottom: Boxes counter pill (floating), Puzzle text, "Need a Clue?" button, Pointer arrow, distance, "Refresh location", "Having trouble" link with the italic sub-line "at the location?". The Boxes counter is always visible. The screen can scroll, so the link may sit below the fold. No Maps link or place names ever. The dinner name stays hidden until Arrival. The Pointer shows "Updating..." in place of the distance while refreshing, and the arrow dims. A weak-signal note appears when accuracy is poor. Distances over 1 km show in km. The "Inspiration" frame has a reference layout.
 
-The Puzzle screen is drawn once, for Plan A Stop 1, with a frame per variant, named "Puzzle - <variant>": Puzzle, Clue, Location Updating, Weak signal, No location, No compass, Over 1 km, Arrival range. "Puzzle - Plan B Puzzle (counter hidden)" is the only Plan B frame, because only the counter and the text differ. Every other Stop reuses the layout and changes only its Puzzle and Clue text (see STOP.md). Do not draw a frame per Stop.
+The Puzzle screen is drawn once, for Stop 1, with a frame per variant, named "Puzzle - <variant>": Puzzle, Clue, Location Updating, Weak signal, No location, No compass, Over 1 km, Arrival range. Every other Stop reuses the layout and changes only its Puzzle and Clue text (see STOP.md). Do not draw a frame per Stop.
 
 The Clue is a white card with an `ink` outline over a scrim (`ink` at 65%). It sits just below the "Need a Clue?" button and ends with a "Got it" button. The Admin tap zone stays above the scrim.
 

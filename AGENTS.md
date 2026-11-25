@@ -1,6 +1,6 @@
 Vidi is a birthday scavenger hunt web app for one person (his girlfriend), played on her iPhone and hosted on Cloudflare.
 
-Vocabulary lives in [GLOSSARY.md](./GLOSSARY.md). Use those terms exactly (Stop, Puzzle, Clue, Reveal, Arrival, Fallback, Plan, and so on).
+Vocabulary lives in [GLOSSARY.md](./GLOSSARY.md). Use those terms exactly (Stop, Puzzle, Clue, Reveal, Arrival, Fallback, and so on).
 
 - All text she sees is mixed English/Indonesian.
 - Design the screens with the user in Pencil (pen.dev) before any Ralph loop. See [docs/BUILD-PLAN.md](./docs/BUILD-PLAN.md).
